@@ -1,9 +1,7 @@
 ---
 title: Conventies voor Open Source ontwikkelen
 title_sm: Open Source
-hide_title: true
 hide_table_of_contents: false
-pagination_label: Open Source
 description: Als developer Open Source ontwikkelen met NL Design System
 keywords:
   - developer

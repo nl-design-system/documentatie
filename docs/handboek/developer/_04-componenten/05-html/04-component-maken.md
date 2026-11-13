@@ -1,8 +1,6 @@
 ---
 title: HTML component maken
-hide_title: true
 hide_table_of_contents: false
-pagination_label: HTML component maken
 description: Hoe kun je een HTML component maken voor NL Design System
 keywords:
   - developer

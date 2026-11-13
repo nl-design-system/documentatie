@@ -1,11 +1,8 @@
 ---
 title: Overzicht van de Hall of Fame Definition of Done voor componenten
 title_sm: Hall of Fame
-hide_title: true
 hide_table_of_contents: false
-sidebar_position: 1
 navigation_order: 4
-pagination_label: Overzicht
 description: Overzicht van de Definition of Done voor Hall of Fame componenten
 slug: /handboek/estafettemodel/componenten/hall-of-fame
 keywords:

@@ -1,8 +1,6 @@
 ---
 title: React component testen
-hide_title: true
 hide_table_of_contents: false
-pagination_label: React component testen
 description: Eigen React component testen
 keywords:
   - developer

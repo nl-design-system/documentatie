@@ -2,7 +2,6 @@
 title: Vercel
 slug: /vercel
 hide_table_of_contents: false
-pagination_label: Vercel
 description: Waarom gebruikt NL Design System de tool Vercel?
 keywords:
   - GitHub Actions

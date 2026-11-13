@@ -1,8 +1,6 @@
 ---
 title: Typo3
-hide_title: true
 hide_table_of_contents: false
-pagination_label: Typo3
 description: NL Design System in Typo3
 slug: /handboek/developer/cms/typo3/
 ---

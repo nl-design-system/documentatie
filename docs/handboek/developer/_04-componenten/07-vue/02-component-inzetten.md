@@ -1,8 +1,6 @@
 ---
 title: Vua.js component inzetten
-hide_title: true
 hide_table_of_contents: false
-pagination_label: Vua.js component inzetten
 description: Hoe kun je een bestaand Vua.js component inzetten
 keywords:
   - developer
