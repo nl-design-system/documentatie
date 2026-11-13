@@ -4,8 +4,8 @@ import { getPathnamesFromSitemap } from '../helpers/sitemap.ts';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
-  sitemapDir: './dist',
   sitemap: '/sitemap-index.xml',
+  sitemapDir: './dist',
 };
 
 declare global {
@@ -48,7 +48,7 @@ async function injectCspHeaders(page: Page, pathname: string) {
     const response = await route.fetch();
     const headers = response.headers();
     headers['content-security-policy'] = csp;
-    await route.fulfill({ response, headers });
+    await route.fulfill({ headers, response });
   });
 }
 

@@ -1,17 +1,17 @@
-import { Grid } from '../grid/grid.tsx';
-import { Heading } from '../heading/heading.tsx';
-import { Paragraph } from '../paragraph/paragraph.tsx';
-import { SearchForm } from '../search/form.tsx';
-import { updateDocumentTitle } from '../page-title/document-title.ts';
+import type { I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index.ts';
 import { useEffect, useState } from 'react';
 import type { SearchResult } from './types';
+import { Grid } from '../grid/grid.tsx';
+import { Heading } from '../heading/heading.tsx';
+import { updateDocumentTitle } from '../page-title/document-title.ts';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { SearchForm } from '../search/form.tsx';
 import { fetchResults, SearchError as SearchErrorClass } from './algolia-api/fetch-results.ts';
 import { groupHitsToPages, type GroupError } from './algolia-api/group-hits-to-pages.ts';
 import { SearchError } from './error.tsx';
-import { SearchResults } from './results.tsx';
 import './page.css';
 import '@nl-design-system-candidate/mark-css/mark.css';
-import type { I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index.ts';
+import { SearchResults } from './results.tsx';
 
 function pageTitle(query?: string | null) {
   return query ? `Zoeken naar: "${query}"` : 'Zoeken';

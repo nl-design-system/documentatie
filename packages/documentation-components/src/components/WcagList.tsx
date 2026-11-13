@@ -1,8 +1,8 @@
+import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
+import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon.tsx';
+import clsx from 'clsx';
 import { Heading, type HeadingProps } from '../heading/heading.tsx';
 import { Link } from '../link/link.tsx';
-import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon.tsx';
-import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
-import clsx from 'clsx';
 import { successCriteriaMap } from './wcag22.ts';
 import './TaskList.css';
 
@@ -18,7 +18,7 @@ export interface WcagListProps {
   items: WcagListItemProps[];
 }
 
-export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: WcagListItemProps) => {
+export const WcagListItem = ({ checked, description, headingLevel = 3, sc }: WcagListItemProps) => {
   const data = successCriteriaMap.get(sc);
   const title = data ? `${sc} ${data.nl?.title}` : sc;
   return (

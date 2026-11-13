@@ -1,10 +1,8 @@
-import { Paragraph } from '../../paragraph/paragraph.tsx';
 import type { TeamMember } from './TeamMember';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
 
 const Astrid: TeamMember = {
   name: 'Astrid Brantjes',
-  role: 'Project Manager',
-  slack: { mention: '@Astrid Brantjes', id: 'U06S00GPXC7' },
   Description: () => (
     <>
       <Paragraph>
@@ -16,10 +14,12 @@ const Astrid: TeamMember = {
         opdracht.
       </Paragraph>
       <Paragraph>
-        Risico's, escalaties, feedback en zaken rondom de Code of Conduct kunnen bij haar worden gemeld.
+        Risico&apos;s, escalaties, feedback en zaken rondom de Code of Conduct kunnen bij haar worden gemeld.
       </Paragraph>
     </>
   ),
+  role: 'Project Manager',
+  slack: { id: 'U06S00GPXC7', mention: '@Astrid Brantjes' },
 };
 
 export default Astrid;

@@ -1,7 +1,7 @@
+import type { Page } from '@playwright/test';
 import { AxeBuilder } from '@axe-core/playwright';
 import { writeFile } from 'fs/promises';
 import { exclusions, exclusionGroups, skippedRoutes, type RouteExclusion } from './a11y-exclusions.ts';
-import type { Page } from '@playwright/test';
 
 export async function analyzeAccessibility(page: Page, disabledRules: string[]) {
   return new AxeBuilder({ page })

@@ -18,7 +18,7 @@ const testCases: Array<[string, string, { stripOrigin?: boolean; stripExtensions
   ['https://example.com/foo/bar', '/foo/bar/', { stripOrigin: true }],
   ['/foo/bar', '/foo/bar/', { stripOrigin: true }],
   // Treat .md / .mdx as pages and strip the extensions
-  ['/foo/bar.md', '/foo/bar/', { stripOrigin: false, stripExtensions: ['.md', '.mdx'] }],
+  ['/foo/bar.md', '/foo/bar/', { stripExtensions: ['.md', '.mdx'], stripOrigin: false }],
   ['/foo/bar.mdx', '/foo/bar/', { stripExtensions: ['.md', '.mdx'] }],
   ['/foo/bar.md#baz', '/foo/bar/#baz', { stripExtensions: ['.md', '.mdx'] }],
   ['/foo/bar.mdx#baz', '/foo/bar/#baz', { stripExtensions: ['.md', '.mdx'] }],

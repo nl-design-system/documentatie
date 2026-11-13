@@ -14,10 +14,10 @@
  */
 
 import type { PropsWithChildren, ReactElement } from 'react';
-import { Link } from '../link/link.tsx';
-import { Heading, type HeadingProps } from '../heading/heading.tsx';
-import { successCriteriaMap } from './wcag22.ts';
 import { AccordionProvider } from '@utrecht/component-library-react';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { successCriteriaMap } from './wcag22.ts';
 import './ComponentCriteriaList.css';
 
 /**
@@ -55,11 +55,11 @@ export interface CriteriaListProps {
  *
  */
 export const CriteriaListItem = ({
-  title,
-  sc,
-  status,
   children,
   headingLevel = 4,
+  sc,
+  status,
+  title,
 }: PropsWithChildren<CriteriaListItemProps>) => {
   const data = sc ? successCriteriaMap.get(sc) : undefined;
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
@@ -96,17 +96,17 @@ export const CriteriaListItem = ({
  * CriteriaList renders the details, summary for the testCategory.
  *
  */
-export const CriteriaList = ({ testCategory, children }: CriteriaListProps) => (
+export const CriteriaList = ({ children, testCategory }: CriteriaListProps) => (
   <AccordionProvider
     sections={[
       {
+        body: children,
         className: 'utrecht-accordion--nlds-subtle',
-        headingLevel: 3,
         expanded: false,
+        headingLevel: 3,
         // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         label: (<span>{testCategory}</span>) as any,
-        body: children,
       },
     ]}
   />

@@ -1,8 +1,8 @@
-import { expect, test } from '@playwright/test';
-import { resolve } from 'node:path';
-import { readFile } from 'node:fs/promises';
 import { parseFrontmatter, type ParseFrontmatterResult } from '@astrojs/markdown-remark';
+import { expect, test } from '@playwright/test';
 import { globSync } from 'glob';
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
 import { getPathnamesFromSitemap } from '../helpers/sitemap.ts';
 
 const sourcefiles = globSync('docs/**/*.{md,mdx}')
@@ -11,8 +11,8 @@ const sourcefiles = globSync('docs/**/*.{md,mdx}')
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
-  sitemapDir: './dist',
   sitemap: '/sitemap-index.xml',
+  sitemapDir: './dist',
 };
 
 const toPathname = (slug: string, pathname: string) => {

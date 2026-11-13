@@ -1,6 +1,6 @@
-import { relative, resolve, sep } from 'node:path';
-import { readdir } from 'node:fs/promises';
 import type { Dirent } from 'node:fs';
+import { readdir } from 'node:fs/promises';
+import { relative, resolve, sep } from 'node:path';
 import { sortItems } from './sort-items.ts';
 export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element.ts';
 export { getMainNavigation } from './get-main-navigation.ts';
@@ -215,17 +215,17 @@ export async function navigationItem(
   if (!label) throw new Error(`No label provided for ${_filePath}`);
 
   const item: NavigationItem = {
-    type: options?.type || 'item',
     id: entry?.id,
     description: entry?.data.description,
-    label,
     filePath: entry?.filePath,
-    parent: options?.parent,
     href: `/${entry?.id || options?.href}/`.replaceAll(/\/{2,}/g, '/'),
-    order: entry?.data?.navigation_order,
-    unlisted: entry?.data?.unlisted,
-    metadata: entry?.data?.conformance_level,
+    label,
     lang: options?.lang || entry?.data?.lang || 'nl',
+    metadata: entry?.data?.conformance_level,
+    order: entry?.data?.navigation_order,
+    parent: options?.parent,
+    type: options?.type || 'item',
+    unlisted: entry?.data?.unlisted,
   };
 
   return item;
@@ -347,14 +347,14 @@ export async function navigationGroup(
 
   // Resulting NavigationGroup to be returned
   const group: NavigationGroup = {
-    type: 'group',
-    label: options.label || index?.label || toTitleCase(folderName) || 'unknown',
-    items: sortedItems,
-    index,
     filePath: options.filePath,
     href: index?.href,
-    order: index?.order,
+    index,
+    items: sortedItems,
+    label: options.label || index?.label || toTitleCase(folderName) || 'unknown',
     lang: options?.lang || index?.lang || 'nl',
+    order: index?.order,
+    type: 'group',
   };
 
   // Add the resulting NavigationGroup to each item as a parent.
@@ -410,7 +410,7 @@ export async function navigationRoot(group: Promise<NavigationGroup>) {
 
   navigationTree.items = navigationTree.items.map(walkTree).filter(Boolean) as NavigationElementResolved[];
 
-  return () => structuredClone({ navigationTree, navigationList: [...navigationList] });
+  return () => structuredClone({ navigationList: [...navigationList], navigationTree });
 }
 
 async function getEntryWithFilepath(entries: DocumentationEntries, filePath: string) {

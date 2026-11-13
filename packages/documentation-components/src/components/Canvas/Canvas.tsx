@@ -1,13 +1,13 @@
-import Prism from 'prismjs';
+import { Root } from '@utrecht/root-react';
 import clsx from 'clsx';
-import { Accordion, AccordionSection } from '../../accordion/accordion.tsx';
-import { Button } from '../../button/button.tsx';
+import Prism from 'prismjs';
+import { useId, type CSSProperties, type ReactNode } from 'react';
 import './Canvas.css';
 import '@utrecht/component-library-css/dist/html.css';
 import '@utrecht/root-css/dist/index.css';
+import { Accordion, AccordionSection } from '../../accordion/accordion.tsx';
+import { Button } from '../../button/button.tsx';
 import { HTMLImage } from '../../html-image/html-image.tsx';
-import { useId, type CSSProperties, type ReactNode } from 'react';
-import { Root } from '@utrecht/root-react';
 
 /**
  * By default the contents of the example are rendered like regular HTML,
@@ -42,16 +42,16 @@ export interface CanvasProps {
 }
 
 export const Canvas = ({
-  language,
   className,
   code = '<p>No code provided</p>',
-  rawCode,
-  copyCode,
   colorScheme,
+  copyCode,
   defaultExpandedCode,
   designTokens,
   forcedColorsAdjust = true,
   label,
+  language,
+  rawCode,
 }: CanvasProps) => {
   const _code = typeof code === 'string' ? code : rawCode || '';
 

@@ -1,10 +1,8 @@
-import { Paragraph } from '../../paragraph/paragraph.tsx';
 import type { TeamMember } from './TeamMember';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
 
 const Sandra: TeamMember = {
   name: 'Sandra de Jong',
-  role: 'Coördinator communicatie en evenementen',
-  slack: { mention: '@Sandra de Jong', id: 'U093GT9PY6A' },
   Description: () => (
     <>
       <Paragraph>Sandra is communicatieadviseur en eventmanager voor NL Design System.</Paragraph>
@@ -13,6 +11,8 @@ const Sandra: TeamMember = {
       </Paragraph>
     </>
   ),
+  role: 'Coördinator communicatie en evenementen',
+  slack: { id: 'U093GT9PY6A', mention: '@Sandra de Jong' },
 };
 
 export default Sandra;

@@ -1,11 +1,9 @@
-import { Paragraph } from '../../paragraph/paragraph.tsx';
 import type { TeamMember } from './TeamMember';
 import { Link } from '../../link/link.tsx';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
 
 const Eelco: TeamMember = {
   name: 'Eelco Bosklopper',
-  role: 'Developer Relations Engineer',
-  slack: { mention: '@Eelco Bosklopper', id: 'U0B9642SC3F' },
   Description: () => (
     <>
       <Paragraph>
@@ -20,6 +18,8 @@ const Eelco: TeamMember = {
       </Paragraph>
     </>
   ),
+  role: 'Developer Relations Engineer',
+  slack: { id: 'U0B9642SC3F', mention: '@Eelco Bosklopper' },
 };
 
 export default Eelco;

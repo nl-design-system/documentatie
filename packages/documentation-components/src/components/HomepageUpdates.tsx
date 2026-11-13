@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
+import clsx from 'clsx';
 import './HomepageUpdates.css';
 
 export const HomepageUpdates = ({ children }: PropsWithChildren<object>) => {

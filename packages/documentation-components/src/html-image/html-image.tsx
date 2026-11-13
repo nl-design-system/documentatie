@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import clsx from 'clsx';
 import './html-image.css';
 
 export interface HTMLImageProps extends HTMLAttributes<HTMLElement> {
@@ -10,13 +10,13 @@ export interface HTMLImageProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const HTMLImage = ({
-  label,
-  labelId,
+  children,
   className,
   colorScheme,
-  forcedColorsAdjust = false,
-  children,
   dangerouslySetInnerHTML,
+  forcedColorsAdjust = false,
+  label,
+  labelId,
   ...restProps
 }: PropsWithChildren<HTMLImageProps>) => {
   /*

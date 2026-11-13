@@ -1,16 +1,16 @@
 import type { AstroUserConfig } from 'astro';
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
 import { unified } from '@astrojs/markdown-remark';
+import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import { remarkCanvasFix } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-canvas-fix/index.ts';
-import { createSharedPlugins } from '@nl-design-system-community/documentation-markdown-plugins/src/shared-plugins.ts';
 import { clientLoadPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-client-load/index.ts';
-import { siteBaseUrl } from './src/seo.config.ts';
+import { createSharedPlugins } from '@nl-design-system-community/documentation-markdown-plugins/src/shared-plugins.ts';
+import { defineConfig } from 'astro/config';
+import { globSync } from 'node:fs';
 import { appendCSPToHTAccess } from './append-csp-to-htaccess.ts';
 import { deadLinkChecker } from './dead-link-checker.ts';
-import { globSync } from 'node:fs';
+import { siteBaseUrl } from './src/seo.config.ts';
 
 const sharedPlugins = createSharedPlugins({ siteUrl: siteBaseUrl });
 
@@ -36,12 +36,6 @@ const cspImgSrcSources = [
 const cspProdConfig: AstroUserConfig = {
   security: {
     csp: {
-      styleDirective: {
-        resources: ["'self'", siteBaseUrl],
-      },
-      scriptDirective: {
-        resources: ["'self'", siteBaseUrl],
-      },
       directives: [
         `base-uri 'self' ${siteBaseUrl}`,
         `connect-src 'self' ${siteBaseUrl} ${cspConnectSrcSources} blob: data:`,
@@ -53,6 +47,12 @@ const cspProdConfig: AstroUserConfig = {
         "object-src 'none'",
         'worker-src blob:',
       ],
+      scriptDirective: {
+        resources: ["'self'", siteBaseUrl],
+      },
+      styleDirective: {
+        resources: ["'self'", siteBaseUrl],
+      },
     },
   },
 };
@@ -66,19 +66,17 @@ globalThis.unlistedPages = new Set();
 const mdxClientLoad = clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp']);
 
 const markdownProcessor = unified({
-  remarkPlugins: sharedPlugins.remarkPlugins,
   rehypePlugins: sharedPlugins.rehypePlugins,
+  remarkPlugins: sharedPlugins.remarkPlugins,
 });
 
 const mdxProcessor = unified({
-  remarkPlugins: [...sharedPlugins.remarkPlugins, remarkCanvasFix, mdxClientLoad],
   rehypePlugins: sharedPlugins.rehypePlugins,
+  remarkPlugins: [...sharedPlugins.remarkPlugins, remarkCanvasFix, mdxClientLoad],
 });
 
 // https://astro.build/config
 export default defineConfig({
-  publicDir: '../../static',
-
   build: {
     inlineStylesheets: 'never',
   },
@@ -86,6 +84,31 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
+
+  integrations: [
+    mdx({ processor: mdxProcessor }),
+    react(),
+    sitemap({
+      changefreq: 'weekly',
+      filter: (page) => {
+        const url = new URL(page);
+        return globalThis.unlistedPages.has(url.pathname) === false;
+      },
+      priority: 0.5,
+    }),
+    deadLinkChecker({
+      assets: globSync('**/*', { cwd: '../../static' }),
+      ignoreTarget: [/^\/blog/, /^\/miro$/],
+    }),
+    appendCSPToHTAccess(),
+  ],
+
+  markdown: {
+    processor: markdownProcessor,
+    syntaxHighlight: 'prism',
+  },
+
+  publicDir: '../../static',
 
   security: {
     csp: cspConfig.security?.csp,
@@ -98,11 +121,7 @@ export default defineConfig({
       // prevent vite from inlining assets as data:* attributes because it violates csp rules
       assetsInlineLimit: 0,
     },
-    ssr: {
-      noExternal: [/@rijkshuisstijl-community\/.*/],
-    },
     resolve: {
-      noExternal: [/@rijkshuisstijl-community\/.*/],
       alias: [
         {
           // dev SSR resolves @babel/runtime/helpers/* to CJS (node condition) and
@@ -111,29 +130,10 @@ export default defineConfig({
           replacement: '@babel/runtime/helpers/esm/',
         },
       ],
+      noExternal: [/@rijkshuisstijl-community\/.*/],
+    },
+    ssr: {
+      noExternal: [/@rijkshuisstijl-community\/.*/],
     },
   },
-
-  markdown: {
-    processor: markdownProcessor,
-    syntaxHighlight: 'prism',
-  },
-
-  integrations: [
-    mdx({ processor: mdxProcessor }),
-    react(),
-    sitemap({
-      changefreq: 'weekly',
-      priority: 0.5,
-      filter: (page) => {
-        const url = new URL(page);
-        return globalThis.unlistedPages.has(url.pathname) === false;
-      },
-    }),
-    deadLinkChecker({
-      assets: globSync('**/*', { cwd: '../../static' }),
-      ignoreTarget: [/^\/blog/, /^\/miro$/],
-    }),
-    appendCSPToHTAccess(),
-  ],
 });

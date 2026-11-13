@@ -1,6 +1,6 @@
-import { Link } from '../link/link.tsx';
-import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren } from 'react';
+import clsx from 'clsx';
+import { Link } from '../link/link.tsx';
 import './CardGroup.css';
 
 type Appearance = 'small' | 'medium' | 'large' | 'background';
@@ -46,12 +46,12 @@ interface CardProps {
 }
 
 export const Card = ({
-  href,
   appearance,
-  className,
-  component = 'div',
   background,
   children,
+  className,
+  component = 'div',
+  href,
 }: PropsWithChildren<CardProps>) => {
   const Wrapper = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => {
     if (component === 'article') return <article {...props} />;

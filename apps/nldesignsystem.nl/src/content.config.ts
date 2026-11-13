@@ -84,25 +84,26 @@ function generateId(options: GenerateIdOptions) {
 }
 
 const schema = z.object({
-  title: z.string(),
-  title_sm: z.string().max(71).optional(),
-  description: z.string().optional(),
   hide_table_of_contents: z.boolean().optional(),
   sidebar_label: z.union([z.string(), z.number()]).optional(),
-  lead: z.string().optional(),
-  lang: z.enum(['nl', 'en']).default(siteLang),
-  translations: z.record(z.string(), z.string()).optional(),
-  slug: z.string().optional(),
-  unlisted: z.boolean().optional(),
+  description: z.string().optional(),
   image: z.httpUrl().optional(),
   image_alt: z.string().optional(),
   keywords: z.array(z.string()).optional(),
+  lang: z.enum(['nl', 'en']).default(siteLang),
+  lead: z.string().optional(),
   navigation_order: z.number().optional(),
+  slug: z.string().optional(),
+  title: z.string(),
+  title_sm: z.string().max(71).optional(),
+  translations: z.record(z.string(), z.string()).optional(),
+  unlisted: z.boolean().optional(),
 });
 
 const docs = defineCollection({
   loader: customGlob({
     base: './../../docs',
+    generateId,
     pattern: [
       'baseline/**/*.{md,mdx}',
       'community/**/*.{md,mdx}',
@@ -118,7 +119,6 @@ const docs = defineCollection({
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
-    generateId,
   }),
   schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
 });
@@ -126,32 +126,32 @@ const docs = defineCollection({
 const components = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['componenten/**/*.{md,mdx}', '!componenten/index.mdx', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
+    pattern: ['componenten/**/*.{md,mdx}', '!componenten/index.mdx', '!**/_*/**', '!**/_*.{md,mdx}'],
   }),
   schema: schema.extend({
-    page_layout: z.enum(['overview', 'detail']).optional(),
     issue_number: z.number(),
+    page_layout: z.enum(['overview', 'detail']).optional(),
   }),
 });
 
 const wcag = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
+    pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
   }),
   schema: schema.extend({
-    page_layout: z.enum(['overview', 'detail']).optional(),
     conformance_level: z.string().optional(),
+    page_layout: z.enum(['overview', 'detail']).optional(),
   }),
 });
 
 const overviewPages = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['**/index.json', '!node_modules/**'],
     generateId,
+    pattern: ['**/index.json', '!node_modules/**'],
   }),
   schema,
 });
@@ -159,8 +159,8 @@ const overviewPages = defineCollection({
 const changelog = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['CHANGELOG.md'],
     generateId,
+    pattern: ['CHANGELOG.md'],
   }),
   schema: z.object({ title: z.string().default('Changelog') }),
 });
@@ -168,16 +168,16 @@ const changelog = defineCollection({
 const contentTest = defineCollection({
   loader: customGlob({
     base: './test/docs',
-    pattern: ['**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId: (options) => `/private/content-test/${generateId(options)}`,
+    pattern: ['**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
   }),
   schema: schema.extend({
-    unlisted: z.literal(true),
     page_layout: z.enum(['overview', 'detail']).optional(),
+    unlisted: z.literal(true),
   }),
 });
 
-export const collections = { docs, wcag, components, overviewPages, changelog, contentTest };
+export const collections = { changelog, components, contentTest, docs, overviewPages, wcag };
 
 export const getAllCollections = async () => {
   const collectionPromises = await Promise.all([

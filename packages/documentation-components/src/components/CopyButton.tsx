@@ -1,6 +1,6 @@
 import { useEffect, useState, type ButtonHTMLAttributes } from 'react';
-import { IconCopy } from '../functional-icon/index.tsx';
 import { Button } from '../button/button.tsx';
+import { IconCopy } from '../functional-icon/index.tsx';
 import { Icon } from '../icon/icon.tsx';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {

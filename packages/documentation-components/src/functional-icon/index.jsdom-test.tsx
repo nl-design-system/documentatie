@@ -1,8 +1,7 @@
-import { describe, expect, test } from 'vitest';
-import * as functionalIcons from './index.tsx';
-
-import '@testing-library/jest-dom/vitest';
 import { render } from '@testing-library/react';
+import { describe, expect, test } from 'vitest';
+import '@testing-library/jest-dom/vitest';
+import * as functionalIcons from './index.tsx';
 
 // Checklist voor maken van SVG iconen voor de NL Design System community
 // https://gist.github.com/Robbert/e0acecc7e126d1db27cb1cb6166b19ea

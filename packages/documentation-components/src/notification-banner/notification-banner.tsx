@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren } from 'react';
+import clsx from 'clsx';
 import './notification-banner.css';
 
 export type NotificationBannerProps = HTMLAttributes<HTMLElement>;

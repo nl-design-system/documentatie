@@ -44,7 +44,7 @@ export const SitemapList = ({ navigationGroup }: SitemapListProps) => {
           <span lang={navigationGroup.lang}>{navigationGroup.label}</span>
         )}
       </Heading>
-      <Paragraph>{allSubItems.length} pagina's</Paragraph>
+      <Paragraph>{allSubItems.length} pagina&apos;s</Paragraph>
       <SitemapListGroup items={navigationGroup.items} />
     </>
   );

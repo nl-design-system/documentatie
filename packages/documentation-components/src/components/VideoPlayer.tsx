@@ -1,7 +1,7 @@
-import { i18n } from '@nl-design-system-community/documentation-i18n/src/index.ts';
-import { Image } from '../image/image.tsx';
-import './VideoPlayer.css';
 import type { DetailedHTMLProps, HTMLAttributes } from 'react';
+import { i18n } from '@nl-design-system-community/documentation-i18n/src/index.ts';
+import './VideoPlayer.css';
+import { Image } from '../image/image.tsx';
 
 interface VideoPlayerProps {
   id: string;
@@ -28,7 +28,7 @@ declare module 'react' {
   }
 }
 
-export const VideoPlayer = ({ id, title, lang = 'nl', thumbnail, playlist }: VideoPlayerProps) => {
+export const VideoPlayer = ({ id, lang = 'nl', playlist, thumbnail, title }: VideoPlayerProps) => {
   const cover = thumbnail || `https://i.ytimg.com/vi_webp/${id}/maxresdefault.webp`;
   const type = playlist ? { playlistid: id } : { videoid: id };
   return (

@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
+import clsx from 'clsx';
 import './MainNav.css';
 
 export const MainNav = ({ children }: PropsWithChildren<object>) => {

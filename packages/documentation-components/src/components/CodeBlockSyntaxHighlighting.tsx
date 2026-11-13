@@ -1,8 +1,8 @@
-import { CodeBlock } from '@utrecht/component-library-react';
 import type { CodeBlockProps } from '@utrecht/component-library-react';
+import type { PropsWithChildren, ReactNode } from 'react';
+import { CodeBlock } from '@utrecht/component-library-react';
 import { Highlight } from 'prism-react-renderer';
 import { useContext, useId } from 'react';
-import type { PropsWithChildren, ReactNode } from 'react';
 import { CodeExampleContext } from './Guideline.tsx';
 
 export interface CodeBlockSyntaxHighlightingProps extends CodeBlockProps {
@@ -29,7 +29,7 @@ export function CodeBlockSyntaxHighlighting({
 
   return (
     <Highlight code={code} language={syntax || ''}>
-      {({ style, tokens, getLineProps, getTokenProps }) => (
+      {({ getLineProps, getTokenProps, style, tokens }) => (
         <>
           <span hidden id={titleId}>
             codevoorbeeld {codeExampleType ? `“${codeExampleType}”` : ''} {title ? ': ' : ' '}

@@ -1,11 +1,11 @@
-import { Link } from '../link/link.tsx';
-import { BadgeList, DataBadge } from '@utrecht/component-library-react';
-import { Heading } from '../heading/heading.tsx';
-import { Paragraph } from '../paragraph/paragraph.tsx';
-import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
-import { Card, CardContent, CardIllustration } from './CardGroup.tsx';
+import { BadgeList, DataBadge } from '@utrecht/component-library-react';
+import clsx from 'clsx';
 import { ComponentIllustration } from '../component-illustration/component-illustration.tsx';
+import { Heading } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { Card, CardContent, CardIllustration } from './CardGroup.tsx';
 import { EstafetteBadge } from './EstafetteBadge.tsx';
 import './ComponentCard.css';
 
@@ -26,10 +26,10 @@ function appendTrailingSlash(string: string) {
 export const ComponentCard = ({
   name,
   description,
-  relayStep,
+  frameworkNames,
   headingLevel = 2,
   href,
-  frameworkNames,
+  relayStep,
 }: PropsWithChildren<ComponentCardProps>) => {
   return (
     <Card

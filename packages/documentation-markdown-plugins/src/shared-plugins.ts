@@ -17,22 +17,23 @@ export function createSharedPlugins({ siteUrl }: { siteUrl: string | URL | undef
   }
 
   const plugins = {
+    addTrailingSlashPlugin: addTrailingSlashPlugin({
+      siteUrl: String(siteUrl),
+      stripExtensions: ['.md', '.mdx'],
+      stripOrigin: true,
+    }),
+    nldsComponentsPlugin,
+    remarkAdmonitions,
     remarkCustomHeaderId,
     remarkDirective,
     remarkUndoInlineDirectives,
-    remarkAdmonitions,
     remarkUnwrapParagraph,
     removeH1FromMarkdown: removeH1FromMarkdown(),
-    nldsComponentsPlugin,
-    addTrailingSlashPlugin: addTrailingSlashPlugin({
-      siteUrl: String(siteUrl),
-      stripOrigin: true,
-      stripExtensions: ['.md', '.mdx'],
-    }),
   };
 
   return {
     plugins,
+    rehypePlugins: [plugins.nldsComponentsPlugin, plugins.addTrailingSlashPlugin],
     remarkPlugins: [
       plugins.remarkCustomHeaderId,
       plugins.remarkDirective,
@@ -41,6 +42,5 @@ export function createSharedPlugins({ siteUrl }: { siteUrl: string | URL | undef
       plugins.remarkUnwrapParagraph,
       plugins.removeH1FromMarkdown,
     ],
-    rehypePlugins: [plugins.nldsComponentsPlugin, plugins.addTrailingSlashPlugin],
   };
 }

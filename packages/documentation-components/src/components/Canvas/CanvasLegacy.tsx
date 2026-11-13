@@ -1,7 +1,5 @@
-import { CodeBlockSyntaxHighlighting } from '../CodeBlockSyntaxHighlighting.tsx';
+import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
 import { Document, Surface } from '@utrecht/component-library-react';
-import { Button } from '../../button/button.tsx';
-import { Paragraph } from '../../paragraph/paragraph.tsx';
 import { HTMLContent } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import * as prettierBabel from 'prettier/plugins/babel';
@@ -9,10 +7,12 @@ import * as prettierESTree from 'prettier/plugins/estree';
 import * as prettierHTML from 'prettier/plugins/html';
 import * as prettierPostcss from 'prettier/plugins/postcss';
 import * as prettier from 'prettier/standalone';
-import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
 import { isValidElement, useEffect, useId, useState } from 'react';
 import { Fragment } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
+import { Button } from '../../button/button.tsx';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
+import { CodeBlockSyntaxHighlighting } from '../CodeBlockSyntaxHighlighting.tsx';
 import './CanvasLegacy.css';
 
 export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
@@ -53,14 +53,14 @@ export interface CanvasLegacyProps {
 }
 
 export const CanvasLegacy = ({
+  children,
   code,
+  container = 'document',
   copy = true,
   defaultExpandedCode = false,
-  displayCode = true,
-  children,
-  container = 'document',
-  language,
   designTokens,
+  displayCode = true,
+  language,
 }: CanvasLegacyProps) => {
   // By default the `children` argument is converted to code.
   const jsxTree = typeof children === 'function' ? children() : children;
@@ -78,12 +78,12 @@ export const CanvasLegacy = ({
   useEffect(() => {
     const formatWithPrettier = async () => {
       const exampleSourceCode = await prettier.format(unformattedCode, {
+        embeddedLanguageFormatting: 'off',
+        htmlWhitespaceSensitivity: 'ignore',
         parser: language,
         plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
         semi: false,
         singleAttributePerLine: true,
-        embeddedLanguageFormatting: 'off',
-        htmlWhitespaceSensitivity: 'ignore',
       });
       setExampleSourceCode(exampleSourceCode);
     };

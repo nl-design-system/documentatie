@@ -35,7 +35,7 @@ const coreteam = [
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
     <div className="ma-core-team">
-      {coreteam.map(({ name, role, Description, slack }) => {
+      {coreteam.map(({ name, Description, role, slack }) => {
         return (
           <Card key={name} heading={name} headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6} subheading={role}>
             <Description />{' '}

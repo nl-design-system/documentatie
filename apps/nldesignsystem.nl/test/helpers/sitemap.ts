@@ -1,5 +1,5 @@
-import { readFileSync } from 'node:fs';
 import * as cheerio from 'cheerio';
+import { readFileSync } from 'node:fs';
 
 export function getPathnamesFromSitemap(sitemapDir: string, sitemapPath: string): string[] {
   const paths: string[] = [];

@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
-import { Button } from '../button/button.tsx';
-import { Drawer } from '@utrecht/component-library-react';
-import { Icon } from '../icon/icon.tsx';
-import { IconX, IconMenu2 } from '../functional-icon/index.tsx';
 import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index.ts';
+import { Drawer } from '@utrecht/component-library-react';
+import { Button } from '../button/button.tsx';
+import { IconX, IconMenu2 } from '../functional-icon/index.tsx';
+import { Icon } from '../icon/icon.tsx';
 import '@utrecht/drawer-css/dist/index.css';
 import './mobile-menu.css';
 

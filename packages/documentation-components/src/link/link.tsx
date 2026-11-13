@@ -1,7 +1,6 @@
+import type { PropsWithChildren } from 'react';
 import { Link as CandidateLink, type LinkProps as CandidateLinkProps } from '@nl-design-system-candidate/link-react';
 import { hasFileExtension } from '../utils.ts';
-import type { PropsWithChildren } from 'react';
-
 import '@nl-design-system-candidate/link-css/link.css';
 
 // `href` is optional on `<a>` elements. This change allows us to use Link

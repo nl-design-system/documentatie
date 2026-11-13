@@ -5,7 +5,7 @@ import { formatTitle } from '../page-title/format.ts';
  * will update the title.
  */
 export const updateDocumentTitle = (newTitle: string, siteTitle: string, siteTitleSeparator?: string) => {
-  const newPageTitle = formatTitle({ title: newTitle, siteTitle, siteTitleSeparator });
+  const newPageTitle = formatTitle({ siteTitle, siteTitleSeparator, title: newTitle });
   document.dispatchEvent(new UpdateDocumentTitleEvent(newPageTitle));
 };
 

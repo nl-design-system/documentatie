@@ -1,7 +1,4 @@
-import { IconCalendarEvent, IconUser } from '../functional-icon/index.tsx';
-import { Paragraph } from '../paragraph/paragraph.tsx';
-import { ButtonLink } from '../button-link/button-link.tsx';
-import { Link } from '../link/link.tsx';
+import type { HTMLAttributes } from 'react';
 import {
   Table,
   TableBody,
@@ -11,10 +8,13 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react';
-import { Icon } from '../icon/icon.tsx';
-import { Heading, type HeadingProps } from '../heading/heading.tsx';
 import clsx from 'clsx';
-import type { HTMLAttributes } from 'react';
+import { ButtonLink } from '../button-link/button-link.tsx';
+import { IconCalendarEvent, IconUser } from '../functional-icon/index.tsx';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { Icon } from '../icon/icon.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import './SessionTable.css';
 
 interface Speaker {
@@ -54,13 +54,13 @@ const SpeakerData = ({ name, organisation }: Speaker) => (
 );
 
 export const SessionTable = ({
-  year,
-  lang,
-  sessions,
-  speakers: allSpeakers,
   className,
   heading,
   headingLevel = 2,
+  lang,
+  sessions,
+  speakers: allSpeakers,
+  year,
   ...props
 }: SessionTableProps) => (
   <div className={clsx('ma-session-table-container', className)}>
@@ -91,7 +91,7 @@ export const SessionTable = ({
       </TableHeader>
       <TableBody>
         {sessions.map(
-          ({ isoDateTime, speakers, subject, icalLink, language, cancelled }, index) =>
+          ({ cancelled, icalLink, isoDateTime, language, speakers, subject }, index) =>
             !cancelled && (
               <TableRow className="ma-session-table__row" key={index}>
                 <TableCell className="ma-session-table__time">
@@ -113,7 +113,7 @@ export const SessionTable = ({
                   <div className="ma-session-table__speakers">
                     {Object.entries(allSpeakers)
                       .filter(([fullName]) => speakers.includes(fullName))
-                      .map(([_, speaker], index) => (
+                      .map(([, speaker], index) => (
                         <SpeakerData key={index} {...speaker} />
                       ))}
                   </div>

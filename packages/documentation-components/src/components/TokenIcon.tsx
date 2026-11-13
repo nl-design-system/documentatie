@@ -1,3 +1,4 @@
+import { createElement } from 'react';
 import {
   IconBold,
   IconFileTypography,
@@ -12,7 +13,6 @@ import {
   IconShadow,
 } from '../functional-icon/index.tsx';
 import { Icon } from '../icon/icon.tsx';
-import { createElement } from 'react';
 
 // This map contains a mix of DTCG-compliant types and real-world usage of types
 // which is why there are some almost-duplicates of singular and plural types.
@@ -21,8 +21,8 @@ const tokenTypeToIconMap = {
   color: IconPalette,
   cursor: IconPointer,
   dimension: IconRuler,
-  fontFamily: IconFileTypography,
   fontFamilies: IconFileTypography,
+  fontFamily: IconFileTypography,
   fontSize: IconTextSize,
   fontSizes: IconTextSize,
   fontWeight: IconBold,

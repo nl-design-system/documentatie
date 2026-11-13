@@ -1,8 +1,8 @@
 import type { Root } from 'mdast';
-import { visit } from 'unist-util-visit';
-import prettierSync from '@prettier/sync';
-import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
 import type {} from 'mdast-util-mdx-expression';
+import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
+import prettierSync from '@prettier/sync';
+import { visit } from 'unist-util-visit';
 
 /**
  * The Canvas component used in Docusaurus depends on a function providing the
@@ -25,8 +25,8 @@ export function remarkCanvasFix() {
         )
       ) {
         node.attributes.push({
-          type: 'mdxJsxAttribute',
           name: 'copyCode',
+          type: 'mdxJsxAttribute',
           value: 'allow',
         });
       }
@@ -52,10 +52,10 @@ export function remarkCanvasFix() {
 
         const formattedCode = prettierSync
           .format(styleTransformedCode, {
-            parser: 'html',
-            singleAttributePerLine: true,
             embeddedLanguageFormatting: 'off',
             htmlWhitespaceSensitivity: 'ignore',
+            parser: 'html',
+            singleAttributePerLine: true,
           })
           // complex regex to remove multiline string literals in JSX
           .replaceAll(/\{\s*"(?:[^"\\]|\\.)*"\s*\}/g, (m) =>
@@ -67,8 +67,8 @@ export function remarkCanvasFix() {
           );
 
         const codeAttr: MdxJsxAttribute = {
-          type: 'mdxJsxAttribute',
           name: 'code',
+          type: 'mdxJsxAttribute',
           value: formattedCode,
         };
 
