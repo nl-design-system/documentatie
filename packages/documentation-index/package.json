@@ -19,7 +19,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "astro": "7.4.2"
+    "astro": "7.4.7"
   },
   "scripts": {
     "lint": "tsc --noEmit"
