@@ -48,7 +48,7 @@ const cspProdConfig: AstroUserConfig = {
         'worker-src blob:',
       ],
       scriptDirective: {
-        resources: ["'self'", siteBaseUrl],
+        resources: ["'self'", siteBaseUrl, 'https://nl-design-system.email-provider.eu'],
       },
       styleDirective: {
         resources: ["'self'", siteBaseUrl],
