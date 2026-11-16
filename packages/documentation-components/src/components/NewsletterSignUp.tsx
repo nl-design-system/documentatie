@@ -376,7 +376,7 @@ export const NewsletterSignUp = ({
           id="email"
           name="email"
           placeholder="Your e-mail here"
-          style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}
+          style={{ left: '-9999px', position: 'absolute', top: '-9999px' }}
           aria-hidden="true"
           tabIndex={-1}
         />
