@@ -382,7 +382,7 @@ export const NewsletterSignUp = ({
         />
       </form>
       {/* Laposta spam beveiliging, zie https://docs.laposta.org/wat-moet-ik-doen-aan-nep-aanmeldingen#beveiliging-per-soort-formulier en "Aanmeldformulier (kale html) - Spam beveiliging" https://app.laposta.nl/c.listconfig/s.memberforms/t.subscribe/v.raw/ */}
-      <script src="https://nl-design-system.email-provider.eu/subscribe/check/validate.js"></script>
+      {/* <script src="https://nl-design-system.email-provider.eu/subscribe/check/validate.js"></script> */}
     </>
   );
 };
