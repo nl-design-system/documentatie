@@ -106,7 +106,7 @@ export const NewsletterSignUp = ({
       <form
         className="ma-flow"
         method="post"
-        action="https://nl-design-system.email-provider.eu/subscribe/post/v2/index.php"
+        action="https://nl-design-system.email-provider.eu/subscribe/post/index.php"
         noValidate
         acceptCharset="utf-8"
         ref={form}
@@ -382,7 +382,7 @@ export const NewsletterSignUp = ({
         />
       </form>
       {/* Laposta spam beveiliging, zie https://docs.laposta.org/wat-moet-ik-doen-aan-nep-aanmeldingen#beveiliging-per-soort-formulier en "Aanmeldformulier (kale html) - Spam beveiliging" https://app.laposta.nl/c.listconfig/s.memberforms/t.subscribe/v.raw/ */}
-      {/* <script src="https://nl-design-system.email-provider.eu/subscribe/check/validate.js"></script> */}
+      <script src="https://nl-design-system.email-provider.eu/subscribe/check/validate.js"></script>
     </>
   );
 };
