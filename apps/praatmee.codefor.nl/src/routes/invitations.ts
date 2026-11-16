@@ -1,0 +1,48 @@
+import { Hono } from 'hono';
+import { bodyLimit } from 'hono/body-limit';
+import { zValidator } from '@hono/zod-validator';
+
+import { apiSecurityHeaders, corsMiddleware, verifyWebsite } from '../middleware/security.js';
+import { invitationRateLimit } from '../middleware/rate-limit.js';
+import { requestInvitation } from '../services/invitation.js';
+import { invitationSchema, toFieldErrors } from '../validators/invitation.js';
+
+// JSON API for other apps' forms. Body: { name, email, bot, website? }.
+const invitations = new Hono();
+
+invitations.use('*', apiSecurityHeaders, corsMiddleware);
+
+invitations.post(
+  '/',
+  verifyWebsite,
+  bodyLimit({
+    maxSize: 10 * 1024,
+    onError: (context) => context.json({ success: false, message: 'Verzoek te groot.' }, 413),
+  }),
+  invitationRateLimit((context) =>
+    context.json({ success: false, message: 'Te veel verzoeken. Probeer het later opnieuw.' }, 429),
+  ),
+  // eslint-disable-next-line consistent-return
+  zValidator('json', invitationSchema, (result, context) => {
+    if (!result.success) {
+      return context.json({ success: false, message: 'Ongeldige invoer.', errors: toFieldErrors(result.error) }, 400);
+    }
+  }),
+  async (context) => {
+    const outcome = await requestInvitation(context.req.valid('json'));
+
+    switch (outcome) {
+      case 'sent':
+        return context.json({
+          success: true,
+          message: 'Je ontvangt een uitnodiging per e-mail.',
+        });
+      case 'retry-later':
+        return context.json({ success: false, message: 'Probeer het over een paar minuten opnieuw.' }, 503);
+      default:
+        return context.json({ success: false, message: 'We konden je aanvraag niet verwerken.' }, 502);
+    }
+  },
+);
+
+export default invitations;
