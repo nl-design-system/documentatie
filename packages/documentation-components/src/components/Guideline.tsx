@@ -1,11 +1,11 @@
-import { IconMoodHappy, IconMoodSad } from '../functional-icon';
-import { Icon } from '../icon/icon';
-import { Link } from '../link/link';
-import { Paragraph } from '../paragraph/paragraph';
-import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import Markdown from 'react-markdown';
+import clsx from 'clsx';
 import { createContext } from 'react';
+import Markdown from 'react-markdown';
+import { IconMoodHappy, IconMoodSad } from '../functional-icon/index.tsx';
+import { Icon } from '../icon/icon.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import './Guideline.css';
 interface GuidelineProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
   title?: ReactNode;
@@ -21,11 +21,11 @@ interface CodeExampleContextType {
 export const CodeExampleContext = createContext<CodeExampleContextType>({});
 
 export const Guideline = ({
-  title,
   appearance,
-  description,
   children,
+  description,
   figure = true,
+  title,
 }: PropsWithChildren<GuidelineProps>) => {
   const guidelineLabel = {
     do: 'Doen',

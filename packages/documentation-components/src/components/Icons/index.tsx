@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
+import clsx from 'clsx';
 
 export const ArrowDown = ({ className, ...props }: HTMLAttributes<SVGElement>) => (
   <svg

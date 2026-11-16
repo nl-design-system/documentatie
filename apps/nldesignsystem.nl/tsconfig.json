@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": ["astro/tsconfigs/strict", "../../tsconfig.json"],
+  "include": [".astro/types.d.ts", "src/**/*", "scripts/**/*"],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "paths": {
+      "@layouts/*": ["./src/layouts/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
+    "plugins": [{ "name": "@astrojs/ts-plugin" }],
+    "checkJs": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

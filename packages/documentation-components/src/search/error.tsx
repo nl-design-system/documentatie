@@ -1,6 +1,6 @@
-import { Paragraph } from '../paragraph/paragraph';
-import { SearchError as SearchErrorClass } from './algolia-api/fetch-results';
-import { GroupError } from './algolia-api/group-hits-to-pages';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { SearchError as SearchErrorClass } from './algolia-api/fetch-results.ts';
+import { GroupError } from './algolia-api/group-hits-to-pages.ts';
 
 export interface SearchErrorProps {
   error: SearchErrorClass | GroupError;

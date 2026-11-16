@@ -1,6 +1,6 @@
 import '@utrecht/page-body-css/dist/index.css';
-import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren } from 'react';
+import clsx from 'clsx';
 import './page-body.css';
 export { PageBody } from '@utrecht/page-body-react';
 
@@ -19,9 +19,9 @@ export interface PageBodyContentProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const PageBodyWrapper = ({
-  Component = 'div',
-  className,
   children,
+  className,
+  Component = 'div',
   ...restProps
 }: PropsWithChildren<PageBodyWrapperProps>) => (
   <Component {...restProps} className={clsx('utrecht-page-body', className)}>
@@ -30,10 +30,10 @@ export const PageBodyWrapper = ({
 );
 
 export const PageBodyContent = ({
-  Component = 'div',
-  className,
-  children,
   appearance,
+  children,
+  className,
+  Component = 'div',
   ...restProps
 }: PropsWithChildren<PageBodyContentProps>) => (
   <Component
@@ -51,10 +51,10 @@ export const PageBodyContent = ({
 );
 
 export const PageBodySection = ({
-  Component = 'div',
-  className,
-  children,
   appearance,
+  children,
+  className,
+  Component = 'div',
   ...restProps
 }: PropsWithChildren<PageBodySectionProps>) => (
   <Component

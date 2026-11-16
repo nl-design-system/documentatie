@@ -1,19 +1,19 @@
-import { Card } from '../../card/card';
-import { Link } from '../../link/link';
-import { Paragraph } from '../../paragraph/paragraph';
-import Ali from './Ali';
-import Astrid from './Astrid';
-import Charlotte from './Charlotte';
-import Eelco from './Eelco';
-import Jeffrey from './Jeffrey';
-import Julia from './Julia';
-import Peter from './Peter';
-import Renate from './Renate';
-import Richard from './Richard';
-import Robbert from './Robbert';
-import Rozerin from './Rozerin';
-import Sandra from './Sandra';
-import Yolijn from './Yolijn';
+import { Card } from '../../card/card.tsx';
+import { Link } from '../../link/link.tsx';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
+import Ali from './Ali.tsx';
+import Astrid from './Astrid.tsx';
+import Charlotte from './Charlotte.tsx';
+import Eelco from './Eelco.tsx';
+import Jeffrey from './Jeffrey.tsx';
+import Julia from './Julia.tsx';
+import Peter from './Peter.tsx';
+import Renate from './Renate.tsx';
+import Richard from './Richard.tsx';
+import Robbert from './Robbert.tsx';
+import Rozerin from './Rozerin.tsx';
+import Sandra from './Sandra.tsx';
+import Yolijn from './Yolijn.tsx';
 import './CoreTeam.css';
 
 const coreteam = [
@@ -35,7 +35,7 @@ const coreteam = [
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
     <div className="ma-core-team">
-      {coreteam.map(({ name, role, Description, slack }) => {
+      {coreteam.map(({ name, Description, role, slack }) => {
         return (
           <Card key={name} heading={name} headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6} subheading={role}>
             <Description />{' '}

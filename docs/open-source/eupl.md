@@ -150,7 +150,7 @@ Voor alle andere wijzigingen van of aanvullingen op dit aanhangsel is de ontwikk
 
 ---
 
-<aside class="utrecht-spotlight-section">
+<aside class="utrecht-note">
   <p class="utrecht-paragraph">NL Design System gebruikt de EUPL-1.2 licentie voor alle herbruikbare onderdelen, zoals code en ontwerpen. Elke Git repository heeft een `LICENSE`-bestand, waarin de EUPL tekst staat. Open source Figma-bestanden hebben een link naar de EUPL-licentie.</p>
   <p class="utrecht-paragraph"><strong>Let op:</strong> sommige bestanden zijn uitgesloten van de open source licentie, zoals gegevens over de huisstijl. In de map `proprietary/` gebruiken we bijvoorbeeld altijd een andere `LICENSE`.</p>
 </aside>

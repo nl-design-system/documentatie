@@ -10,12 +10,12 @@ class MaTableOfContents extends HTMLElement {
 
   #_level: utils.HeadingLevel = '2';
   #headingListItemMap: utils.HeadingToListItemsMap;
-  #headingsInScope: Set<HTMLHeadingElement>;
-  #labelHeadings: Set<HTMLHeadingElement>;
+  #headingsInScope!: Set<HTMLHeadingElement>;
+  #labelHeadings!: Set<HTMLHeadingElement>;
   #headingsToIgnore: Set<HTMLHeadingElement>;
-  #listElement: HTMLUListElement | HTMLOListElement;
-  #listItems: Set<HTMLLIElement>;
-  #scopeRoot: HTMLElement;
+  #listElement!: HTMLUListElement | HTMLOListElement;
+  #listItems!: Set<HTMLLIElement>;
+  #scopeRoot!: HTMLElement;
   #observer: MutationObserver;
 
   /** The id of the scope element */
@@ -25,7 +25,7 @@ class MaTableOfContents extends HTMLElement {
       return;
     }
 
-    this.#scopeRoot = document.getElementById(id) || document.querySelector('main');
+    this.#scopeRoot = (document.getElementById(id) || document.querySelector('main')) as HTMLElement;
 
     if (!this.#scopeRoot) throw new Error(`Could not locate scope element by id ${id}`);
 
@@ -84,7 +84,7 @@ class MaTableOfContents extends HTMLElement {
     }
 
     this.#labelHeadings = new Set(
-      this.#listElement?.['ariaLabelledByElements'].filter((element) => element instanceof HTMLHeadingElement) || [],
+      this.#listElement?.['ariaLabelledByElements']?.filter((element) => element instanceof HTMLHeadingElement) || [],
     );
     this.#headingsToIgnore = this.headingsToIgnore.union(this.#labelHeadings);
     this.update();
@@ -118,7 +118,7 @@ class MaTableOfContents extends HTMLElement {
     // get the current headings and listItems and update the map to reflect the
     // current state
     this.#headingsInScope = utils.getHeadingsInScope(this.#scopeRoot, this.#_level, this.#headingsToIgnore);
-    this.#listItems = utils.getListItems(this.querySelector('ul'));
+    this.#listItems = utils.getListItems(this.querySelector('ul') as HTMLUListElement);
     utils.mapHeadingsToListItems(this.#headingsInScope, this.#listItems, this.#headingListItemMap);
 
     // Loop over each heading in the map and create or update its listItems
@@ -136,7 +136,7 @@ class MaTableOfContents extends HTMLElement {
     this.#listElement.replaceChildren();
     this.#headingsInScope.forEach((heading) => {
       const li = this.#headingListItemMap.get(heading)?.[0];
-      this.#listElement.appendChild(li);
+      this.#listElement.appendChild(li as HTMLLIElement);
     });
 
     // If there are no headings in scope, hide the label headings
@@ -144,8 +144,8 @@ class MaTableOfContents extends HTMLElement {
       this.hidden = true;
       this.#labelHeadings.forEach((heading) => (heading.hidden = true));
     } else {
-      this.hidden = null;
-      this.#labelHeadings.forEach((heading) => (heading.hidden = null));
+      this.hidden = false;
+      this.#labelHeadings.forEach((heading) => (heading.hidden = false));
     }
 
     // clean up list items that point to headings that are no longer in scope

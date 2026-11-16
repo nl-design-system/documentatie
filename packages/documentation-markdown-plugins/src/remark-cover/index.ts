@@ -1,3 +1,4 @@
+import type {} from '@astrojs/markdown-remark';
 import type { Root, Paragraph, Image } from 'mdast';
 import type { VFile } from 'vfile';
 

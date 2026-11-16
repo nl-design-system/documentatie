@@ -1,5 +1,5 @@
-import type { NavigationRoot } from '.';
-import { withCurrentIndication } from './with-current-indication';
+import type { NavigationRoot } from './index.ts';
+import { withCurrentIndication } from './with-current-indication.ts';
 
 /**
  * Get the main navigation items (level 1) of the navigation structure.

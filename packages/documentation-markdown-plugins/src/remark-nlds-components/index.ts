@@ -3,7 +3,7 @@ import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';
 import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
-import { nldsComponentsPlugin as nldsComponentsRehypePlugin } from '../rehype-nlds-components';
+import { nldsComponentsPlugin as nldsComponentsRehypePlugin } from '../rehype-nlds-components/index.ts';
 
 // This plugin transforms HTML blocks in markdown files into NL Design System
 // components.

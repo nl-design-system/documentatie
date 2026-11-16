@@ -23,8 +23,8 @@ export function clientLoadPlugin(componentNames: string[]) {
         // Add client:load attribute if not present
         if (!hasClientLoad) {
           const newAttr: MdxJsxAttribute = {
-            type: 'mdxJsxAttribute',
             name: 'client:load',
+            type: 'mdxJsxAttribute',
             value: null,
           };
           node.attributes.push(newAttr);

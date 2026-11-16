@@ -6,7 +6,7 @@ export interface StoryProps {
   label: string;
 }
 
-export const Story = ({ label, href }: StoryProps) => {
+export const Story = ({ href, label }: StoryProps) => {
   const storySrc = href;
   const iframeSrc = href.replace('?path=/docs/', 'iframe.html?id=') + '&viewMode=story';
 
@@ -14,7 +14,7 @@ export const Story = ({ label, href }: StoryProps) => {
     <div className="ma-story">
       <IframeResizer
         src={iframeSrc}
-        style={{ width: '1px', minWidth: '100%' }}
+        style={{ minWidth: '100%', width: '1px' }}
         // heightCalculationMethod is missing in the `index.d.ts` file
         // https://github.com/davidjbradshaw/iframe-resizer/blob/372cc8a0ce2f42544049a12fd4265fa6b330d689/packages/react/index.d.ts
         // but is in fact implemented

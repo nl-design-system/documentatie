@@ -41,7 +41,7 @@ export function getListItems(listElement: HTMLUListElement | HTMLOListElement) {
  * consider the heading to be missing.
  */
 export function findHeadingForListItem(listItem: HTMLLIElement, headings: Set<HTMLHeadingElement>) {
-  let heading: HTMLHeadingElement;
+  let heading: HTMLHeadingElement | undefined;
 
   const linkElement: HTMLAnchorElement | null = listItem.querySelector('a');
   heading = headings.values().find((heading) => heading.id === linkElement?.href.replace('#', ''));
@@ -70,7 +70,7 @@ export function mapHeadingsToListItems(
 
   listItems.values().forEach((listItem) => {
     const heading = findHeadingForListItem(listItem, headings);
-    map.get(heading).push(listItem);
+    map.get(heading)?.push(listItem);
   });
 }
 

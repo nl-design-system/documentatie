@@ -8,56 +8,56 @@ import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.
 
 export const usage = [
   {
-    title: 'De gemarkeerde tekst is niet alleen herkenbaar aan de achtergrondkleur.',
+    component: Wcag141,
     sc: '1.4.1',
     status: '',
-    component: Wcag141,
     tags: ['designer', 'contentmaker'],
+    title: 'De gemarkeerde tekst is niet alleen herkenbaar aan de achtergrondkleur.',
   },
   {
-    title: 'De gemarkeerde tekst heeft voldoende contrast met de achtergrondkleur.',
+    component: Wcag143,
     sc: '1.4.3',
     status: '',
-    component: Wcag143,
     tags: ['designer', 'contentmaker'],
+    title: 'De gemarkeerde tekst heeft voldoende contrast met de achtergrondkleur.',
   },
   {
-    title:
-      'Wanneer de achtergrondkleur van de Mark component anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.',
+    component: Wcag1411,
     sc: '1.4.11',
     status: '',
-    component: Wcag1411,
     tags: ['designer', 'contentmaker'],
+    title:
+      'Wanneer de achtergrondkleur van de Mark component anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.',
   },
   {
-    title: 'Tekst in een andere taal heeft het juiste lang-attribuut.',
+    component: Wcag312,
     sc: '3.1.2',
     status: '',
-    component: Wcag312,
     tags: ['developer', 'contentmaker'],
+    title: 'Tekst in een andere taal heeft het juiste lang-attribuut.',
   },
 ];
 
 export const component = [
   {
-    title: 'Gebruik het juiste HTML-element voor de Mark component.',
+    component: Wcag131,
     sc: '1.3.1',
     status: '',
-    component: Wcag131,
     tags: ['developer'],
+    title: 'Gebruik het juiste HTML-element voor de Mark component.',
   },
   {
-    title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar.',
+    component: Wcag144,
     sc: '1.4.4',
     status: '',
-    component: Wcag144,
     tags: ['developer'],
+    title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar.',
   },
   {
-    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.',
+    component: Wcag1412,
     sc: '1.4.12',
     status: '',
-    component: Wcag1412,
     tags: ['developer'],
+    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.',
   },
 ];

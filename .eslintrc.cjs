@@ -1,18 +1,16 @@
-/* eslint-env node */
-
 module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: false,
     jest: true,
+    node: false,
   },
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
   settings: {
     react: {

@@ -1,5 +1,5 @@
 import type { AlgoliaHit, SearchResult } from '../types';
-import type { FetchResult, SearchError } from './fetch-results';
+import type { FetchResult, SearchError } from './fetch-results.ts';
 
 export type RecordMap = Map<string, AlgoliaHit[]>;
 

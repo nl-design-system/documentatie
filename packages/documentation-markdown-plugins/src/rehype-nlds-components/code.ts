@@ -1,6 +1,6 @@
 import type { Element, Root } from 'hast';
 import { isElement } from 'hast-util-is-element';
-import { addClassName } from './_add-class-name';
+import { addClassName } from './_add-class-name.ts';
 
 export function code(element: Element, parent?: Element | Root) {
   if (isElement(element, 'code') === false) return;

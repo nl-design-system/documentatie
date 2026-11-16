@@ -1,18 +1,18 @@
-import { Canvas } from './Canvas/Canvas';
-import type { CanvasContainerType } from './Canvas/Canvas';
-import { ContrastRatio } from './ContrastRatio';
-import { Guideline } from './Guideline';
-import { Code, FormFieldTextbox, PageContent } from '@utrecht/component-library-react';
-import { ActionGroup } from '../action-group/action-group';
-import { Icon } from '../icon/icon';
-import { Button } from '../button/button';
-import { Paragraph } from '../paragraph/paragraph';
-import { Heading1, Heading2 } from '../heading/heading';
-import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import './contrast-tool.css';
+import { Code, FormFieldTextbox, PageContent } from '@utrecht/component-library-react';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { useIsBrowser } from '../hooks/use-is-browser';
+import Color from 'color';
+import type { CanvasContainerType } from './Canvas/CanvasLegacy.tsx';
+import { ActionGroup } from '../action-group/action-group.tsx';
+import { Button } from '../button/button.tsx';
+import { Heading1, Heading2 } from '../heading/heading.tsx';
+import { useIsBrowser } from '../hooks/use-is-browser.ts';
+import { Icon } from '../icon/icon.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { CanvasLegacy } from './Canvas/CanvasLegacy.tsx';
+import './contrast-tool.css';
+import { ContrastRatio } from './ContrastRatio.tsx';
+import { Guideline } from './Guideline.tsx';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>
@@ -43,7 +43,7 @@ export const parseColor = (colorString: string) => {
   // Parse colors such as `hsl(0deg 0% 20%)`
   try {
     color = Color(query);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (e) {
     color = null;
   }
@@ -101,8 +101,8 @@ export const ContrastTool = () => {
 
   const search = isBrowser ? window.location.search : '';
   const params = new URLSearchParams(search);
-  let backgroundColor = params.get('background-color');
-  let color = params.get('color');
+  let backgroundColor = params.get('background-color') ?? '';
+  let color = params.get('color') ?? '';
 
   if (!backgroundColor && !color) {
     backgroundColor = 'white';
@@ -116,7 +116,8 @@ export const ContrastTool = () => {
     ['background-color']: backgroundColor,
     ['color']: color,
   }).toString()}`;
-  const contrastRatio = !!parsedBackgroundColor && !!parsedColor ? parsedBackgroundColor.contrast(parsedColor) : null;
+  const hasValidColors = !!parsedBackgroundColor && !!parsedColor;
+  const contrastRatio = hasValidColors ? parsedBackgroundColor.contrast(parsedColor) : 0;
 
   interface Recommendation {
     positive: boolean;
@@ -127,34 +128,34 @@ export const ContrastTool = () => {
   }
   const recommendations: Recommendation[] = [
     {
+      container: 'document',
+      content: <>Je mag de kleuren gebruiken voor alle tekst, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
+      example: ExampleNormalText,
       positive: true,
       result: contrastRatio >= 4.5,
-      content: <>Je mag de kleuren gebruiken voor alle tekst, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
-      example: ExampleNormalText,
     },
     {
-      positive: true,
-      result: contrastRatio >= 3,
+      container: 'document',
       content: <>Je mag de kleuren voor iconen gebruiken, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
       example: ExampleIcon,
-    },
-    {
       positive: true,
       result: contrastRatio >= 3,
-      content: <>Je mag de kleuren gebruiken voor tekst groter dan 24px, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
+    },
+    {
       container: 'document',
+      content: <>Je mag de kleuren gebruiken voor tekst groter dan 24px, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
       example: LargeTextExample,
-    },
-    {
       positive: true,
       result: contrastRatio >= 3,
+    },
+    {
+      container: 'document',
       content: (
         <>Je mag de kleuren gebruiken voor vette tekst groter dan 18.5px, als je wilt voldoen aan WCAG 2.2 AA niveau.</>
       ),
-      container: 'document',
       example: BoldTextExample,
+      positive: true,
+      result: contrastRatio >= 3,
     },
     /*
     {
@@ -165,39 +166,39 @@ export const ContrastTool = () => {
     },
     */
     {
+      container: 'document',
+      content: <>Je mag de kleuren niet voor iconen gebruiken, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.</>,
+      example: ExampleIcon,
       positive: false,
       result: contrastRatio >= 3,
-      content: <>Je mag de kleuren niet voor iconen gebruiken, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
-      example: ExampleIcon,
     },
     {
+      container: 'document',
+      content: <>Je mag de kleuren niet gebruiken voor tekst, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.</>,
+      example: ExampleNormalText,
       positive: false,
       result: contrastRatio >= 4.5,
-      content: <>Je mag de kleuren niet gebruiken voor tekst, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
-      example: ExampleNormalText,
     },
     {
+      container: 'document',
+      content: <>Je mag de kleuren niet gebruiken voor tekst, als je wilt voldoen aan WCAG 2.2 AAA niveau.</>,
+      example: ExampleNormalText,
       positive: false,
       result: contrastRatio >= 7,
-      content: <>Je mag de kleuren niet gebruiken voor tekst, als je wilt voldoen aan WCAG 2.2 AAA niveau.</>,
-      container: 'document',
-      example: ExampleNormalText,
     },
   ];
 
-  const dos = recommendations.filter(({ result, positive }) => positive && result === positive);
-  const donts = recommendations.filter(({ result, positive }) => !positive && result === positive);
+  const dos = recommendations.filter(({ positive, result }) => positive && result === positive);
+  const donts = recommendations.filter(({ positive, result }) => !positive && result === positive);
 
   return (
     <PageContent
       className="ma-flow"
       style={{
         '--utrecht-space-around': 1,
-        maxInlineSize: '600px',
         marginInlineEnd: 'auto',
         marginInlineStart: 'auto',
+        maxInlineSize: '600px',
       }}
     >
       <Heading1>Contrast van kleuren</Heading1>
@@ -240,7 +241,7 @@ export const ContrastTool = () => {
           </Button>
         </ActionGroup>
       </form>
-      {typeof contrastRatio === 'number' && (
+      {hasValidColors && (
         <div>
           <Heading2 id="output">Resultaat</Heading2>
           <ContrastRatio {...{ backgroundColor, color, contrastRatio }} />
@@ -255,25 +256,25 @@ export const ContrastTool = () => {
               <div>
                 {dos.map(({ container, content, example, positive }, index) => (
                   <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} figure>
-                    <Canvas
+                    <CanvasLegacy
                       language="html"
                       code={null}
                       displayCode={false}
                       container={container}
                       designTokens={{
-                        backgroundColor,
-                        color,
-                        forcedColorAdjust: 'none',
-                        '--utrecht-surface-background-color': backgroundColor,
-                        '--utrecht-surface-color': color,
                         '--utrecht-document-background-color': backgroundColor,
                         '--utrecht-document-color': color,
                         '--utrecht-icon-color': 'currentColor',
                         '--utrecht-paragraph-color': 'currentColor',
+                        '--utrecht-surface-background-color': backgroundColor,
+                        '--utrecht-surface-color': color,
+                        backgroundColor,
+                        color,
+                        forcedColorAdjust: 'none',
                       }}
                     >
                       {example}
-                    </Canvas>
+                    </CanvasLegacy>
                   </Guideline>
                 ))}
               </div>
@@ -288,25 +289,25 @@ export const ContrastTool = () => {
               <div>
                 {donts.map(({ container, content, example, positive }, index) => (
                   <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content}>
-                    <Canvas
+                    <CanvasLegacy
                       language="html"
                       code={null}
                       displayCode={false}
                       container={container}
                       designTokens={{
-                        backgroundColor,
-                        color,
-                        forcedColorAdjust: 'none',
-                        '--utrecht-surface-background-color': backgroundColor,
-                        '--utrecht-surface-color': color,
                         '--utrecht-document-background-color': backgroundColor,
                         '--utrecht-document-color': color,
                         '--utrecht-icon-color': 'currentColor',
                         '--utrecht-paragraph-color': 'currentColor',
+                        '--utrecht-surface-background-color': backgroundColor,
+                        '--utrecht-surface-color': color,
+                        backgroundColor,
+                        color,
+                        forcedColorAdjust: 'none',
                       }}
                     >
                       {example}
-                    </Canvas>
+                    </CanvasLegacy>
                   </Guideline>
                 ))}
               </div>

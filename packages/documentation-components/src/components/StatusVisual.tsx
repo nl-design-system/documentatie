@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { ArrowDown } from './Icons';
+import { ArrowDown } from './Icons/index.tsx';
 import './StatusVisual.css';
 
 export const StatusVisual = () => {

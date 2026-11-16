@@ -1,9 +1,9 @@
+import type { PropsWithChildren } from 'react';
+import { VideoPlayer } from '@nl-design-system-community/documentation-components/src/components/VideoPlayer';
 import { Heading, HeadingProps } from '@nl-design-system-community/documentation-components/src/heading/heading.tsx';
 import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph.tsx';
-import clsx from 'clsx';
-import { VideoPlayer } from '@nl-design-system-community/documentation-components/src/components/VideoPlayer';
 import '@nl-design-system-community/documentation-components/src/components/DSWSession.css';
-import type { PropsWithChildren } from 'react';
+import clsx from 'clsx';
 
 interface OldSessionProps {
   title: string;
@@ -28,11 +28,11 @@ interface DSWSpeaker {
 }
 
 export const OldSession = ({
+  videoId,
   children,
-  title,
   headingLevel = 3,
   speakers,
-  videoId,
+  title,
 }: PropsWithChildren<OldSessionProps>) => (
   <article className={clsx('ma-dsw-session')} id={title.toLowerCase().replace(/\s/gi, '-')}>
     <Heading level={headingLevel} className="ma-dsw-session__title">

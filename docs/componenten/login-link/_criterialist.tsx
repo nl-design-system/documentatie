@@ -18,53 +18,53 @@ import Wcag244 from '@nl-design-system-unstable/documentation/wcag/summaries/_2.
 
 export const general = [
   {
-    title: 'Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst',
+    component: Wcag145,
     sc: '1.4.5',
     status: '',
-    component: Wcag145,
+    title: 'Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst',
   },
   {
-    title:
-      'De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).',
+    component: Wcag244,
     sc: '2.4.4',
     status: '',
-    component: Wcag244,
+    title:
+      'De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).',
   },
   {
-    title:
-      'Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken',
+    component: Wcag252,
     sc: '2.5.2',
     status: '',
-    component: Wcag252,
+    title:
+      'Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken',
   },
   {
-    title: 'De zichtbare naam van de Login Link komt voor in de toegankelijke naam',
+    component: Wcag253,
     sc: '2.5.3',
     status: '',
-    component: Wcag253,
+    title: 'De zichtbare naam van de Login Link komt voor in de toegankelijke naam',
   },
   {
-    title:
-      'Als de tekst van de Login Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode',
+    component: Wcag312,
     sc: '3.1.2',
     status: '',
-    component: Wcag312,
+    title:
+      'Als de tekst van de Login Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode',
   },
 ];
 
 export const visualDesign = [
   {
-    title: 'De contrastverhouding van de tekstkleur in Login Link met de achtergrondkleur is hoog genoeg.',
+    component: Wcag143,
     sc: '1.4.3',
     status: '',
-    component: Wcag143,
+    title: 'De contrastverhouding van de tekstkleur in Login Link met de achtergrondkleur is hoog genoeg.',
   },
   {
-    title:
-      'Als het zichtbare label van de Login Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1',
+    component: Wcag1411,
     sc: '1.4.11',
     status: '',
-    component: Wcag1411,
+    title:
+      'Als het zichtbare label van de Login Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1',
   },
   /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
   /*
@@ -76,73 +76,73 @@ export const visualDesign = [
 },
  */
   {
-    title: 'De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels',
+    component: Wcag255,
     sc: '2.5.5',
     status: '',
-    component: Wcag255,
+    title: 'De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels',
   },
   {
-    title: 'Login Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label',
+    component: Wcag324,
     sc: '3.2.4',
     status: '',
-    component: Wcag324,
+    title: 'Login Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label',
   },
 ];
 
 export const zoom = [
   {
-    title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar',
+    component: Wcag144,
     sc: '1.4.4',
     status: '',
-    component: Wcag144,
+    title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar',
   },
   {
-    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar',
+    component: Wcag1412,
     sc: '1.4.12',
     status: '',
-    component: Wcag1412,
+    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar',
   },
 ];
 
 export const keyboard = [
   {
-    title: 'Je kunt de Login Link focussen met de tabtoets en activeren met de entertoets',
+    component: Wcag211,
     sc: '2.1.1',
     status: '',
-    component: Wcag211,
+    title: 'Je kunt de Login Link focussen met de tabtoets en activeren met de entertoets',
   },
   {
-    title: 'De functionaliteit van de Login Link veroorzaakt geen toetsenbordval',
+    component: Wcag212,
     sc: '2.1.2',
     status: '',
-    component: Wcag212,
+    title: 'De functionaliteit van de Login Link veroorzaakt geen toetsenbordval',
   },
   {
-    title: 'Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar',
+    component: Wcag247,
     sc: '2.4.7',
     status: '',
-    component: Wcag247,
+    title: 'Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar',
   },
   {
-    title: 'Als de Login Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud',
+    component: Wcag2411,
     sc: '2.4.11',
     status: '',
-    component: Wcag2411,
+    title: 'Als de Login Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud',
   },
 ];
 
 export const screenreader = [
   {
-    title: 'Als het label van de Login Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief',
+    component: Wcag111,
     sc: '1.1.1',
     status: '',
-    component: Wcag111,
+    title: 'Als het label van de Login Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief',
   },
   {
-    title:
-      'De Login Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Login Link voor dient',
+    component: Wcag412,
     sc: '4.1.2',
     status: '',
-    component: Wcag412,
+    title:
+      'De Login Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Login Link voor dient',
   },
 ];

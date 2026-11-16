@@ -1,0 +1,110 @@
+/* stylelint-disable */
+
+.token.namespace {
+  color: var(--ma-code-block-namespace-color);
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  font-style: italic;
+}
+.token.comment {
+  color: var(--ma-code-block-comment-color);
+}
+.token.prolog {
+  color: var(--ma-code-block-prolog-color);
+}
+.token.cdata {
+  color: var(--ma-code-block-cdata-color);
+}
+.token.punctuation {
+  color: var(--ma-code-block-punctuation-color);
+}
+.token.deleted {
+  color: var(--ma-code-block-deleted-color);
+  font-style: italic;
+}
+.token.symbol {
+  color: var(--ma-code-block-symbol-color);
+}
+.token.property {
+  color: var(--ma-code-block-property-color);
+}
+.token.tag {
+  color: var(--ma-code-block-tag-color);
+}
+.token.operator {
+  color: var(--ma-code-block-operator-color);
+}
+.token.keyword {
+  color: var(--ma-code-block-keyword-color);
+}
+.token.boolean {
+  color: var(--ma-code-block-boolean-color);
+}
+.token.number {
+  color: var(--ma-code-block-number-color);
+}
+.token.constant {
+  color: var(--ma-code-block-constant-color);
+}
+.token.function {
+  color: var(--ma-code-block-function-color);
+}
+.token.builtin {
+  color: var(--ma-code-block-builtin-color);
+}
+.token.char {
+  color: var(--ma-code-block-char-color);
+}
+.token.selector {
+  color: var(--ma-code-block-selector-color);
+  font-style: italic;
+}
+.token.doctype {
+  color: var(--ma-code-block-doctype-color);
+  font-style: italic;
+}
+.token.attr-name {
+  color: var(--ma-code-block-attr-name-color);
+  font-style: italic;
+}
+.token.inserted {
+  color: var(--ma-code-block-inserted-color);
+  font-style: italic;
+}
+.token.string {
+  color: var(--ma-code-block-string-color);
+}
+.token.url {
+  color: var(--ma-code-block-url-color);
+}
+.token.entity {
+  color: var(--ma-code-block-entity-color);
+}
+.token.class-name {
+  color: var(--ma-code-block-class-name-color);
+}
+.token.atrule {
+  color: var(--ma-code-block-atrule-color);
+}
+.token.attr-value {
+  color: var(--ma-code-block-attr-value-color);
+}
+.token.regex {
+  color: var(--ma-code-block-regex-color);
+}
+.token.important {
+  color: var(--ma-code-block-important-color);
+  font-weight: bold;
+}
+.token.variable {
+  color: var(--ma-code-block-variable-color);
+}
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}

@@ -1,3 +1,4 @@
+import type { PropsWithChildren } from 'react';
 import {
   Checkbox,
   Fieldset,
@@ -8,15 +9,14 @@ import {
   FormLabel,
   Textarea,
 } from '@utrecht/component-library-react';
-import { Textbox } from '../textbox/textbox';
-import { Button } from '../button/button';
-import { ActionGroup } from '../action-group/action-group';
-import { Paragraph } from '../paragraph/paragraph';
-import type { PropsWithChildren } from 'react';
+import clsx from 'clsx';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import { useIsBrowser } from '../hooks/use-is-browser';
-import clsx from 'clsx';
+import { ActionGroup } from '../action-group/action-group.tsx';
+import { Button } from '../button/button.tsx';
+import { useIsBrowser } from '../hooks/use-is-browser.ts';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { Textbox } from '../textbox/textbox.tsx';
 
 interface NewsletterSignUpProps {
   listId: string;
@@ -64,42 +64,42 @@ const generateInterestsValues = (interests: string[], disallowedValues: number[]
 };
 
 export const NewsletterSignUp = ({
-  listId = '',
-  laPostaId = '',
-  thanksPage = '',
+  disallowedInterestValues = [],
   emailFieldId = '',
   firstNameFieldId = '',
-  orgId = '',
+  interests = [],
   interestsId = '',
   interestsLegend = 'Waar wil je NL Design System voor gebruiken?',
-  interests = [],
   interestsRequired = false,
-  disallowedInterestValues = [],
-  workAreasId = '',
-  privacyPolicyId = '',
   language,
-  submitText = '',
-  talkTitleId = '',
-  talkDescriptionId = '',
+  laPostaId = '',
+  listId = '',
+  orgId = '',
+  privacyPolicyId = '',
   roleId = '',
   roleLegend = 'Wat is jouw rol?',
-  roles = [],
   roleRequired = false,
+  roles = [],
+  submitText = '',
+  talkDescriptionId = '',
+  talkTitleId = '',
+  thanksPage = '',
+  workAreasId = '',
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
-    register,
-    handleSubmit,
     formState: { errors },
+    handleSubmit,
+    register,
   } = useForm<{ [key: string]: string }>({ mode: 'onBlur' });
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
   const IS_ENGLISH = language?.value === '2';
   const isBrowser = useIsBrowser();
   const search = isBrowser ? window.location.search : '';
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
   const prefillName = params.get('prefillName');
-  const interestsValues: number[] | false =
-    interestsId && interests.length > 0 ? generateInterestsValues(interests, disallowedInterestValues) : false;
+  const interestsValues: number[] =
+    interestsId && interests.length > 0 ? generateInterestsValues(interests, disallowedInterestValues) : [];
 
   return (
     <>
@@ -111,7 +111,7 @@ export const NewsletterSignUp = ({
         acceptCharset="utf-8"
         ref={form}
         onSubmit={handleSubmit(() => {
-          form.current.submit();
+          form.current?.submit();
         })}
       >
         <FormField type="email">
@@ -126,22 +126,21 @@ export const NewsletterSignUp = ({
           <Paragraph>
             <Textbox
               id={`id-${emailFieldId}`}
-              name={emailFieldId}
               type="email"
               autoComplete="email"
-              defaultValue={prefillEmail}
+              defaultValue={prefillEmail ?? undefined}
               aria-required="true"
               aria-describedby={errors[emailFieldId] && `${emailFieldId}-error`}
               {...register(`${emailFieldId}`, {
+                pattern: {
+                  message: IS_ENGLISH ? 'This is not a valid email address.' : 'Dit is geen correct emailadres.',
+                  value: /\S+@\S+\.\S+/,
+                },
                 required: {
-                  value: true,
                   message: IS_ENGLISH
                     ? 'This field is required, but it was left empty.'
                     : 'Dit veld is verplicht, maar het is niet ingevuld.',
-                },
-                pattern: {
-                  value: /\S+@\S+\.\S+/,
-                  message: IS_ENGLISH ? 'This is not a valid email address.' : 'Dit is geen correct emailadres.',
+                  value: true,
                 },
               })}
               invalid={!!errors[emailFieldId]}
@@ -161,18 +160,17 @@ export const NewsletterSignUp = ({
           <Paragraph>
             <Textbox
               id={firstNameFieldId}
-              name={firstNameFieldId}
               type="text"
-              defaultValue={prefillName}
+              defaultValue={prefillName ?? undefined}
               autoComplete="given-name"
               aria-required="true"
               aria-describedby={errors[firstNameFieldId] && `${firstNameFieldId}-error`}
               {...register(`${firstNameFieldId}`, {
                 required: {
-                  value: true,
                   message: IS_ENGLISH
                     ? 'This field is required, but it was left empty.'
                     : 'Dit veld is verplicht, maar het is niet ingevuld.',
+                  value: true,
                 },
               })}
               invalid={!!errors[firstNameFieldId]}
@@ -193,14 +191,13 @@ export const NewsletterSignUp = ({
             <Paragraph>
               <Textbox
                 id={talkTitleId}
-                name={talkTitleId}
                 aria-describedby={`${talkTitleId}-description`}
                 {...register(talkTitleId, {
                   required: {
-                    value: true,
                     message: IS_ENGLISH
                       ? 'You can only submit a talk if you provide a title.'
                       : 'Je kunt alleen een voorstel insturen als je een titel toevoegd.',
+                    value: true,
                   },
                 })}
               ></Textbox>
@@ -223,15 +220,14 @@ export const NewsletterSignUp = ({
             <Paragraph>
               <Textarea
                 id={talkDescriptionId}
-                name={talkDescriptionId}
                 rows={12}
                 aria-describedby={`${talkDescriptionId}-description`}
                 {...register(talkDescriptionId, {
                   required: {
-                    value: true,
                     message: IS_ENGLISH
                       ? 'You can only submit a talk if you provide a description.'
                       : 'Je kunt alleen een voorstel insturen als je een beschrijving toevoegd.',
+                    value: true,
                   },
                 })}
               ></Textarea>
@@ -339,10 +335,10 @@ export const NewsletterSignUp = ({
                 aria-required="true"
                 {...register(`${privacyPolicyId}[]`, {
                   required: {
-                    value: true,
                     message: IS_ENGLISH
                       ? 'You can only register if you agree with the privacy policy.'
                       : 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.',
+                    value: true,
                   },
                 })}
                 invalid={!!errors[`${privacyPolicyId}`]}
@@ -355,7 +351,7 @@ export const NewsletterSignUp = ({
             </FormField>
             {errors[`${privacyPolicyId}`] && (
               <FormFieldErrorMessage role="alert" id={`${privacyPolicyId}-error`}>
-                {errors[`${privacyPolicyId}`].message}
+                {errors[`${privacyPolicyId}`]?.message}
               </FormFieldErrorMessage>
             )}
           </FormField>

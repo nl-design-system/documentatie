@@ -7,49 +7,49 @@ import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.
 
 export const usage = [
   {
-    title: 'De code is niet alleen herkenbaar aan een andere achtergrondkleur.',
+    component: Wcag141,
     sc: '1.4.1',
     status: '',
-    component: Wcag141,
     tags: ['designer', 'contentmaker', 'developer'],
+    title: 'De code is niet alleen herkenbaar aan een andere achtergrondkleur.',
   },
   {
-    title: 'De code heeft voldoende contrast met de achtergrondkleur',
+    component: Wcag143,
     sc: '1.4.3',
     status: '',
-    component: Wcag143,
     tags: ['designer', 'contentmaker'],
+    title: 'De code heeft voldoende contrast met de achtergrondkleur',
   },
   {
-    title:
-      'Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.',
+    component: Wcag1411,
     sc: '1.4.11',
     status: '',
-    component: Wcag1411,
     tags: ['designer', 'contentmaker'],
+    title:
+      'Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.',
   },
 ];
 
 export const component = [
   {
-    title: 'De juiste HTML-elementen voor de Code Block component zijn toegepast.',
+    component: Wcag131,
     sc: '1.3.1',
     status: '',
-    component: Wcag131,
     tags: ['developer'],
+    title: 'De juiste HTML-elementen voor de Code Block component zijn toegepast.',
   },
   {
-    title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar.',
+    component: Wcag144,
     sc: '1.4.4',
     status: '',
-    component: Wcag144,
     tags: ['developer'],
+    title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar.',
   },
   {
-    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.',
+    component: Wcag1412,
     sc: '1.4.12',
     status: '',
-    component: Wcag1412,
     tags: ['developer'],
+    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.',
   },
 ];

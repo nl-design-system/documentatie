@@ -1,13 +1,4 @@
-import { Code } from '@nl-design-system-candidate/code-react/css';
-import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
-import type { TokenNode } from '../utils';
-import {
-  getTokenPaths,
-  sortTokenPaths,
-  tokenAtPath,
-  tokenPathToCSSCustomProperty,
-  tokenPathToDottedTokenPath,
-} from '../utils';
+import type { BaseDesignToken } from '@nl-design-system-community/design-tokens-schema';
 import {
   PreserveData,
   Table,
@@ -17,12 +8,21 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react';
-import { ActionGroup } from '../action-group/action-group';
-import { CopyButton } from './CopyButton';
-import type { IconType } from './TokenIcon';
-import { TokenIcon } from './TokenIcon';
-import type { BaseDesignToken } from '@nl-design-system-community/design-tokens-schema';
 import { cloneDeepWith } from 'es-toolkit/object';
+import type { TokenNode } from '../utils.ts';
+import type { IconType } from './TokenIcon.tsx';
+import { ActionGroup } from '../action-group/action-group.tsx';
+import { Code } from '../code/code.tsx';
+import { DataBadge } from '../data-badge/data-badge.tsx';
+import {
+  getTokenPaths,
+  sortTokenPaths,
+  tokenAtPath,
+  tokenPathToCSSCustomProperty,
+  tokenPathToDottedTokenPath,
+} from '../utils.ts';
+import { CopyButton } from './CopyButton.tsx';
+import { TokenIcon } from './TokenIcon.tsx';
 
 interface Props {
   tokens: TokenNode;
@@ -45,7 +45,7 @@ export function DesignTokens({ tokens }: Props) {
   const cleanTokens = cloneDeepWith(tokens, (obj) =>
     isTokenDefinition(obj)
       ? {
-          $type: obj.$type,
+          $type: obj['$type'],
           $value: '',
         }
       : undefined,

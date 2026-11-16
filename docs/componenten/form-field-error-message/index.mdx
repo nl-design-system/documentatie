@@ -45,7 +45,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -54,23 +53,17 @@ import {
 } from "@nl-design-system-community/documentation-components/src/components/Checklist";
 import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 
-import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
-import Usage from "./\_usage.md";
+import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
+import usage from "./\_usage.md?raw";
 
-import { ComponentAliases } from "@nl-design-system-community/documentation-components/src/components/ComponentAliases";
 import { DesignTokens } from "@nl-design-system-community/documentation-components/src/components/DesignTokens";
 
 import tokens from "@nl-design-system-candidate/form-field-error-message-tokens";
 
 export const title = "Form Field Error Message";
-export const description = "Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.";
 export const issueNumber = 122;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentAliases component={component} />
 
 <Card className="ma-implementation-card">
   <CardContent>
@@ -124,9 +117,7 @@ export const component = componentProgress.find((item) => item.number === issueN
   ))}
 </Checklist>
 
-<Markdown omitH1 headingLevel={3}>
-  <Usage />
-</Markdown>
+<Markdown omitH1 headingLevel={3} content={usage} />
 
 ## Design tokens
 

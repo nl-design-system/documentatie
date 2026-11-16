@@ -7,8 +7,6 @@ dist/
 .astro
 
 # Generated files
-.docusaurus
-.cache-loader
 .lighthouseci/
 tmp/
 *.tsbuildinfo

@@ -1,20 +1,28 @@
-import { UnorderedList } from '../unordered-list/unordered-list';
-import { Card } from '../card/card';
 import {
   isNavigationGroup,
   isNavigationItem,
   type NavigationElement,
-} from '@nl-design-system-community/documentation-index/src/navigation';
+} from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
+import { Card } from '../card/card.tsx';
+import { UnorderedList } from '../unordered-list/unordered-list.tsx';
 
 export interface DocCardListProps {
   cardHeadingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
   items: (NavigationElement & { labelLang?: string; descriptionLang?: string })[];
+  excludeDocIDs?: string[];
 }
 
 export const DocCardList = (props: DocCardListProps) => {
+  const docIDs = props.excludeDocIDs || [];
+
+  const filteredItems = (props.items || []).filter((page) => {
+    const filePath = page?.filePath?.replace('../../docs/', '')?.replace(/\.mdx?$/, '');
+    return Boolean(filePath && docIDs.includes(filePath)) === false;
+  });
+
   return (
     <UnorderedList markers={false}>
-      {(props.items || []).map((page) => {
+      {filteredItems.map((page) => {
         let heading, description, href, lang;
 
         if (isNavigationItem(page)) {

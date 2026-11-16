@@ -1,0 +1,50 @@
+import type { APIContext, MiddlewareNext } from 'astro';
+import * as cheerio from 'cheerio';
+import { createHash } from 'node:crypto';
+
+/**
+ * Returns a SHA256 hash using SHA-2 for the given `content`.
+ */
+function sha256(content: string) {
+  return createHash('sha256').update(content).digest('base64');
+}
+
+/**
+ * This middleware calculates a sha256 hash of style attributes and adds them
+ * to the csp header, allowing for inline styles within the source code
+ */
+export async function onRequest(_context: APIContext, next: MiddlewareNext) {
+  const response = await next();
+  const html = await response.text();
+  const $ = cheerio.load(html);
+
+  const hashes = new Set();
+  const cspRuleElement = $('[http-equiv="content-security-policy"]');
+
+  $('[style]').map((_, element) =>
+    element.attributes
+      .filter((attribute) => attribute.name === 'style')
+      .map((attribute) => sha256(attribute.value))
+      .forEach((hash) => {
+        hashes.add(`'sha256-${hash}'`);
+      }),
+  );
+
+  const cspContent = cspRuleElement.attr('content');
+
+  if (cspContent && hashes.size) {
+    const cspRules = cspContent
+      .split(';')
+      .map((rule) => rule.trim())
+      .map((cspRule) =>
+        cspRule.startsWith('style-src') ? `${cspRule} ${[...hashes.values()].join(' ')} 'unsafe-hashes'` : cspRule,
+      )
+      .join('; ');
+    $(cspRuleElement).attr('content', cspRules);
+  }
+
+  return new Response($.html(), {
+    headers: response.headers,
+    status: 200,
+  });
+}

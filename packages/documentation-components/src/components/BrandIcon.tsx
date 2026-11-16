@@ -1,4 +1,4 @@
-import { Icon } from '../icon/icon';
+import type { ReactElement } from 'react';
 import {
   IconBrandFigma,
   IconBrandGithub,
@@ -6,8 +6,9 @@ import {
   IconBrandStorybook,
   IconExternalLink,
 } from '@tabler/icons-react';
+import { Icon } from '../icon/icon.tsx';
 
-const brandMap = {
+const brandMap: Record<string, ReactElement> = {
   figma: <IconBrandFigma />,
   github: <IconBrandGithub />,
   npm: <IconBrandNpm />,
