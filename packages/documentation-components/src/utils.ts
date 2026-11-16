@@ -38,6 +38,7 @@ export const previousRelayStep = {
 };
 
 export const relayProjectIds = Object.keys(previousRelayStep);
+export const RELAY_STEP_SORT_ORDER = ['HELP_WANTED', 'COMMUNITY', 'CANDIDATE', 'HALL_OF_FAME', 'UNKNOWN'];
 
 export const normalizeName = (name: string) => name.toLowerCase().replace(/(\s|-)+/, '');
 const FRAMEWORK_NAME_SORT_ORDER = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];

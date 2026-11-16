@@ -11,6 +11,7 @@ import {
   getProjectFrameworks,
   getRelayBoardDescription,
   relayProjectIds,
+  RELAY_STEP_SORT_ORDER,
   toKebabCase,
   type ComponentPageSectionProps,
 } from '../utils.ts';
@@ -29,7 +30,8 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
     relayProjects &&
     relayProjectIds
       .map((id) => relayProjects.find((project) => project.id === id))
-      .filter((project) => project !== undefined);
+      .filter((project) => project !== undefined)
+      .sort((a, b) => RELAY_STEP_SORT_ORDER.indexOf(a.id) - RELAY_STEP_SORT_ORDER.indexOf(b.id));
 
   return (
     component && (
