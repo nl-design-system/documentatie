@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Bij de beschrijving staat niet welk woord ze uitlegt. Je bezoeker weet dan niet waar de beschrijving over gaat.
+Geen enkele term in deze definitielijst heeft tekst. Je bezoeker weet bij geen enkele beschrijving welk woord ze uitlegt.
