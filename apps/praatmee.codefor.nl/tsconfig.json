@@ -1,15 +1,11 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",
-    "strict": true,
-    "moduleResolution": "NodeNext",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "types": ["node"],
     "rootDir": "./src",
     "outDir": "./dist"
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts"]
 }
