@@ -19,11 +19,11 @@ export class SlackInvitationError extends Error {
 export const inviteToSlack = async (name: string, email: string) => {
   try {
     await slack.admin.users.invite({
-      team_id: config.slack.teamId,
-      email,
       channel_ids: config.slack.channelIds as [string, ...string[]],
       real_name: name,
+      team_id: config.slack.teamId,
       custom_message: 'Welkom bij Code for NL!',
+      email,
     });
   } catch (error) {
     const slackError = error as { code?: string; data?: { error?: string } };

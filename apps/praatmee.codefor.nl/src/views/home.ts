@@ -11,8 +11,8 @@ const SITE_TITLE = 'Praat mee op Slack – Code for NL';
 
 const fieldLabels: Record<FieldName, string> = {
   name: 'Voornaam',
-  email: 'E-mailadres',
   bot: 'Ben je een bot?',
+  email: 'E-mailadres',
 };
 
 export const homePage = (state: PageState = { kind: 'form' }) => {
@@ -81,27 +81,27 @@ const formView = (state: Exclude<PageState, { kind: 'sent' }>, errorEntries: [Fi
     <form method="post" action="/" novalidate>
       ${field({
         name: 'name',
-        type: 'text',
         autocomplete: 'given-name',
-        value: values.name,
         error: errors.name,
+        type: 'text',
+        value: values.name,
       })}
       ${field({
         name: 'email',
-        type: 'email',
         autocomplete: 'email',
-        value: values.email,
         error: errors.email,
         hint: 'Hier sturen we de uitnodiging naartoe.',
+        type: 'email',
+        value: values.email,
       })}
       ${field({
         name: 'bot',
-        type: 'text',
         autocomplete: 'off',
-        value: values.bot,
         error: errors.bot,
         hint: 'Typ "nee" als je een mens bent.',
         short: true,
+        type: 'text',
+        value: values.bot,
       })}
 
       <div class="praatmee-hp" aria-hidden="true">
@@ -146,7 +146,7 @@ interface FieldOptions {
   short?: boolean;
 }
 
-const field = ({ name, type, autocomplete, value, error, hint, short }: FieldOptions) => {
+const field = ({ name, autocomplete, error, hint, short, type, value }: FieldOptions) => {
   const hintId = hint ? `${name}-hint` : '';
   const errorId = error ? `${name}-error` : '';
   const describedBy = [hintId, errorId].filter(Boolean).join(' ');

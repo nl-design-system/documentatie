@@ -1,7 +1,6 @@
+import { zValidator } from '@hono/zod-validator';
 import { Hono } from 'hono';
 import { bodyLimit } from 'hono/body-limit';
-import { zValidator } from '@hono/zod-validator';
-
 import { apiSecurityHeaders, corsMiddleware, verifyWebsite } from '../middleware/security.js';
 import { requestInvitation } from '../services/invitation.js';
 import { invitationSchema, toFieldErrors } from '../validators/invitation.js';
@@ -16,11 +15,11 @@ users.post(
   verifyWebsite,
   bodyLimit({
     maxSize: 10 * 1024,
-    onError: (context) => context.json({ success: false, message: 'Verzoek te groot.' }, 413),
+    onError: (context) => context.json({ message: 'Verzoek te groot.', success: false }, 413),
   }),
   zValidator('json', invitationSchema, (result, context) => {
     if (!result.success) {
-      return context.json({ success: false, message: 'Ongeldige invoer.', errors: toFieldErrors(result.error) }, 400);
+      return context.json({ errors: toFieldErrors(result.error), message: 'Ongeldige invoer.', success: false }, 400);
     }
     return undefined;
   }),
@@ -30,13 +29,13 @@ users.post(
     switch (outcome) {
       case 'sent':
         return context.json({
-          success: true,
           message: 'Je ontvangt een uitnodiging per e-mail.',
+          success: true,
         });
       case 'retry-later':
-        return context.json({ success: false, message: 'Probeer het over een paar minuten opnieuw.' }, 503);
+        return context.json({ message: 'Probeer het over een paar minuten opnieuw.', success: false }, 503);
       default:
-        return context.json({ success: false, message: 'We konden je aanvraag niet verwerken.' }, 502);
+        return context.json({ message: 'We konden je aanvraag niet verwerken.', success: false }, 502);
     }
   },
 );

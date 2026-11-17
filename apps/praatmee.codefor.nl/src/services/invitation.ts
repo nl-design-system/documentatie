@@ -1,5 +1,5 @@
-import { inviteToSlack, SlackInvitationError } from './slack.js';
 import type { Invitation } from '../validators/invitation.js';
+import { inviteToSlack, SlackInvitationError } from './slack.js';
 
 export type InvitationOutcome = 'sent' | 'retry-later' | 'failed';
 
