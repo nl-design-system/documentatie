@@ -1,6 +1,6 @@
+import type { MiddlewareHandler } from 'hono';
 import { cors } from 'hono/cors';
 import { secureHeaders } from 'hono/secure-headers';
-import type { MiddlewareHandler } from 'hono';
 import { config } from '../config.js';
 
 const shared = {
@@ -12,14 +12,14 @@ const shared = {
 export const pageSecurityHeaders = secureHeaders({
   ...shared,
   contentSecurityPolicy: {
+    baseUri: ["'none'"],
     defaultSrc: ["'none'"],
-    styleSrc: ["'self'"],
-    imgSrc: ["'self'"],
     formAction: ["'self'"],
     frameAncestors: ["'none'"],
-    baseUri: ["'none'"],
+    imgSrc: ["'self'"],
+    styleSrc: ["'self'"],
   },
-  permissionsPolicy: { camera: [], microphone: [], geolocation: [] },
+  permissionsPolicy: { camera: [], geolocation: [], microphone: [] },
 });
 
 export const apiSecurityHeaders = secureHeaders({
@@ -31,10 +31,10 @@ export const apiSecurityHeaders = secureHeaders({
 });
 
 export const corsMiddleware = cors({
-  origin: (origin) => (config.allowedOrigins.includes(origin) ? origin : null),
-  allowMethods: ['POST', 'OPTIONS'],
   allowHeaders: ['Content-Type'],
+  allowMethods: ['POST', 'OPTIONS'],
   maxAge: 600,
+  origin: (origin) => (config.allowedOrigins.includes(origin) ? origin : null),
 });
 
 // Non-browser clients can fake Origin; the Vercel Firewall rate limit covers that.
@@ -42,7 +42,7 @@ export const verifyWebsite: MiddlewareHandler = async (context, next) => {
   const origin = context.req.header('Origin');
 
   if (!origin || !config.allowedOrigins.includes(origin)) {
-    return context.json({ success: false, message: 'Origin niet toegestaan.' }, 403);
+    return context.json({ message: 'Origin niet toegestaan.', success: false }, 403);
   }
 
   return next();

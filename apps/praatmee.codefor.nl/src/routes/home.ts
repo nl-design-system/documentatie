@@ -1,8 +1,7 @@
+import { zValidator } from '@hono/zod-validator';
 import { Hono } from 'hono';
 import { bodyLimit } from 'hono/body-limit';
 import { csrf } from 'hono/csrf';
-import { zValidator } from '@hono/zod-validator';
-
 import { config } from '../config.js';
 import { pageSecurityHeaders } from '../middleware/security.js';
 import { requestInvitation } from '../services/invitation.js';
@@ -24,7 +23,7 @@ home.get('/', (context) => {
 // Refill the form after an error, but never the honeypot.
 const formValues = (body: Record<string, unknown>) => {
   const text = (value: unknown) => (typeof value === 'string' ? value.slice(0, 254) : '');
-  return { name: text(body['name']), email: text(body['email']), bot: text(body['bot']) };
+  return { name: text(body['name']), bot: text(body['bot']), email: text(body['email']) };
 };
 
 home.post(
@@ -39,9 +38,9 @@ home.post(
       const body = await context.req.parseBody();
       return context.html(
         homePage({
+          errors: toFieldErrors(result.error),
           kind: 'form',
           values: formValues(body),
-          errors: toFieldErrors(result.error),
         }),
         400,
       );
@@ -60,11 +59,11 @@ home.post(
     return context.html(
       homePage({
         kind: 'problem',
-        values: { name: invitation.name, email: invitation.email, bot: invitation.bot },
         message:
           outcome === 'retry-later'
             ? 'Het is op dit moment erg druk. Probeer het over een paar minuten opnieuw.'
             : 'We konden je aanvraag niet verwerken. Probeer het later opnieuw.',
+        values: { name: invitation.name, bot: invitation.bot, email: invitation.email },
       }),
       outcome === 'retry-later' ? 503 : 502,
     );
