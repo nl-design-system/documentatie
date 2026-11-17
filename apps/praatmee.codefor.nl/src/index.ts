@@ -3,7 +3,7 @@ import { HTTPException } from 'hono/http-exception';
 
 import './config.js'; // Validate env vars first.
 import home from './routes/home.js';
-import invitations from './routes/invitations.js';
+import users from './routes/users.js';
 
 // Vercel runs this default export; src/local.ts runs it locally.
 const app = new Hono();
@@ -12,7 +12,7 @@ app.route('/', home);
 
 app.get('/health', (c) => c.json({ status: 'ok' }));
 
-app.route('/api/invitations', invitations);
+app.route('/api/v1/users', users);
 
 app.notFound((c) => c.json({ success: false, message: 'Niet gevonden.' }, 404));
 

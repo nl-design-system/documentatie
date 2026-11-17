@@ -8,11 +8,11 @@ import { requestInvitation } from '../services/invitation.js';
 import { invitationSchema, toFieldErrors } from '../validators/invitation.js';
 
 // JSON API for other apps' forms. Body: { name, email, bot, website? }.
-const invitations = new Hono();
+const users = new Hono();
 
-invitations.use('*', apiSecurityHeaders, corsMiddleware);
+users.use('*', apiSecurityHeaders, corsMiddleware);
 
-invitations.post(
+users.post(
   '/',
   verifyWebsite,
   bodyLimit({
@@ -22,11 +22,11 @@ invitations.post(
   invitationRateLimit((context) =>
     context.json({ success: false, message: 'Te veel verzoeken. Probeer het later opnieuw.' }, 429),
   ),
-  // eslint-disable-next-line consistent-return
   zValidator('json', invitationSchema, (result, context) => {
     if (!result.success) {
       return context.json({ success: false, message: 'Ongeldige invoer.', errors: toFieldErrors(result.error) }, 400);
     }
+    return undefined;
   }),
   async (context) => {
     const outcome = await requestInvitation(context.req.valid('json'));
@@ -45,4 +45,4 @@ invitations.post(
   },
 );
 
-export default invitations;
+export default users;

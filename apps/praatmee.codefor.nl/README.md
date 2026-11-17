@@ -2,9 +2,9 @@
 
 Lets visitors request an invitation to the Code for NL Slack workspace.
 
-- **Form** at `/`: server-rendered, works without JavaScript. Rebuild of the
+- **Form** at `/`: server-rendered, works without JavaScript.
   original PHP page.
-- **API** at `POST /api/invitations`: for other apps that have their own form
+- **API** at `POST /api/v1/users`: for other apps that have their own form
   and call it from the browser.
 
 Both share the same validation, Slack logic and rate limit (5 requests per
@@ -12,7 +12,7 @@ Both share the same validation, Slack logic and rate limit (5 requests per
 
 ## API
 
-`POST /api/invitations` with `Content-Type: application/json`:
+`POST /api/v1/users` with `Content-Type: application/json`:
 
 ```json
 { "name": "Ali", "email": "ali@example.nl", "bot": "nee", "website": "" }
@@ -85,7 +85,7 @@ Vercel detects Hono automatically and runs the default export of
    file is not used on Vercel.
 3. Add a rate-limit rule under **Firewall → Configure → New Rule** (available
    on all plans; Hobby allows one rule):
-   - **If** Request Path is `/` or `/api/invitations`, **and** Method is `POST`
+   - **If** Request Path is `/` or `/api/v1/users`, **and** Method is `POST`
    - **Then** Rate Limit: Fixed Window, **10 minutes**, **5 requests**, key **IP**
    - Action: Too Many Requests (429)
 
