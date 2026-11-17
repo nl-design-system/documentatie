@@ -34,13 +34,13 @@ export const homePage = (state: PageState = { kind: 'form' }) => {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>${title}</title>
-        <link rel="icon" href="https://www.codefor.nl/img/CfNL.png" />
+        <link rel="icon" href="/img/CfNL.png" />
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
         <header class="praatmee-header">
           <a href="https://www.codefor.nl" class="praatmee-logo">
-            <img alt="" src="https://codefor.nl/img/larger_CfNL.png" width="68" height="68" />
+            <img alt="" src="/img/larger_CfNL.png" width="68" height="68" />
             <span>Code for NL</span>
           </a>
         </header>
