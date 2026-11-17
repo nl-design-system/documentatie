@@ -1,0 +1,88 @@
+---
+title: Adres uitvragen
+hide_title: true
+hide_table_of_contents: true
+sidebar_position: 4
+navigation_order: 4
+pagination_label: Adres uitvragen
+description: Voorbeeld van een adres uitvraag patroon, gemaakt met richtlijnen en componenten uit NL Design System.
+slug: /voorbeelden/patronen-en-templates/adres-uitvragen
+keywords:
+  - patroon
+  - adres uitvraag
+  - formulier
+---
+
+**plaatje hier**
+
+# Adres uitvragen
+
+Het adrespatroon helpt gebruikers om snel en foutloos hun adres door te geven.
+
+## Wanneer gebruik je dit patroon?
+
+Gebruik het adrespatroon wanneer je een Nederlands postadres moet uitvragen, bijvoorbeeld bij het afronden van een bestelling, het aanvragen van een dienst of het aanmaken van een account.
+
+## Componenten
+
+De componenten die je gebruikt in dit patroon zijn:
+
+- [Fieldset](/fieldset/) (optioneel)
+- [Form Field](form-field/)
+- [Form Field Label](/form-field-label/)
+- [Form Field Label Suffix](/form-field-label-suffix/)(optioneel)
+- [Form Field Description](form-field-description/)
+- [Form Field Status](/form-field-status/) (optioneel)
+- [Form Field Error Message](/form-field-error-message/)
+- [Text Input](/text-input/)
+
+### Volgorde van componenten
+
+Ieder invoerveld in het adrespatroon is opgebouwd uit dezelfde componenten. De Form Field is de buitenste container, alle andere onderdelen zitten daarbinnen.
+
+- Form Field Label: Staat altijd bovenaan en geeft het veld een naam, bijvoorbeeld “Postcode”.
+- Form Field Label Suffix (optioneel): Staat naast het label en geeft extra informatie, bijvoorbeeld of het veld verplicht ingevuld moet worden.
+- Form Field Description: staat onder het label en geeft extra uitleg of een voorbeeld, zoals “Bijvoorbeeld 1234 AB”.
+- Form Field Status (optioneel): staat onder de extra beschrijving en geeft feedback over de status, bijvoorbeeld hoeveel karakters er nog ingevuld kunnen worden.
+- Form Field Error Message: staat onder de description en boven het invoerveld, en verschijnt alleen als de invoer niet klopt.
+- Text Input: het invoerveld waar de bezoekers gegevens invult.
+
+Plaats iedere adres-uitvraag in een Fieldset als je op 1 pagina meerdere adressen uitvraagt, bijvoorbeeld een factuur- en afleveradres.
+
+## Velden
+
+**plaatje hier**
+
+Het adrespatroon bestaat uit de volgende velden:
+
+- Straat en huisnummer
+- Postcode
+- Woonplaats
+
+### Relevante richtlijnen
+
+- [Uit te vragen informatie in een formulier](/richtlijnen/formulieren/vragen/)
+- [Labels in een formulier](/richtlijnen/formulieren/labels/)
+
+## Koppel informatie aan de velden
+
+Koppel het label (en eventueel suffix), de beschrijving, status en foutmelding aan het invoerveld. Dan hoort een screenreadergebruiker de informatie automatisch wanneer de toetsenbordfocus op het veld staat.
+
+### Relevante richtlijnen
+
+- [Geef een formulierveld een toegankelijke naam met een label.](/richtlijnen/formulieren/labels/toegankelijke-naam/)
+- [Koppel de beschrijving aan het invoerveld.](/richtlijnen/formulieren/descriptions/koppelen/)
+- [Informeer gebruikers van screenreaders over het statusbericht.](richtlijnen/formulieren/status/screenreaders/)
+- [Geef feedback over foutmeldingen aan screenreadergebruikers.](/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback/)
+
+## Hulp bij invullen
+
+Geef de velden een geldig autocomplete-attribuut zodat bezoekers hulp krijgen bij het invullen van de velden.
+
+- Straat en huisnummer: `autocomplete="address-line1"`
+- Postcode: `autocomplete="postal-code"`
+- Woonplaats: `autocomplete="address-line2"`
+
+## Relevante richtlijnen
+
+- [Vul bekende informatie in waar mogelijk](/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen/)
