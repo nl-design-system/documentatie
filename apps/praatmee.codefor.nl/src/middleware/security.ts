@@ -37,7 +37,7 @@ export const corsMiddleware = cors({
   maxAge: 600,
 });
 
-// Non-browser clients can fake Origin; the rate limit covers that.
+// Non-browser clients can fake Origin; the Vercel Firewall rate limit covers that.
 export const verifyWebsite: MiddlewareHandler = async (context, next) => {
   const origin = context.req.header('Origin');
 

@@ -4,7 +4,6 @@ import { csrf } from 'hono/csrf';
 import { zValidator } from '@hono/zod-validator';
 
 import { config } from '../config.js';
-import { invitationRateLimit } from '../middleware/rate-limit.js';
 import { pageSecurityHeaders } from '../middleware/security.js';
 import { requestInvitation } from '../services/invitation.js';
 import { invitationSchema, toFieldErrors } from '../validators/invitation.js';
@@ -43,15 +42,6 @@ home.post(
     maxSize: 10 * 1024,
     onError: (context) => context.text('Het formulier is te groot.', 413),
   }),
-  invitationRateLimit((context) =>
-    context.html(
-      homePage({
-        kind: 'problem',
-        message: 'Je hebt het formulier te vaak verstuurd. Probeer het over 15 minuten opnieuw.',
-      }),
-      429,
-    ),
-  ),
   zValidator('form', invitationSchema, async (result, context) => {
     if (!result.success) {
       const body = await context.req.parseBody();
