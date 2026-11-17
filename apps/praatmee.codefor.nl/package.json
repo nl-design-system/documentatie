@@ -1,5 +1,5 @@
 {
-  "name": "@nl-design-system/praatmee.codefor.nl",
+  "name": "@nl-design-system-community/praatmee.codefor.nl",
   "version": "1.0.0",
   "description": "NL Design System - Praat mee Code for NL",
   "private": true,
@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "tsx watch --env-file-if-exists=.env src/local.ts",
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "@hono/node-server": "2.1.6",
@@ -33,8 +33,5 @@
     "codefor.nl",
     "praatmee"
   ],
-  "author": "Community for NL Design System",
-  "engines": {
-    "node": "24 <25"
-  }
+  "author": "Community for NL Design System"
 }
