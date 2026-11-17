@@ -34,7 +34,8 @@ home.post(
     onError: (context) => context.text('Het formulier is te groot.', 413),
   }),
   zValidator('form', invitationSchema, async (result, context) => {
-    if (!result.success) {
+    // `=== false`, not `!`: Vercel compiles without strict mode, where `!` doesn't narrow.
+    if (result.success === false) {
       const body = await context.req.parseBody();
       return context.html(
         homePage({
