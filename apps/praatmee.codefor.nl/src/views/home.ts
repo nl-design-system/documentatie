@@ -157,9 +157,7 @@ const field = ({ name, type, autocomplete, value, error, hint, short }: FieldOpt
       name="${name}"
       type="${type}"
       autocomplete="${autocomplete}"
-      ${type === 'email' ? html`spellcheck="false"` : ''}
       required
-      maxlength="${type === 'email' ? 254 : 100}"
       value="${value ?? ''}"
       ${describedBy ? html`aria-describedby="${describedBy}"` : ''}
       ${error ? html`aria-invalid="true"` : ''}
