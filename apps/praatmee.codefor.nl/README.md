@@ -77,7 +77,9 @@ This runs `src/local.ts`, a small Node server around the app. Alternatively,
 ## Deploy to Vercel
 
 Vercel detects Hono automatically and runs the default export of
-`src/index.ts` as a Vercel Function. No `vercel.json` is needed.
+`src/index.ts` as a Vercel Function. Files in `public/` (the stylesheet) are
+served by the Vercel CDN; locally `src/local.ts` serves them. No `vercel.json`
+is needed.
 
 1. Set the **Root Directory** of the Vercel project to `apps/praatmee.codefor.nl`.
 2. Add the environment variables above under **Settings → Environment
