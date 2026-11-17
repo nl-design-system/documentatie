@@ -33,7 +33,7 @@ home.get('/styles.css', (context) => {
 // Refill the form after an error, but never the honeypot.
 const formValues = (body: Record<string, unknown>) => {
   const text = (value: unknown) => (typeof value === 'string' ? value.slice(0, 254) : '');
-  return { name: text(body.name), email: text(body.email), bot: text(body.bot) };
+  return { name: text(body['name']), email: text(body['email']), bot: text(body['bot']) };
 };
 
 home.post(

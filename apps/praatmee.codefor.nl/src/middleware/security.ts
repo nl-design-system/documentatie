@@ -38,7 +38,6 @@ export const corsMiddleware = cors({
 });
 
 // Non-browser clients can fake Origin; the rate limit covers that.
-// eslint-disable-next-line consistent-return
 export const verifyWebsite: MiddlewareHandler = async (context, next) => {
   const origin = context.req.header('Origin');
 
@@ -46,5 +45,5 @@ export const verifyWebsite: MiddlewareHandler = async (context, next) => {
     return context.json({ success: false, message: 'Origin niet toegestaan.' }, 403);
   }
 
-  await next();
+  return next();
 };

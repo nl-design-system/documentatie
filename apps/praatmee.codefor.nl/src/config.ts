@@ -13,17 +13,16 @@ const list = (name: string): string[] => {
     .filter(Boolean);
 };
 
-const onVercel = process.env.VERCEL === '1';
-const localOrigin = `http://localhost:${process.env.PORT ?? 8787}`;
+const onVercel = process.env['VERCEL'] === '1';
+const localOrigin = `http://localhost:${process.env['PORT'] ?? 8787}`;
 
 export const config = {
   onVercel,
-
   // Origins allowed to post the form (CSRF). VERCEL_* covers preview deployments.
   formOrigins: [
-    process.env.PUBLIC_ORIGIN?.trim(),
-    process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`,
-    process.env.VERCEL_BRANCH_URL && `https://${process.env.VERCEL_BRANCH_URL}`,
+    process.env['PUBLIC_ORIGIN']?.trim(),
+    process.env['VERCEL_URL'] && `https://${process.env['VERCEL_URL']}`,
+    process.env['VERCEL_BRANCH_URL'] && `https://${process.env['VERCEL_BRANCH_URL']}`,
     onVercel ? undefined : localOrigin,
   ].filter((origin): origin is string => Boolean(origin)),
 
