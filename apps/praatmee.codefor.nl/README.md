@@ -7,8 +7,8 @@ Lets visitors request an invitation to the Code for NL Slack workspace.
 - **API** at `POST /api/v1/users`: for other apps that have their own form
   and call it from the browser.
 
-Both share the same validation, Slack logic and rate limit (5 requests per
-15 minutes per IP, counted across form and API together).
+Both share the same validation and Slack logic. Rate limiting is done by the
+Vercel Firewall (see [Deploy to Vercel](#deploy-to-vercel)).
 
 ## API
 
@@ -33,7 +33,7 @@ Responses (messages are Dutch, ready to show to the visitor):
 | 400     | `{ "success": false, "message": "…", "errors": { "email": "Vul een geldig …" } }` |
 | 403     | Origin not in `API_ALLOWED_ORIGINS`.                                              |
 | 413     | Body larger than 10 KB.                                                           |
-| 429     | More than 5 requests per 15 minutes from one IP (`Retry-After` header is set).    |
+| 429     | More than 5 requests per 10 minutes from one IP (Vercel Firewall).                |
 | 502/503 | Slack failed / is busy; ask the visitor to try again later.                       |
 
 "Already a member" and "already invited" also return 200 on purpose, so the
@@ -89,6 +89,6 @@ Vercel detects Hono automatically and runs the default export of
    - **Then** Rate Limit: Fixed Window, **10 minutes**, **5 requests**, key **IP**
    - Action: Too Many Requests (429)
 
-   This is the real rate limit on Vercel. The limiter in the code
-   (`hono-rate-limiter`) keeps its counts in memory per function instance, and
-   Vercel runs several instances, so on its own it is not reliable there.
+   **Required.** This is the only per-IP limit. Slack's own limit is per app,
+   so without this rule one bot can use up the quota and send Slack invitation
+   emails to any address.

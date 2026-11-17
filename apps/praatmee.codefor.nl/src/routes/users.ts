@@ -3,7 +3,6 @@ import { bodyLimit } from 'hono/body-limit';
 import { zValidator } from '@hono/zod-validator';
 
 import { apiSecurityHeaders, corsMiddleware, verifyWebsite } from '../middleware/security.js';
-import { invitationRateLimit } from '../middleware/rate-limit.js';
 import { requestInvitation } from '../services/invitation.js';
 import { invitationSchema, toFieldErrors } from '../validators/invitation.js';
 
@@ -19,9 +18,6 @@ users.post(
     maxSize: 10 * 1024,
     onError: (context) => context.json({ success: false, message: 'Verzoek te groot.' }, 413),
   }),
-  invitationRateLimit((context) =>
-    context.json({ success: false, message: 'Te veel verzoeken. Probeer het later opnieuw.' }, 429),
-  ),
   zValidator('json', invitationSchema, (result, context) => {
     if (!result.success) {
       return context.json({ success: false, message: 'Ongeldige invoer.', errors: toFieldErrors(result.error) }, 400);

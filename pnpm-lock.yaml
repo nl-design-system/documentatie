@@ -564,9 +564,6 @@ importers:
       hono:
         specifier: 4.13.18
         version: 4.13.18
-      hono-rate-limiter:
-        specifier: 0.5.4
-        version: 0.5.4(hono@4.13.18)(unstorage@1.17.5)
       zod:
         specifier: 4.6.7
         version: 4.6.7
@@ -6222,15 +6219,6 @@ packages:
 
   header-case@2.0.4:
     resolution: {integrity: sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==}
-
-  hono-rate-limiter@0.5.4:
-    resolution: {integrity: sha512-P3/cscAmz1hA+MuM+Hn9gP/EyO2zWv2aXIFkVYuLZkPzrPa4oaWdVCS94vyDlsNBgeMnE/Hr2+LznIKQxrF0ng==}
-    peerDependencies:
-      hono: ^4.10.8
-      unstorage: ^1.17.3
-    peerDependenciesMeta:
-      unstorage:
-        optional: true
 
   hono@4.13.18:
     resolution: {integrity: sha512-H9q/E1XizaWstJxUW881dmLxEj+t/TrGGnyxINkm4+sK0qUwsMtFdo2BWI9Vs3cIS19MU6b6iCijoUoEf4f3DA==}
@@ -16289,12 +16277,6 @@ snapshots:
     dependencies:
       capital-case: 1.0.4
       tslib: 2.6.2
-
-  hono-rate-limiter@0.5.4(hono@4.13.18)(unstorage@1.17.5):
-    dependencies:
-      hono: 4.13.18
-    optionalDependencies:
-      unstorage: 1.17.5
 
   hono@4.13.18: {}
 

@@ -17,7 +17,6 @@ const onVercel = process.env['VERCEL'] === '1';
 const localOrigin = `http://localhost:${process.env['PORT'] ?? 8787}`;
 
 export const config = {
-  onVercel,
   // Origins allowed to post the form (CSRF). VERCEL_* covers preview deployments.
   formOrigins: [
     process.env['PUBLIC_ORIGIN']?.trim(),
