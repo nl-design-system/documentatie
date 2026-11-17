@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Maak van de eerste kolom een kopkolom.
+Zegt de eerste kolom waar de rij over gaat? Maak er dan een kopkolom van.
