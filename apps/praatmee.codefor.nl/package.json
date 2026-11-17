@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/node": "24.19.2",
     "tsx": "4.23.0",
-    "typescript": "7.0.2"
+    "typescript": "5.9.3"
   },
   "keywords": [
     "nl-design-system",
