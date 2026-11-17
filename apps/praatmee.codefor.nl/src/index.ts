@@ -10,7 +10,7 @@ const app = new Hono();
 
 app.route('/', home);
 
-app.get('/health', (c) => c.json({ status: 'ok' }));
+app.get('/healthz', (c) => c.json({ status: 'ok' }));
 
 app.route('/api/v1/users', users);
 

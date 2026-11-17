@@ -14,7 +14,7 @@ export const pageSecurityHeaders = secureHeaders({
   contentSecurityPolicy: {
     defaultSrc: ["'none'"],
     styleSrc: ["'self'"],
-    imgSrc: ["'self'", 'https://codefor.nl', 'https://www.codefor.nl'],
+    imgSrc: ["'self'"],
     formAction: ["'self'"],
     frameAncestors: ["'none'"],
     baseUri: ["'none'"],
