@@ -38,14 +38,14 @@ export const homePage = (state: PageState = { kind: 'form' }) => {
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <header class="header">
-          <a href="https://www.codefor.nl" class="logo">
+        <header class="praatmee-header">
+          <a href="https://www.codefor.nl" class="praatmee-logo">
             <img alt="" src="https://codefor.nl/img/larger_CfNL.png" width="68" height="68" />
             <span>Code for NL</span>
           </a>
         </header>
 
-        <main class="main" id="inhoud">
+        <main class="praatmee-main" id="inhoud">
           <h1>Praat mee op Slack</h1>
 
           ${state.kind === 'sent' ? sentMessage() : formView(state, errorEntries)}
@@ -56,7 +56,7 @@ export const homePage = (state: PageState = { kind: 'form' }) => {
 
 const sentMessage = () => {
   // autofocus makes screen readers announce the result.
-  return html` <div class="alert alert--success" role="status" tabindex="-1" autofocus>
+  return html` <div class="praatmee-alert praatmee-alert--success" role="status" tabindex="-1" autofocus>
       <h2>Gelukt!</h2>
       <p>
         Je ontvangt binnen enkele minuten een uitnodiging per e-mail. Niets ontvangen? Kijk ook in je map met ongewenste
@@ -104,18 +104,24 @@ const formView = (state: Exclude<PageState, { kind: 'sent' }>, errorEntries: [Fi
         short: true,
       })}
 
-      <div class="hp" aria-hidden="true">
+      <div class="praatmee-hp" aria-hidden="true">
         <label for="website">Laat dit veld leeg</label>
         <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
       </div>
 
-      <button type="submit" class="button">Nodig me uit!</button>
+      <button type="submit" class="praatmee-button">Nodig me uit!</button>
     </form>`;
 };
 
 // Error summary pattern: gets focus and links to each field.
 const errorSummary = (entries: [FieldName, string][]) => {
-  return html` <div class="alert alert--error" role="alert" tabindex="-1" autofocus aria-labelledby="foutmelding-titel">
+  return html` <div
+    class="praatmee-alert praatmee-alert--error"
+    role="alert"
+    tabindex="-1"
+    autofocus
+    aria-labelledby="foutmelding-titel"
+  >
     <h2 id="foutmelding-titel">Controleer het formulier</h2>
     <ul>
       ${entries.map(([name, message]) => html`<li><a href="#${name}">${message}</a></li>`)}
@@ -124,7 +130,7 @@ const errorSummary = (entries: [FieldName, string][]) => {
 };
 
 const problemMessage = (message: string) => {
-  return html` <div class="alert alert--error" role="alert" tabindex="-1" autofocus>
+  return html` <div class="praatmee-alert praatmee-alert--error" role="alert" tabindex="-1" autofocus>
     <h2>Er is iets misgegaan</h2>
     <p>${message}</p>
   </div>`;
@@ -145,14 +151,16 @@ const field = ({ name, type, autocomplete, value, error, hint, short }: FieldOpt
   const errorId = error ? `${name}-error` : '';
   const describedBy = [hintId, errorId].filter(Boolean).join(' ');
 
-  return html` <div class="field">
-    <label class="label" for="${name}">${fieldLabels[name]}</label>
-    ${hint ? html`<span class="hint" id="${hintId}">${hint}</span>` : ''}
+  return html` <div class="praatmee-field">
+    <label class="praatmee-label" for="${name}">${fieldLabels[name]}</label>
+    ${hint ? html`<span class="praatmee-hint" id="${hintId}">${hint}</span>` : ''}
     ${error
-      ? html`<span class="field-error" id="${errorId}"><span class="visually-hidden">Fout: </span>${error}</span>`
+      ? html`<span class="praatmee-field-error" id="${errorId}"
+          ><span class="praatmee-visually-hidden">Fout: </span>${error}</span
+        >`
       : ''}
     <input
-      class="input${short ? ' input--short' : ''}"
+      class="praatmee-input${short ? ' praatmee-input--short' : ''}"
       id="${name}"
       name="${name}"
       type="${type}"

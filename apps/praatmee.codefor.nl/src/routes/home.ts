@@ -8,25 +8,17 @@ import { pageSecurityHeaders } from '../middleware/security.js';
 import { requestInvitation } from '../services/invitation.js';
 import { invitationSchema, toFieldErrors } from '../validators/invitation.js';
 import { homePage } from '../views/home.js';
-import { styles } from '../views/styles.js';
 
 const home = new Hono();
 
 // Not '*': mounted at '/', that would also match /api/*.
 home.use('/', pageSecurityHeaders);
-home.use('/styles.css', pageSecurityHeaders);
 
 home.get('/', (context) => {
   if (context.req.query('verstuurd') === '1') {
     return context.html(homePage({ kind: 'sent' }));
   }
   return context.html(homePage());
-});
-
-home.get('/styles.css', (context) => {
-  context.header('Content-Type', 'text/css; charset=utf-8');
-  context.header('Cache-Control', 'public, max-age=3600');
-  return context.body(styles);
 });
 
 // Refill the form after an error, but never the honeypot.
