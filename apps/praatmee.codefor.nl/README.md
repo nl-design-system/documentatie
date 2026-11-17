@@ -53,14 +53,14 @@ An app that uses the API is responsible for presenting the results accessibly
 
 ## Environment variables
 
-| Variable              | Required | Description                                                                                                                    |
-| --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `SLACK_TOKEN`         | yes      | Org-level token with `admin.users:write` (Enterprise Grid only).                                                               |
-| `SLACK_TEAM_ID`       | yes      | Workspace ID to invite into.                                                                                                   |
-| `SLACK_CHANNEL_IDS`   | yes      | Comma-separated channel IDs new members join.                                                                                  |
-| `PUBLIC_ORIGIN`       | prod     | Production domain, e.g. `https://praatmee.codefor.nl`. Used for the form's CSRF check. Preview URLs are allowed automatically. |
-| `API_ALLOWED_ORIGINS` | no       | Comma-separated origins of the other apps that call the API. Unset = every API call gets 403.                                  |
-| `PORT`                | no       | Local development only. Defaults to `8787`.                                                                                    |
+| Variable              | Required | Description                                                                                                                                             |
+| --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SLACK_TOKEN`         | yes      | Org-level token with `admin.users:write` (Enterprise Grid only).                                                                                        |
+| `SLACK_TEAM_ID`       | yes      | Workspace ID to invite into.                                                                                                                            |
+| `SLACK_CHANNEL_IDS`   | yes      | Comma-separated channel IDs new members join.                                                                                                           |
+| `PUBLIC_ORIGIN`       | prod     | Production origin **including `https://`**, e.g. `https://praatmee.codefor.nl`. Used for the form's CSRF check. Preview URLs are allowed automatically. |
+| `API_ALLOWED_ORIGINS` | no       | Comma-separated origins **including `https://`** of the apps that call the API, e.g. `https://nldesignsystem.nl`. Unset = every API call gets 403.      |
+| `PORT`                | no       | Local development only. Defaults to `8787`.                                                                                                             |
 
 The app refuses to start when a required variable is missing.
 

@@ -13,16 +13,24 @@ const list = (name: string): string[] => {
     .filter(Boolean);
 };
 
+// Full origin like https://example.nl; also drops a trailing slash.
+const toOrigin = (name: string, value: string): string => {
+  if (!/^https?:\/\//.test(value)) {
+    throw new Error(`${name} must start with https:// (e.g. https://example.nl), got "${value}"`);
+  }
+  return new URL(value).origin;
+};
+
 const onVercel = process.env['VERCEL'] === '1';
 const localOrigin = `http://localhost:${process.env['PORT'] ?? 8787}`;
 
 export const config = {
-  // Other apps allowed to call the API. Normalised so a trailing slash still matches.
-  allowedOrigins: list('API_ALLOWED_ORIGINS').map((value) => new URL(value).origin),
+  // Other apps allowed to call the API.
+  allowedOrigins: list('API_ALLOWED_ORIGINS').map((value) => toOrigin('API_ALLOWED_ORIGINS', value)),
 
   // Origins allowed to post the form (CSRF). VERCEL_* covers preview deployments.
   formOrigins: [
-    process.env['PUBLIC_ORIGIN']?.trim(),
+    process.env['PUBLIC_ORIGIN']?.trim() && toOrigin('PUBLIC_ORIGIN', process.env['PUBLIC_ORIGIN'].trim()),
     process.env['VERCEL_URL'] && `https://${process.env['VERCEL_URL']}`,
     process.env['VERCEL_BRANCH_URL'] && `https://${process.env['VERCEL_BRANCH_URL']}`,
     onVercel ? undefined : localOrigin,
