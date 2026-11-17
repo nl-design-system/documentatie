@@ -18,7 +18,8 @@ users.post(
     onError: (context) => context.json({ message: 'Verzoek te groot.', success: false }, 413),
   }),
   zValidator('json', invitationSchema, (result, context) => {
-    if (!result.success) {
+    // `=== false`, not `!`: Vercel compiles without strict mode, where `!` doesn't narrow.
+    if (result.success === false) {
       return context.json({ errors: toFieldErrors(result.error), message: 'Ongeldige invoer.', success: false }, 400);
     }
     return undefined;
