@@ -8,6 +8,7 @@ import { clientLoadPlugin } from '@nl-design-system-community/documentation-mark
 import { createSharedPlugins } from '@nl-design-system-community/documentation-markdown-plugins/src/shared-plugins.ts';
 import { defineConfig } from 'astro/config';
 import { globSync } from 'node:fs';
+import { loadEnv } from 'vite';
 import { appendCSPToHTAccess } from './append-csp-to-htaccess.ts';
 import { deadLinkChecker } from './dead-link-checker.ts';
 import { siteBaseUrl } from './src/seo.config.ts';
@@ -20,7 +21,19 @@ const cspDevConfig: AstroUserConfig = {
   },
 };
 
-const cspConnectSrcSources = ['https://*.algolia.net', 'https://*.algolianet.com', 'https://*.algolia.io'].join(' ');
+// CommunitySignupForm posts to the praatmee API; also allow a custom URL from .env.
+const { PUBLIC_PRAATMEE_API_URL } = loadEnv(process.env['NODE_ENV'] ?? 'production', process.cwd(), 'PUBLIC_');
+const praatmeeOrigins = [
+  'https://praatmee.codefor.nl',
+  ...(PUBLIC_PRAATMEE_API_URL ? [new URL(PUBLIC_PRAATMEE_API_URL).origin] : []),
+];
+
+const cspConnectSrcSources = [
+  'https://*.algolia.net',
+  'https://*.algolianet.com',
+  'https://*.algolia.io',
+  ...new Set(praatmeeOrigins),
+].join(' ');
 
 const cspImgSrcSources = [
   'https://raw.githubusercontent.com',
@@ -63,7 +76,7 @@ const cspConfig = process.env['NODE_ENV'] === 'development' ? cspDevConfig : csp
 // generation of the content collections.
 globalThis.unlistedPages = new Set();
 
-const mdxClientLoad = clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp']);
+const mdxClientLoad = clientLoadPlugin(['Checklist', 'CommunitySignupForm', 'DesignTokens', 'NewsletterSignUp']);
 
 const markdownProcessor = unified({
   rehypePlugins: sharedPlugins.rehypePlugins,

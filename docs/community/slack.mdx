@@ -25,19 +25,13 @@ import { ButtonLink } from "@nl-design-system-community/documentation-components
 import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@nl-design-system-community/documentation-components/src/functional-icon/index";
 import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
+import { CommunitySignupForm } from "@nl-design-system-community/documentation-components/src/components/CommunitySignupForm";
 
 # Slack voor NL Design System
 
-NL Design System werkt met de [Slack van de Code for NL community](https://codefornl.slack.com/). Je kunt jezelf aanmelden via het formulier op [praatmee.codefor.nl](https://praatmee.codefor.nl), iedereen is welkom!
+NL Design System werkt met de [Slack van de Code for NL community](https://codefornl.slack.com/). Vul het formulier in en je krijgt een uitnodiging per e-mail. Iedereen is welkom! Je kunt je ook aanmelden op [praatmee.codefor.nl](https://praatmee.codefor.nl).
 
-<ActionGroup>
-  <ButtonLink href="https://praatmee.codefor.nl/" purpose="primary">
-    {"Doe mee op Slack"}
-    <Icon slot="icon-end">
-      <IconChevronRight />
-    </Icon>
-  </ButtonLink>
-</ActionGroup>
+<CommunitySignupForm apiUrl={import.meta.env.PUBLIC_PRAATMEE_API_URL} thanksPage="/slack/bedankt" />
 
 ## Chatkanalen
 
