@@ -38,6 +38,14 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
+## 🔑 Environment variables
+
+Optional. Put them in `apps/nldesignsystem.nl/.env` (not committed).
+
+| Variable                  | Default                                    | Description                                                                                                                       |
+| ------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| `PUBLIC_PRAATMEE_API_URL` | `https://praatmee.codefor.nl/api/v1/users` | API used by the Slack signup form on `/slack`. For local development: `http://localhost:3000/api/v1/users` (praatmee.codefor.nl). |
+
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

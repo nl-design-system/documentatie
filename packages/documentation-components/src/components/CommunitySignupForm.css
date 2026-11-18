@@ -1,0 +1,12 @@
+.utrecht-textbox.ma-community-signup-form__short-field {
+  max-inline-size: 10ch;
+}
+
+/* Honeypot: off-screen for everyone, also hidden from assistive technology via aria-hidden. */
+.ma-community-signup-form__honeypot {
+  block-size: 1px;
+  inline-size: 1px;
+  inset-inline-start: -10000px;
+  overflow: hidden;
+  position: absolute;
+}
