@@ -27,7 +27,7 @@
     "./*": "./*"
   },
   "dependencies": {
-    "@nl-design-system-candidate/button-docs": "1.0.2",
+    "@nl-design-system-candidate/button-docs": "1.1.0",
     "@nl-design-system-candidate/button-tokens": "1.0.0",
     "@nl-design-system-candidate/code-block-docs": "1.2.1",
     "@nl-design-system-candidate/code-block-tokens": "2.0.3",
