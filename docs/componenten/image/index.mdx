@@ -23,6 +23,24 @@ keywords:
 {/* @license CC0-1.0 */}
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
 import { DefinitionOfDone, HelpImproveComponent, Implementations, Related } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
+import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
+import MissingAltMeta from "@nl-design-system-unstable/documentation/componenten/image/\_rules/missing-alt/metadata.json";
+import MissingAltExplanation from "@nl-design-system-unstable/documentation/componenten/image/\_rules/missing-alt/explanation.md";
+import MissingAltSolution from "@nl-design-system-unstable/documentation/componenten/image/\_rules/missing-alt/solution.md";
+import MissingAltSolutionDecorative from "@nl-design-system-unstable/documentation/componenten/image/\_rules/missing-alt/decorative.solution.md";
+import FilenameAltMeta from "@nl-design-system-unstable/documentation/componenten/image/\_rules/filename-alt/metadata.json";
+import FilenameAltExplanation from "@nl-design-system-unstable/documentation/componenten/image/\_rules/filename-alt/explanation.md";
+import FilenameAltSolution from "@nl-design-system-unstable/documentation/componenten/image/\_rules/filename-alt/solution.md";
+import MissingPeriodMeta from "@nl-design-system-unstable/documentation/componenten/image/\_rules/missing-period/metadata.json";
+import MissingPeriodExplanation from "@nl-design-system-unstable/documentation/componenten/image/\_rules/missing-period/explanation.md";
+import MissingPeriodSolution from "@nl-design-system-unstable/documentation/componenten/image/\_rules/missing-period/solution.md";
+import TextInImageMeta from "@nl-design-system-unstable/documentation/componenten/image/\_rules/text-in-image/metadata.json";
+import TextInImageExplanation from "@nl-design-system-unstable/documentation/componenten/image/\_rules/text-in-image/explanation.md";
+import TextInImageSolution from "@nl-design-system-unstable/documentation/componenten/image/\_rules/text-in-image/solution.md";
+import ChartMeta from "@nl-design-system-unstable/documentation/componenten/image/\_rules/chart/metadata.json";
+import ChartExplanation from "@nl-design-system-unstable/documentation/componenten/image/\_rules/chart/explanation.md";
+import ChartSolution from "@nl-design-system-unstable/documentation/componenten/image/\_rules/chart/solution.md";
+import ChartSolutionTable from "@nl-design-system-unstable/documentation/componenten/image/\_rules/chart/table.solution.md";
 
 export const title = "Image";
 export const issueNumber = 201;
@@ -39,4 +57,51 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Related component={component} />
 
+## Veel gemaakte fouten bij het inzetten van Image
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{MissingAltMeta.title}</Heading>
+
+<MissingAltExplanation />
+
+#### Oplossing
+
+<MissingAltSolution />
+
+<MissingAltSolutionDecorative />
+
+<Heading level={3}>{FilenameAltMeta.title}</Heading>
+
+<FilenameAltExplanation />
+
+#### Oplossing
+
+<FilenameAltSolution />
+
+<Heading level={3}>{MissingPeriodMeta.title}</Heading>
+
+<MissingPeriodExplanation />
+
+#### Oplossing
+
+<MissingPeriodSolution />
+
+<Heading level={3}>{TextInImageMeta.title}</Heading>
+
+<TextInImageExplanation />
+
+#### Oplossing
+
+<TextInImageSolution />
+
+<Heading level={3}>{ChartMeta.title}</Heading>
+
+<ChartExplanation />
+
+#### Oplossing
+
+<ChartSolution />
+
+<ChartSolutionTable />
 <HelpImproveComponent component={component} headingLevel={2} />
