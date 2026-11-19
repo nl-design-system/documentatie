@@ -30,6 +30,13 @@ import {
   Implementations,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
+import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
+import ItalicParagraphMeta from "@nl-design-system-unstable/documentation/componenten/blockquote/\_rules/italic-paragraph/metadata.json";
+import ItalicParagraphExplanation from "@nl-design-system-unstable/documentation/componenten/blockquote/\_rules/italic-paragraph/explanation.md";
+import ItalicParagraphSolution from "@nl-design-system-unstable/documentation/componenten/blockquote/\_rules/italic-paragraph/solution.md";
+import HeadingMeta from "@nl-design-system-unstable/documentation/componenten/blockquote/\_rules/heading/metadata.json";
+import HeadingExplanation from "@nl-design-system-unstable/documentation/componenten/blockquote/\_rules/heading/explanation.md";
+import HeadingSolution from "@nl-design-system-unstable/documentation/componenten/blockquote/\_rules/heading/solution.md";
 
 export const title = "Blockquote";
 export const issueNumber = 73;
@@ -45,5 +52,25 @@ export const component = componentProgress.find((item) => item.number === issueN
 <Implementations component={component} headingLevel={3} />
 
 <Related component={component} />
+
+## Veel gemaakte fouten bij het inzetten van Blockquote
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{ItalicParagraphMeta.title}</Heading>
+
+<ItalicParagraphExplanation />
+
+#### Oplossing
+
+<ItalicParagraphSolution />
+
+<Heading level={3}>{HeadingMeta.title}</Heading>
+
+<HeadingExplanation />
+
+#### Oplossing
+
+<HeadingSolution />
 
 <HelpImproveComponent component={component} headingLevel={2} />
