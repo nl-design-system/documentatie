@@ -65,6 +65,12 @@ import { DesignTokens } from "@nl-design-system-community/documentation-componen
 import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
 import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/code-tokens";
+import NotCodeMeta from "@nl-design-system-unstable/documentation/componenten/code/\_rules/not-code/metadata.json";
+import NotCodeExplanation from "@nl-design-system-unstable/documentation/componenten/code/\_rules/not-code/explanation.md";
+import NotCodeSolution from "@nl-design-system-unstable/documentation/componenten/code/\_rules/not-code/solution.md";
+import TooLongMeta from "@nl-design-system-unstable/documentation/componenten/code/\_rules/too-long/metadata.json";
+import TooLongExplanation from "@nl-design-system-unstable/documentation/componenten/code/\_rules/too-long/explanation.md";
+import TooLongSolution from "@nl-design-system-unstable/documentation/componenten/code/\_rules/too-long/solution.md";
 
 export const title = "Code";
 export const issueNumber = 326;
@@ -144,3 +150,23 @@ Gebruik de [Code Block](/code-block) component als de code meerdere regels besla
 <Implementations component={component} headingLevel={3} />
 
 <Related component={component} />
+
+## Veel gemaakte fouten bij het inzetten van Code
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{NotCodeMeta.title}</Heading>
+
+<NotCodeExplanation />
+
+#### Oplossing
+
+<NotCodeSolution />
+
+<Heading level={3}>{TooLongMeta.title}</Heading>
+
+<TooLongExplanation />
+
+#### Oplossing
+
+<TooLongSolution />
