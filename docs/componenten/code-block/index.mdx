@@ -68,6 +68,12 @@ import { DesignTokens } from "@nl-design-system-community/documentation-componen
 import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
 import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/code-block-tokens";
+import NotCodeMeta from "@nl-design-system-unstable/documentation/componenten/code-block/\_rules/not-code/metadata.json";
+import NotCodeExplanation from "@nl-design-system-unstable/documentation/componenten/code-block/\_rules/not-code/explanation.md";
+import NotCodeSolution from "@nl-design-system-unstable/documentation/componenten/code-block/\_rules/not-code/solution.md";
+import EmptyMeta from "@nl-design-system-unstable/documentation/componenten/code-block/\_rules/empty/metadata.json";
+import EmptyExplanation from "@nl-design-system-unstable/documentation/componenten/code-block/\_rules/empty/explanation.md";
+import EmptySolution from "@nl-design-system-unstable/documentation/componenten/code-block/\_rules/empty/solution.md";
 
 export const title = "Code Block";
 export const issueNumber = 329;
@@ -147,3 +153,23 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
 <Implementations component={component} headingLevel={3} />
 
 <Related component={component} />
+
+## Veel gemaakte fouten bij het inzetten van Code Block
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{NotCodeMeta.title}</Heading>
+
+<NotCodeExplanation />
+
+#### Oplossing
+
+<NotCodeSolution />
+
+<Heading level={3}>{EmptyMeta.title}</Heading>
+
+<EmptyExplanation />
+
+#### Oplossing
+
+<EmptySolution />
