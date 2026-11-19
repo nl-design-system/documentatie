@@ -1,0 +1,10 @@
+{
+  "label": "Adres uitvragen",
+  "link": {
+    "type": "doc",
+    "id": "/voorbeelden/patronen-en-templates/adres"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
