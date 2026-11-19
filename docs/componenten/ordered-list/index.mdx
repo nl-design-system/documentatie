@@ -44,9 +44,14 @@ import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/a
 import ContrastMeta from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/contrast/metadata.json";
 import ContrastExplanation from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/contrast/explanation.md";
 import ContrastSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/contrast/solution.md";
+import EmptyItemMeta from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/empty-item/metadata.json";
+import EmptyItemExplanation from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/empty-item/explanation.md";
+import EmptyItemSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/empty-item/solution.md";
+import EmptyItemWriteSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/empty-item/write.solution.md";
 import LanguageMeta from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/language/metadata.json";
 import LanguageExplanation from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/language/explanation.md";
 import LanguageSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/language/solution.md";
+import LanguageTranslateSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/language/translate.solution.md";
 import ListSemanticsMeta from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/list-semantics/metadata.json";
 import ListSemanticsExplanation from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/list-semantics/explanation.md";
 import ListSemanticsSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/list-semantics/solution.md";
@@ -157,6 +162,16 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <ContrastSolution />
 
+<Heading level={3}>{EmptyItemMeta.title}</Heading>
+
+<EmptyItemExplanation />
+
+#### Oplossing
+
+<EmptyItemSolution />
+
+<EmptyItemWriteSolution />
+
 <Heading level={3}>{LanguageMeta.title}</Heading>
 
 <LanguageExplanation />
@@ -164,6 +179,8 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 #### Oplossing
 
 <LanguageSolution />
+
+<LanguageTranslateSolution />
 
 <Heading level={3}>{ListSemanticsMeta.title}</Heading>
 
