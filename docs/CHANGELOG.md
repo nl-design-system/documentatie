@@ -1,5 +1,23 @@
 # @nl-design-system-unstable/documentation
 
+## 2.2.0
+
+### Minor Changes
+
+- e45068a: `dist/component-rules.json`: elke regel heeft nu een `solutions` lijst met per oplossing een `id`, een `$comment` en de naar HTML geconverteerde tekst in `html`. De losse keys `solution` en `<naam>.solution` per regel zijn vervallen.
+- e720888: Knoplabels van de oplossingen bij Table korter gemaakt.
+- e720888: Link naar Vlaanderen Design System geüpdatet.
+- 9c8958b: Toevoeging snippetteksten veelgemaakte fouten Unordered List.
+- 9c7ee31: Verwijzing kleurcontrast verwijst naar richtlijnen rondom kleur in plaats van Paragraph component.
+- e720888: Regels voor de definitielijst
+- e720888: docs(table): regels voor de editor toegevoegd
+- e720888: NL Design System Baseline van november 2026.
+- 37cc214: Paragraph: oplossingen als losse bestanden met JSON voor de editor
+- e720888: Regels voor lege items in opsomming en genummerde lijst
+- e632165: Link: één oplossing per bestand, met een id per oplossing
+- 3d3924c: Heading: oplossingen als losse bestanden met JSON voor de editor
+- 351dade: Toevoeging snippetteksten veelgemaakte fouten Ordered List.
+
 ## 2.1.0
 
 ### Minor Changes
