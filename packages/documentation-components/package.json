@@ -7,6 +7,19 @@
   "keywords": [
     "nl-design-system"
   ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./index.css": "./dist/index.css",
+    "./src/*": "./src/*"
+  },
   "private": false,
   "publishConfig": {
     "access": "public",
@@ -123,6 +136,7 @@
     "@types/prismjs": "1.26.3",
     "@types/react": "18.3.27",
     "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "6.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "rehype": "13.0.2",
@@ -134,10 +148,18 @@
     "remark-rehype": "11.1.2",
     "remark-smartypants": "3.0.3",
     "unified": "11.0.5",
+    "vite": "8.3.5",
+    "vite-plugin-dts": "5.1.2",
     "vitest": "4.1.11"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "scripts": {
     "lint": "tsc --noEmit",
-    "test": "vitest run --config ./vitest-jsdom.config.ts"
+    "test": "vitest run --config ./vitest-jsdom.config.ts",
+    "build": "vite build",
+    "watch": "vite build --watch --mode development"
   }
 }
