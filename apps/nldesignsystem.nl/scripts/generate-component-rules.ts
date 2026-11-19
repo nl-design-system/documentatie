@@ -44,17 +44,26 @@ async function readRuleSlugs(rulesDir: string): Promise<string[]> {
 
 // Keys the rule object itself uses. A markdown file may not claim one of these,
 // because the markdown keys are spread last and would overwrite the metadata.
-const reservedKeys = new Set(['subject', 'id', 'title']);
+const reservedKeys = new Set(['subject', 'id', 'title', 'solutions']);
+
+/**
+ * `solution.md` and `<name>.solution.md` describe a solution. Each comes with a
+ * `.json` file of the same name that holds its `id` and `$comment`.
+ */
+function isSolution(fileName: string): boolean {
+  return fileName === 'solution.md' || fileName.endsWith('.solution.md');
+}
 
 /**
  * Build the rule object for a single `_rules/<slug>` folder: a reference to its
- * `subject`, the metadata id/title, plus one key per markdown file (`solution`,
- * `explanation`, `editor-error`, …). Every markdown file is rendered to HTML that
- * uses NL Design System components.
+ * `subject`, the metadata id/title, a `solutions` list, plus one key per other
+ * markdown file (`explanation`, `editor-error`, …). Every markdown file is rendered
+ * to HTML that uses NL Design System components.
  *
+ * @param ruleDir
  * @param subject id of the subject this rule belongs to
  */
-async function readRule(ruleDir: string, subject: string): Promise<Record<string, string>> {
+async function readRule(ruleDir: string, subject: string): Promise<Record<string, unknown>> {
   const [metadataText, entries] = await Promise.all([
     readFile(join(ruleDir, 'metadata.json'), 'utf8'),
     readdir(ruleDir, { withFileTypes: true }),
@@ -67,17 +76,36 @@ async function readRule(ruleDir: string, subject: string): Promise<Record<string
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const rendered = await Promise.all(
-    markdownFiles.map(async (entry) => {
-      const key = basename(entry.name, '.md');
-      if (reservedKeys.has(key)) {
-        throw new Error(`${join(ruleDir, entry.name)} uses the reserved name "${key}", rename the file`);
-      }
-      return [key, await readMarkdownAsHtml(join(ruleDir, entry.name))] as const;
+    markdownFiles
+      .filter((entry) => !isSolution(entry.name))
+      .map(async (entry) => {
+        const key = basename(entry.name, '.md');
+        if (reservedKeys.has(key)) {
+          throw new Error(`${join(ruleDir, entry.name)} uses the reserved name "${key}", rename the file`);
+        }
+        return [key, await readMarkdownAsHtml(join(ruleDir, entry.name))] as const;
+      }),
+  );
+
+  // The plain `solution.md` goes first, the named solutions follow alphabetically.
+  const solutionFiles = markdownFiles
+    .filter((entry) => isSolution(entry.name))
+    .sort((a, b) => Number(b.name === 'solution.md') - Number(a.name === 'solution.md'));
+
+  const solutions = await Promise.all(
+    solutionFiles.map(async (entry) => {
+      const [solutionText, html] = await Promise.all([
+        readFile(join(ruleDir, `${basename(entry.name, '.md')}.json`), 'utf8'),
+        readMarkdownAsHtml(join(ruleDir, entry.name)),
+      ]);
+      const { id, $comment } = JSON.parse(solutionText);
+      return { id, $comment, html };
     }),
   );
 
   return {
     id: metadata.id,
+    solutions,
     subject,
     title: metadata.title,
     ...Object.fromEntries(rendered),
