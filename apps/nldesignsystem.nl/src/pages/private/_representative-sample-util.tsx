@@ -20,7 +20,7 @@ const representativeSample = [
   { href: '/events/heartbeat/videos/', label: 'NL Design System Heartbeat: video-overzicht van de ' },
   { href: '/events/design-systems-week-2025/programma/', label: 'Design Systems Week: huidig programma' },
   { href: '/events/design-systems-week-2024/programma/', label: 'Design Systems Week: video-overzicht' },
-  { href: '/project/kernteam/', label: 'Cards met contactinfo voor kernteam' },
+  { href: '/contact/', label: 'Cards met contactinfo voor kernteam' },
   { href: '/zoeken?query=button', label: 'Zoekresultaten: button' },
   {
     href: '/community/belangenorganisaties/aanmelden/',
