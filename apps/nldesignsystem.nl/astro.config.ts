@@ -98,7 +98,7 @@ export default defineConfig({
     }),
     deadLinkChecker({
       assets: globSync('**/*', { cwd: '../../static' }),
-      ignoreTarget: [/^\/blog/, /^\/miro$/],
+      ignoreTarget: [/^\/miro$/],
     }),
     appendCSPToHTAccess(),
   ],

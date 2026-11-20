@@ -26,7 +26,7 @@ Bijvoorbeeld:
 
 Controleer tijdens het invullen de gegevens op invoerfouten en geef de gebruiker de mogelijkheid de gegevens te verbeteren.
 
-Een goede foutafhandeling tijdens het invullen van een formulier helpt de gebruiker fouten te voorkomen en te corrigeren. Lees hiervoor ook de [richtlijnen over foutmeldingen](/richtlijnen/formulieren/foutmeldingen/) en onze blogpost [Toegankelijke foutmeldingen in formulieren](/blog/toegankelijke-foutmeldingen-formulieren).
+Een goede foutafhandeling tijdens het invullen van een formulier helpt de gebruiker fouten te voorkomen en te corrigeren. Lees hiervoor ook de [richtlijnen over foutmeldingen](/richtlijnen/formulieren/foutmeldingen/).
 
 ## Bevestigd
 

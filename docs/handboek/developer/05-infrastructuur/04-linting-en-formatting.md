@@ -101,7 +101,7 @@ Als je in jouw situatie veel onnodige foutmeldingen krijgt, dan kun je het volge
 ### npm-package-json-lint
 
 Met [npm-package-json-lint](https://npmpackagejsonlint.org/) wordt de `package.json` gecontroleerd, bijvoorbeeld op het bestaan van een author.
-Voor NL Design System wordt onder andere bijgehouden dat de licentie op [EUPL](https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system/) staat.
+Voor NL Design System wordt onder andere bijgehouden dat de licentie op [EUPL](/open-source/eupl/) staat.
 
 - Geconfigureerd in `npmpackagejsonlint.config.cjs` ([voorbeeld](https://github.com/nl-design-system/example/blob/main/npmpackagejsonlint.config.cjs))
 - Uitvoeren met `pnpm lint:package-json`

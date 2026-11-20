@@ -1,7 +1,6 @@
 DirectoryIndex index.html
 
 # Permanent redirects because the file moved or the slug changed
-Redirect 301 "/blog/nlds-zelfstandig" "/blog/nl-design-system-zelfstandig-verder"
 Redirect 301 "/breadcrumb" "/breadcrumb-navigation"
 Redirect 301 "/button-group" "/action-group"
 Redirect 301 "/componenten/definition-of-done" "/handboek/component-bijdragen/definition-of-done"
