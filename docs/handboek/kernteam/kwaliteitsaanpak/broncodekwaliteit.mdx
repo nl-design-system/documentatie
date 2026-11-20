@@ -77,7 +77,7 @@ Je kunt Git instellen om elke keer dat je een commit doet automatisch de code co
 
 Installeer de pre-commit hook met `pnpm run prepare`, nadat je `pnpm install` hebt gedaan. Hierna zul je zien dat `git commit` extra controles uitvoert voordat de commit wordt opgeslagen.
 
-Wanneer je geen tijd hebt om de fouten op te lossen, maar wel een backup wil committen, dan kun je met `git commit --no-verify` de commit doen zonder checks. [Continuous integration](/project/kwaliteitsaanpak/continuous-integration) checks zullen voorkomen dat deze onvoltooide code per ongeluk wordt gemerged.
+Wanneer je geen tijd hebt om de fouten op te lossen, maar wel een backup wil committen, dan kun je met `git commit --no-verify` de commit doen zonder checks. [Continuous integration](/handboek/kernteam/kwaliteitsaanpak/continuous-integration) checks zullen voorkomen dat deze onvoltooide code per ongeluk wordt gemerged.
 
 Pre-commit hooks helpen ook te garanderen dat de code van elke atomic commit klopt, en niet alleen de code van de laatste commit in de branch. Hiermee wordt het makkelijker om met `git cherry-pick` alvast enkele commits te mergen naar de `main` branch, voordat de volledige branch klaar is.
 
@@ -93,7 +93,7 @@ De pre-commit hook gebaseerd op `lint-staged` is ook extra gebruiksvriendelijk, 
 
 ## Continuous integration \{#continuous-integration\}
 
-Gebruik `pnpm run --if-present lint` als verplichte check in je continuous integration pipeline, zoals in GitHub Actions om Pull Requests te controleren. Lees meer in het artikel over [continuous integration](/project/kwaliteitsaanpak/continuous-integration/).
+Gebruik `pnpm run --if-present lint` als verplichte check in je continuous integration pipeline, zoals in GitHub Actions om Pull Requests te controleren. Lees meer in het artikel over [continuous integration](/handboek/kernteam/kwaliteitsaanpak/continuous-integration/).
 
 - Gebruik `prettier --check` voor Continuous Integration, om te garanderen dat alle code consistente opmaak heeft.
 - Gebruik `stylelint --allow-empty-input '**/*.{css,scss}'` om CSS en SCSS te controleren.
