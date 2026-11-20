@@ -21,7 +21,7 @@ export const navigation = navigationRoot(
     items: [
       navigationGroup({ filePath: 'docs/introductie', label: 'Introductie' }),
       navigationGroup({
-        index: navigationItem('docs/handboek/index.json'),
+        index: navigationItem('docs/handboek/index.mdx'),
         items: [
           navigationItem('docs/handboek/componenten-vinden.mdx'),
           navigationGroup({ filePath: 'docs/handboek/bijdragen', label: 'Bijdragen' }),
