@@ -12,7 +12,7 @@ type: Task
 
 ## TLDR
 
-Op estafettemodeldagen gaan we de community langs componenten, om na te gaan of ze voldoen aan onze [Definition of Done](https://www.nldesignsystem.nl/componenten/definition-of-done/). Zo krijgen we inzicht in welke componenten welke status hebben, en werken we toe naar het verder brengen van componenten via het [estafettemodel](https://www.nldesignsystem.nl/handboek/estafettemodel/).
+Op estafettemodeldagen gaan we de community langs componenten, om na te gaan of ze voldoen aan onze [Definition of Done](https://www.nldesignsystem.nl/componenten/definition-of-done/). Zo krijgen we inzicht in welke componenten welke status hebben, en werken we toe naar het verder brengen van componenten via het [estafettemodel](https://www.nldesignsystem.nl/introductie/estafettemodel/).
 
 ## User Story
 
@@ -89,7 +89,7 @@ Door: Community Relations
 
 ```
 **Morgen is er weer een estafettemodeldag.**
-Op estafettemodeldagen gaan we met designers en developers langs componenten, om na te gaan of ze voldoen aan onze [Definition of Done](https://www.nldesignsystem.nl/componenten/definition-of-done). Zo krijgen jullie inzicht in welke componenten welke status hebben en waar beschikbaar zijn, en werken we toe naar het verder brengen van componenten via het [estafettemodel](https://www.nldesignsystem.nl/handboek/estafettemodel/).
+Op estafettemodeldagen gaan we met designers en developers langs componenten, om na te gaan of ze voldoen aan onze [Definition of Done](https://www.nldesignsystem.nl/componenten/definition-of-done). Zo krijgen jullie inzicht in welke componenten welke status hebben en waar beschikbaar zijn, en werken we toe naar het verder brengen van componenten via het [estafettemodel](https://www.nldesignsystem.nl/introductie/estafettemodel/).
 Heb je wat in te brengen, voel je vrij om het toe te voegen.:man_dancing:
 Heb je je nog niet aangemeld? Laat het even weten dat je komt, door te reageren!
 :clock2: Tijd: <<10:00 - 17:00>>

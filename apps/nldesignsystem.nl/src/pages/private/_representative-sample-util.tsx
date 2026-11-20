@@ -44,7 +44,7 @@ const representativeSample = [
   },
   { href: '/wcag/', label: 'WCAG-succescriteria-overzicht' },
   { href: '/toegankelijkheidsverklaring', label: 'Toegankelijkheidsrapport' },
-  { href: '/handboek/estafettemodel/', label: 'Documentatiepagina met widget voor Estafettemodel' },
+  { href: '/introductie/estafettemodel/', label: 'Documentatiepagina met widget voor Estafettemodel' },
   { href: '/handboek/designer/figma-structuur/', label: 'Documentatiepagina met infographics' },
   { href: '/handboek/huisstijl/basis-tokens/', label: 'Documentatiepagina met technische documentatie' },
   {

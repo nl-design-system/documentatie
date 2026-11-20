@@ -1,0 +1,89 @@
+---
+title: Onderdelen van NL Design System
+hide_title: true
+hide_table_of_contents: true
+navigation_order: 3
+pagination_label: Onderdelen van NL Design System
+description: "Componenten, patronen en templates, richtlijnen, thema's en gebruikersonderzoek: de 5 onderdelen waaruit NL Design System is opgebouwd."
+keywords:
+  - componenten
+  - patronen
+  - templates
+  - richtlijnen
+  - design system
+---
+
+import {
+  ThemesSVG,
+  GuidelineSVG,
+  ComponentSVG,
+  PatternSVG,
+  UserResearchSVG,
+} from "@nl-design-system-community/documentation-components/src/components/Icons/index.tsx";
+import { Grid } from "@nl-design-system-community/documentation-components/src/grid/grid.tsx";
+import { Paragraph } from "@nl-design-system-community/documentation-components/src/paragraph/paragraph";
+import { Card } from "@nl-design-system-community/documentation-components/src/card/card.tsx";
+
+{/* @license CC0-1.0 */}
+
+# Onderdelen van NL Design System
+
+<Paragraph purpose="lead">
+  NL Design System bestaat uit verschillende onderdelen: componenten, patronen en templates, richtlijnen, thema's en
+  gebruikersonderzoeken. Samen vormt dit de basis voor een toegankelijke en herkenbare website of applicatie.
+</Paragraph>
+
+De [community](/introductie/kernteam-community/) ontwikkelt deze onderdelen op basis van richtlijnen, gebruikersonderzoek en praktijkervaring. Zo kan iedereen herbruikbare, toegankelijke en gebruiksvriendelijke websites en webapplicaties maken op basis van alles wat eerder door anderen is uitgezocht.
+
+<Grid>
+  <Grid.Cell span="all">
+    <Card
+      heading="Componenten"
+      headingLevel={2}
+      description="Componenten zijn herbruikbare elementen, zoals een knop, een invoerveld of een menu."
+      href="/componenten/"
+    >
+      <ComponentSVG slot="image" />
+    </Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      heading="Patronen en templates"
+      headingLevel={2}
+      description="Patronen laten zien hoe componenten samenwerken bij een taak die een gebruiker wil uitvoeren. Templates zijn complete voorbeeldpagina's die overgenomen kunnen worden."
+      href="/voorbeelden/patronen-en-templates/"
+    >
+      <PatternSVG slot="image" />
+    </Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      heading="Richtlijnen"
+      headingLevel={2}
+      description="Richtlijnen geven concrete adviezen over stijl, content en formulieren, met uitleg waarom iets zo werkt."
+      href="/richtlijnen/"
+    >
+      <GuidelineSVG slot="image" />
+    </Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      heading="Thema's"
+      headingLevel={2}
+      description="Elke deelnemende organisatie legt de eigen huisstijl vast als thema. Daardoor draait dezelfde toegankelijke logica op verschillende plekken, met behoud van de eigen identiteit."
+      href="/handboek/huisstijl-vastleggen/overzicht/"
+    >
+      <ThemesSVG slot="image" />
+    </Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      heading="Gebruikersonderzoek"
+      headingLevel={2}
+      description="Op gebruikersonderzoeken.nl staan onderzoeken van overheidsorganisaties. Die onderbouwen de keuzes in het design system."
+      href="https://gebruikersonderzoeken.nl"
+    >
+      <UserResearchSVG slot="image" />
+    </Card>
+  </Grid.Cell>
+</Grid>
