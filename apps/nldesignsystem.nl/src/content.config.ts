@@ -114,7 +114,6 @@ const docs = defineCollection({
       'private/**/*.{md,mdx}',
       'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
-      'woordenlijst/**/*.{md,mdx}',
       'componenten/index.mdx',
       '!**/_*/**',
       '!**/_*.{md,mdx}',

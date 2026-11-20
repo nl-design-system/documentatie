@@ -32,4 +32,4 @@ Maar zo:
 </pre>
 ```
 
-**Let op**: Het element `<code>` wordt op het moment van schrijven (2025) nog niet ondersteund door alle hulpsoftware. Dat betekent niet dat bezoekers die bijvoorbeeld een [screenreader](/woordenlijst/#screenreader) gebruiken de inhoud van het element niet horen, alleen dat er op dit moment niet wordt aangegeven dat het om een `code` element gaat.
+**Let op**: Het element `<code>` wordt op het moment van schrijven (2025) nog niet ondersteund door alle hulpsoftware. Dat betekent niet dat bezoekers die bijvoorbeeld een screenreader gebruiken de inhoud van het element niet horen, alleen dat er op dit moment niet wordt aangegeven dat het om een `code` element gaat.

@@ -60,7 +60,6 @@ const representativeSample = [
   { href: '/handboek/designer/figma-structuur/', label: 'Overzicht van design tokens API' },
   { href: '/slack/', label: 'Documentatiepagina met mix van interne en externe links' },
   { href: '/privacyverklaring/', label: 'Privacyverklaring' },
-  { href: '/woordenlijst/', label: 'Woordenlijst' },
   { href: '/CHANGELOG/', label: 'Changelog' },
 ];
 

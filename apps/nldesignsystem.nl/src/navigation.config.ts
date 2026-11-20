@@ -31,7 +31,6 @@ export const navigation = navigationRoot(
           navigationGroup({ filePath: 'docs/handboek/organisatie', label: 'Voor organisaties' }),
           navigationGroup({ filePath: 'docs/handboek/kernteam', label: 'Voor het kernteam' }),
           navigationGroup({ filePath: 'docs/baseline' }),
-          navigationItem('docs/woordenlijst/index.mdx'),
         ],
         label: 'Handboek',
       }),
