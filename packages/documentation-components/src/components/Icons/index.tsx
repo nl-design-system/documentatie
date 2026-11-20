@@ -191,7 +191,7 @@ export const ComponentSVG = ({ className, ...props }: HTMLAttributes<SVGElement>
   </svg>
 );
 
-export const ExamplesSVG = ({ className, ...props }: HTMLAttributes<SVGElement>) => (
+export const TemplateSVG = ({ className, ...props }: HTMLAttributes<SVGElement>) => (
   <svg
     width="64"
     height="64"
