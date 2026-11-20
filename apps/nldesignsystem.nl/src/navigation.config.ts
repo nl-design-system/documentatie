@@ -19,19 +19,18 @@ export const navigation = navigationRoot(
   navigationGroup({
     index: navigationItem({ href: '/', label: 'Home' }),
     items: [
+      navigationGroup({ filePath: 'docs/introductie', label: 'Introductie' }),
       navigationGroup({
-        index: navigationItem('docs/handboek/index.json'),
+        index: navigationItem('docs/handboek/index.mdx'),
         items: [
-          navigationItem('docs/handboek/introductie.md'),
-          navigationItem('docs/handboek/estafettemodel.mdx'),
           navigationItem('docs/handboek/componenten-vinden.mdx'),
-          navigationGroup({ filePath: 'docs/handboek/definition-of-done' }),
+          navigationGroup({ filePath: 'docs/handboek/bijdragen', label: 'Bijdragen' }),
           navigationGroup({ filePath: 'docs/handboek/huisstijl-vastleggen' }),
           navigationGroup({ filePath: 'docs/handboek/designer', label: 'Voor designers' }),
           navigationGroup({ filePath: 'docs/handboek/developer', label: 'Voor developers' }),
           navigationGroup({ filePath: 'docs/handboek/organisatie', label: 'Voor organisaties' }),
+          navigationGroup({ filePath: 'docs/handboek/kernteam', label: 'Voor het kernteam' }),
           navigationGroup({ filePath: 'docs/baseline' }),
-          navigationItem('docs/woordenlijst/index.mdx'),
         ],
         label: 'Handboek',
       }),
@@ -90,7 +89,6 @@ export const navigation = navigationRoot(
         ],
         label: 'Community',
       }),
-      navigationGroup({ filePath: 'docs/project' }),
     ],
   }),
 );

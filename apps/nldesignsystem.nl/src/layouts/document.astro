@@ -146,8 +146,9 @@ const items = serialiseNavigationTree(navigationTree);
 const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
-  { href: '/project/kernteam/', label: 'Contact', lang: 'nl' },
+  { href: '/contact/', label: 'Contact', lang: 'nl' },
   { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid', lang: 'nl' },
+  { href: '/klachten/', label: 'Klachten', lang: 'nl' },
   { href: '/privacyverklaring/', label: 'Privacyverklaring', lang: 'nl' },
   { href: '/colofon/', label: 'Colofon', lang: 'nl' },
   { href: '/github/', label: 'GitHub', lang: 'en' },

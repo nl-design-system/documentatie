@@ -14,7 +14,7 @@ const pathnamesSelection = [
   '/',
 
   // [...slug].astro - DetailLayout - nl - No Image
-  '/handboek/introductie/',
+  '/introductie/',
 
   // [...slug].astro - OverviewLayout - nl
   '/componenten/',

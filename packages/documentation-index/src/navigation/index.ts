@@ -190,7 +190,7 @@ export type NavigationItemInput =
  *
  * @example
  * ```js
- * navigationItem("docs/handboek/estafettemodel.mdx");
+ * navigationItem("docs/introductie/estafettemodel.mdx");
  * // or
  * navigationItem({ label: "Home", href: "/" });
  * ```
@@ -255,7 +255,7 @@ export type NavigationGroupOptions = Partial<
  * navigationGroup({
  *   label: 'Handboek',
  *   items: [
- *     navigationItem('docs/handboek/introductie.md'),
+ *     navigationItem('docs/handboek/componenten-vinden.mdx'),
  *     ...
  *   ]
  * });
