@@ -25,7 +25,7 @@ export const navigation = navigationRoot(
           navigationItem('docs/handboek/introductie.md'),
           navigationItem('docs/handboek/estafettemodel.mdx'),
           navigationItem('docs/handboek/componenten-vinden.mdx'),
-          navigationGroup({ filePath: 'docs/handboek/definition-of-done' }),
+          navigationGroup({ filePath: 'docs/handboek/bijdragen', label: 'Bijdragen' }),
           navigationGroup({ filePath: 'docs/handboek/huisstijl-vastleggen' }),
           navigationGroup({ filePath: 'docs/handboek/designer', label: 'Voor designers' }),
           navigationGroup({ filePath: 'docs/handboek/developer', label: 'Voor developers' }),
