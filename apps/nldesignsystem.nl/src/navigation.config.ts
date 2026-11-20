@@ -90,7 +90,6 @@ export const navigation = navigationRoot(
         ],
         label: 'Community',
       }),
-      navigationGroup({ filePath: 'docs/project' }),
     ],
   }),
 );
