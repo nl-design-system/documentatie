@@ -1,6 +1,7 @@
 import type { Root } from 'mdast';
 import type {} from 'mdast-util-mdx-expression';
 import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
+import type { VFile } from 'vfile';
 import prettierSync from '@prettier/sync';
 import { visit } from 'unist-util-visit';
 
@@ -12,7 +13,7 @@ import { visit } from 'unist-util-visit';
  * used, the source files can be updated and this plugin can be removed
  */
 export function remarkCanvasFix() {
-  return async (tree: Root) => {
+  return async (tree: Root, file: VFile) => {
     visit(tree, 'mdxJsxFlowElement', (node, _, parent) => {
       if (node.name !== 'Canvas') return;
       if (!parent || parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Guideline') return;
@@ -32,44 +33,64 @@ export function remarkCanvasFix() {
       }
     });
 
-    visit(tree, 'mdxFlowExpression', (node, _, parent) => {
+    visit(tree, (node, _, parent) => {
       if (!parent || parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Canvas') return;
 
       const parentNode = parent;
 
-      if (node.value.startsWith('() => ')) {
-        const code = node.value
-          .replace(/\(\)\s=>\s\(?/, '') // remove the arrow function from the string
-          .replace(/\)$/, '') // remove the closing `)` of the arrow function
-          .replaceAll(/\n/g, '') // remove newlines, prettier will reformat
-          .replaceAll(/\bhtmlFor=/g, 'for=') // replace jsx style attribute name `htmlFor` with `for`
-          .replaceAll(/\bclassName=/g, 'class=') // replace jsx style attribute name `className` with `class`
-          .replaceAll('<>', '') // remove jsx fragment wrapper start
-          .replaceAll('</>', '') // remove jsx fragment wrapper end
-          .trim();
+      if (node.position) {
+        const source = String(file.value).slice(node.position.start.offset, node.position.end.offset);
 
-        const styleTransformedCode = styleObjectToString(code);
-
-        const formattedCode = prettierSync
-          .format(styleTransformedCode, {
-            embeddedLanguageFormatting: 'off',
-            htmlWhitespaceSensitivity: 'ignore',
-            parser: 'html',
+        const formattedCodeSmall = prettierSync
+          .format(source, {
+            printWidth: 20,
+            parser: 'typescript',
             singleAttributePerLine: true,
           })
-          // complex regex to remove multiline string literals in JSX
-          .replaceAll(/\{\s*"(?:[^"\\]|\\.)*"\s*\}/g, (m) =>
-            m
-              .replace(/^\{\s*"/, '')
-              .replace(/"\s*\}$/, '')
-              .replaceAll('\\"', '"')
-              .replaceAll("\\'", "'"),
-          );
+          .replace(/;\n$/, '');
+        const formattedCodeMedium = prettierSync
+          .format(source, {
+            printWidth: 50,
+            parser: 'typescript',
+            singleAttributePerLine: true,
+          })
+          .replace(/;\n$/, '');
+        const formattedCodeLarge = prettierSync
+          .format(source, {
+            printWidth: 75,
+            parser: 'typescript',
+            singleAttributePerLine: true,
+          })
+          .replace(/;\n$/, '');
 
         const codeAttr: MdxJsxAttribute = {
           name: 'code',
           type: 'mdxJsxAttribute',
-          value: formattedCode,
+          value: {
+            data: {
+              estree: {
+                body: [
+                  {
+                    expression: {
+                      elements: [formattedCodeSmall, formattedCodeMedium, formattedCodeLarge].map((code) => ({
+                        raw: JSON.stringify(code),
+                        type: 'Literal',
+                        value: code,
+                      })),
+                      type: 'ArrayExpression',
+                    },
+                    type: 'ExpressionStatement',
+                  },
+                ],
+                sourceType: 'module',
+                type: 'Program',
+              },
+            },
+            type: 'mdxJsxAttributeValueExpression',
+            value: `[${[formattedCodeSmall, formattedCodeMedium, formattedCodeLarge]
+              .map((code) => JSON.stringify(code))
+              .join(', ')}]`,
+          },
         };
 
         // only if no existing `code` attribute is present create a new one
@@ -79,29 +100,4 @@ export function remarkCanvasFix() {
       }
     });
   };
-}
-
-// Transform JSX (multiline) style attributes into html style attributes
-function styleObjectToString(input: string) {
-  let output = input;
-  const matches = output.matchAll(/style=(\{\{.+?\}\})/g);
-  [...matches].forEach(([, match]) => {
-    let replacement = match
-      .replaceAll('("', "('")
-      .replaceAll('")', "')")
-      .replaceAll('"', '')
-      .replaceAll(',', ';')
-      .replace('{{', '"')
-      .replace('}}', '"');
-
-    // camel case to snake case
-    replacement = replacement.replaceAll(/([a-z])([A-Z])/g, (_, p1, p2) => `${p1}-${p2}`.toLowerCase());
-
-    // collapse double spaces into a single space
-    replacement = replacement.replaceAll(/\s+/g, ' ').trim();
-
-    output = output.replace(match, replacement);
-  });
-
-  return output;
 }

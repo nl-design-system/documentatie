@@ -21,3 +21,33 @@
 .ma-canvas__example--color-scheme-light {
   color-scheme: only light;
 }
+
+.ma-canvas__code-section {
+  container-type: inline-size;
+  container-name: ma-canvas-code-section;
+
+  .ma-canvas__code-highlight-medium,
+  .ma-canvas__code-highlight-large {
+    display: none;
+  }
+
+  @container ma-canvas-code-section (width > 400px) {
+    .ma-canvas__code-highlight-small,
+    .ma-canvas__code-highlight-large {
+      display: none;
+    }
+    .ma-canvas__code-highlight-medium {
+      display: block;
+    }
+  }
+
+  @container ma-canvas-code-section (width > 760px) {
+    .ma-canvas__code-highlight-small,
+    .ma-canvas__code-highlight-medium {
+      display: none;
+    }
+    .ma-canvas__code-highlight-large {
+      display: block;
+    }
+  }
+}

@@ -23,13 +23,20 @@ export interface CanvasProps {
   className?: string;
   defaultExpandedCode?: boolean;
   designTokens?: CSSProperties;
-  // Not rendered: `remark-canvas-fix` converts `{() => …}` children in MDX into `code`
   children?: ReactNode;
-  code?: string;
+
   rawCode?: string;
   copyCode?: 'allow' | 'deny';
   colorScheme?: 'dark' | 'light';
   forcedColorsAdjust?: boolean;
+
+  /**
+   * The `code` prop can be an array of strings, the purpose of this is to
+   * provide three versions of the code in various print sizes so that each
+   * code example is optimised for the available space on screen.
+   * In the Astro site, a remark plugin is used to provide these three versions
+   */
+  code?: string | string[];
 
   /**
    * Configure a `label` to render the contents as if it is an image with an alt-text.
@@ -42,23 +49,26 @@ export interface CanvasProps {
 }
 
 export const Canvas = ({
+  children,
   className,
   code = '<p>No code provided</p>',
   colorScheme,
   copyCode,
-  defaultExpandedCode,
+  defaultExpandedCode = true,
   designTokens,
   forcedColorsAdjust = true,
   label,
   language,
   rawCode,
 }: CanvasProps) => {
-  const _code = typeof code === 'string' ? code : rawCode || '';
+  const codeList = typeof code === 'string' ? [code] : code;
+  const codeSmall = codeList[0] ?? (rawCode || '');
+  const codeMedium = codeList[1] || codeSmall;
+  const codeLarge = codeList[2] || codeMedium;
 
-  const highlighed =
-    typeof code === 'string'
-      ? Prism.highlight(code, Prism.languages[language], language)
-      : Prism.highlight(rawCode || '', Prism.languages[language], language);
+  const highlighedSmall = Prism.highlight(codeSmall, Prism.languages[language], language);
+  const highlighedMedium = Prism.highlight(codeMedium, Prism.languages[language], language);
+  const highlighedLarge = Prism.highlight(codeLarge, Prism.languages[language], language);
 
   const example = (
     <Root
@@ -68,8 +78,9 @@ export const Canvas = ({
         'ma-canvas__example--color-scheme-light': colorScheme === 'light',
       })}
       style={designTokens as CSSProperties}
-      dangerouslySetInnerHTML={{ __html: _code }}
-    ></Root>
+    >
+      {children}
+    </Root>
   );
 
   return (
@@ -86,13 +97,30 @@ export const Canvas = ({
       {/* Highlighted code example */}
       <Accordion>
         <AccordionSection label="Code" open={defaultExpandedCode}>
-          <pre className="language-html nl-code-block" tabIndex={0}>
-            <code className="language-html nl-code-block__code" dangerouslySetInnerHTML={{ __html: highlighed }} />
-          </pre>
+          <div className="ma-canvas__code-section">
+            <pre className="ma-canvas__code-highlight-small language-html nl-code-block" hidden>
+              <code
+                className="language-html nl-code-block__code"
+                dangerouslySetInnerHTML={{ __html: highlighedSmall }}
+              />
+            </pre>
+            <pre className="ma-canvas__code-highlight-medium language-html nl-code-block" hidden>
+              <code
+                className="language-html nl-code-block__code"
+                dangerouslySetInnerHTML={{ __html: highlighedMedium }}
+              />
+            </pre>
+            <pre className="ma-canvas__code-highlight-large language-html nl-code-block">
+              <code
+                className="language-html nl-code-block__code"
+                dangerouslySetInnerHTML={{ __html: highlighedLarge }}
+              />
+            </pre>
+          </div>
 
           {/* Because of the arrow function syntax, the <Canvas> element can not be clientside rendered with client:load. therefore, the javascript allowing to copy the code is included in the `document.astro` file as a <script> element */}
           {copyCode === 'allow' && (
-            <Button data-copy-code={_code} purpose="secondary">
+            <Button data-copy-code={codeLarge} purpose="secondary">
               Kopieer code
             </Button>
           )}
