@@ -211,12 +211,17 @@ Help je mee hem door de Candidate stappen te krijgen?
 <li class="ams-unordered-list__item">Publiceer een nieuwe versie van het <code class="nl-code" dir="ltr" translate="no">component-progress</code> package: ga naar de <a href="https://github.com/nl-design-system/index/pulls" class="nl-link">pull requests van de Index repository</a> en zoek naar de pull request genaamd <code class="nl-code" dir="ltr" translate="no">docs(release): design system packages</code>. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.</li>
 <li class="ams-unordered-list__item">Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="nl-link"><code class="nl-code" dir="ltr" translate="no">@nl-design-system/component-progress</code> op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="nl-code" dir="ltr" translate="no">Last publish</code>.</li>
 <li class="ams-unordered-list__item">Open de <a href="https://github.com/nl-design-system/documentatie" class="nl-link">documentatie repository</a> in Visual Studio Code.</li>
-<li class="ams-unordered-list__item">Update <code class="nl-code" dir="ltr" translate="no">@nl-design-system/component-progress</code> in de documentatie repository. Dat doe je door lokaal in de branch <code class="nl-code" dir="ltr" translate="no">pnpm update --recursive @nl-design-system/component-progress@latest</code> te draaien. Dit update de devDependency en de lockfile.</li>
 <li class="ams-unordered-list__item">Maak een nieuwe branch aan en gebruik de volgende naam:</li>
 </ul>
 <p class="nl-paragraph"><strong class="ma-strong">Branch</strong></p>
 <pre class="language-plaintext nl-code-block" data-language="plaintext" dir="ltr" translate="no" tabindex="0"><code class="language-plaintext nl-code-block__code">build/update-component-progress-{datum-of-versienummer}
 </code></pre>
+<ul class="ams-unordered-list" role="list">
+<li class="ams-unordered-list__item">Update <code class="nl-code" dir="ltr" translate="no">@nl-design-system/component-progress</code> in de documentatie repository. Dat doe je door lokaal in de branch het volgende te draaien:</li>
+</ul>
+<pre class="language-bash nl-code-block" data-language="bash" dir="ltr" translate="no" tabindex="0"><code class="language-bash nl-code-block__code"><span class="token function">pnpm</span> update <span class="token parameter variable">--recursive</span> @nl-design-system/component-progress@latest
+</code></pre>
+<p class="nl-paragraph">Dit update de devDependency en de lockfile.</p>
 <ul class="ams-unordered-list" role="list">
 <li class="ams-unordered-list__item">Maak een commit en gebruik hierbij het volgende bericht:</li>
 </ul>
