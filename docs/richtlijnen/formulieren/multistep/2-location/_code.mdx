@@ -7,13 +7,9 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 
 <Guideline appearance="do" title="Info boven het form element.">
   <Canvas language="html">
-    {() => (
-      <>
-        <h2>Uw gegevens</h2>
-        <p>Stap 2 van 3</p>
-        <form>[... inhoud formulier …]</form>
-      </>
-    )}
+    <h2>Uw gegevens</h2>
+    <p>Stap 2 van 3</p>
+    <form>[... inhoud formulier …]</form>
   </Canvas>
 </Guideline>
 
@@ -23,28 +19,20 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="En deze tekst visueel op een andere regel plaatsen. "
 >
   <Canvas language="html">
-    {() => (
-      <>
-        <h2>
-          <span class="example-progress-indicator">Stap 2 van 3</span>
-          Uw gegevens
-        </h2>
-        <form>[... inhoud formulier …]</form>
-      </>
-    )}
+    <h2>
+      <span class="example-progress-indicator">Stap 2 van 3</span>
+      Uw gegevens
+    </h2>
+    <form>[... inhoud formulier …]</form>
   </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Info binnen het formulier.">
   <Canvas language="html">
-    {() => (
-      <>
-        <h2>Uw gegevens</h2>
-        <form>
-          <h3>Stap 2 van 3</h3>
-          [... inhoud formulier …]
-        </form>
-      </>
-    )}
+    <h2>Uw gegevens</h2>
+    <form>
+      <h3>Stap 2 van 3</h3>
+      [... inhoud formulier …]
+    </form>
   </Canvas>
 </Guideline>

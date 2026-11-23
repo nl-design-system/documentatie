@@ -7,52 +7,44 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 
 <Guideline appearance="do" title="Formulier zonder tabindex.">
   <Canvas language="html">
-    {() => (
-      <>
-        <form>
-          <p>
-            <label htmlFor="naam1">Uw naam</label>
-          </p>
-          <p>
-            <input id="naam1" autoComplete="name" />
-          </p>
-          <p>
-            <label htmlFor="email1">Uw e-mailadres</label>
-          </p>
-          <p>
-            <input id="email1" autoComplete="email" />
-          </p>
-          <p>
-            <button>Stuur mij de nieuwsbrief!</button>
-          </p>
-        </form>
-      </>
-    )}
+    <form>
+      <p>
+        <label htmlFor="naam1">Uw naam</label>
+      </p>
+      <p>
+        <input id="naam1" autoComplete="name" />
+      </p>
+      <p>
+        <label htmlFor="email1">Uw e-mailadres</label>
+      </p>
+      <p>
+        <input id="email1" autoComplete="email" />
+      </p>
+      <p>
+        <button>Stuur mij de nieuwsbrief!</button>
+      </p>
+    </form>
   </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Formulier met gebruik van een positieve tabindex.">
   <Canvas language="html">
-    {() => (
-      <>
-        <form>
-          <p>
-            <label htmlFor="naam2">Uw naam</label>
-          </p>
-          <p>
-            <input id="naam2" autoComplete="name" tabIndex="1" />
-          </p>
-          <p>
-            <label htmlFor="email2">Uw e-mailadres</label>
-          </p>
-          <p>
-            <input id="email2" autoComplete="email" />
-          </p>
-          <p>
-            <button>Stuur mij de nieuwsbrief!</button>
-          </p>
-        </form>
-      </>
-    )}
+    <form>
+      <p>
+        <label htmlFor="naam2">Uw naam</label>
+      </p>
+      <p>
+        <input id="naam2" autoComplete="name" tabIndex="1" />
+      </p>
+      <p>
+        <label htmlFor="email2">Uw e-mailadres</label>
+      </p>
+      <p>
+        <input id="email2" autoComplete="email" />
+      </p>
+      <p>
+        <button>Stuur mij de nieuwsbrief!</button>
+      </p>
+    </form>
   </Canvas>
 </Guideline>

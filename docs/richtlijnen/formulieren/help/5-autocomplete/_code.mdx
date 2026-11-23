@@ -7,16 +7,12 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 
 <Guideline appearance="do" title="Het autocomplete-attribuut gebruiken.">
   <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="voornaam">Je voornaam</label>
-        </p>
-        <p>
-          <input id="voornaam" type="text" autoComplete="given-name" />
-        </p>
-      </>
-    )}
+    <p>
+      <label htmlFor="voornaam">Je voornaam</label>
+    </p>
+    <p>
+      <input id="voornaam" type="text" autoComplete="given-name" />
+    </p>
   </Canvas>
 </Guideline>
 
@@ -26,15 +22,11 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="Het input type alleen is hier niet voldoende om te voldoen aan WCAG."
 >
   <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="telefoon">Uw telefoonnummer</label>
-        </p>
-        <p>
-          <input id="telefoon" type="tel" />
-        </p>
-      </>
-    )}
+    <p>
+      <label htmlFor="telefoon">Uw telefoonnummer</label>
+    </p>
+    <p>
+      <input id="telefoon" type="tel" />
+    </p>
   </Canvas>
 </Guideline>

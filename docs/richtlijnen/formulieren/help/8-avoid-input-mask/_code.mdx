@@ -7,23 +7,19 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 
 <Guideline appearance="do" title="Geef in de description aan hoe een veld kan worden ingevoerd.">
   <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="bevestigingcode">Je bevestigingcode</label>
-        </p>
-        <p id="description-bevestigingcode">Vul een nummer van 8 cijfers in.</p>
-        <p>
-          <input
-            type="text"
-            inputMode="numeric"
-            id="bevestigingcode"
-            name="bevestigingcode"
-            aria-describedby="description-bevestigingcode"
-          />
-        </p>
-      </>
-    )}
+    <p>
+      <label htmlFor="bevestigingcode">Je bevestigingcode</label>
+    </p>
+    <p id="description-bevestigingcode">Vul een nummer van 8 cijfers in.</p>
+    <p>
+      <input
+        type="text"
+        inputMode="numeric"
+        id="bevestigingcode"
+        name="bevestigingcode"
+        aria-describedby="description-bevestigingcode"
+      />
+    </p>
   </Canvas>
 </Guideline>
 
@@ -33,22 +29,18 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="Dit voorbeeld valideert de waarde niet met JavaScript en is alleen ter illustratie."
 >
   <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="postcode2">Je postcode</label>
-        </p>
-        <p>
-          <input
-            type="text"
-            placeholder="____ __"
-            id="postcode2"
-            name="postcode"
-            pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"
-            autoComplete="postal-code"
-          />
-        </p>
-      </>
-    )}
+    <p>
+      <label htmlFor="postcode2">Je postcode</label>
+    </p>
+    <p>
+      <input
+        type="text"
+        placeholder="____ __"
+        id="postcode2"
+        name="postcode"
+        pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"
+        autoComplete="postal-code"
+      />
+    </p>
   </Canvas>
 </Guideline>

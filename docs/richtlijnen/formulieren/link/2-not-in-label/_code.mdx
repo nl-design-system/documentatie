@@ -7,18 +7,14 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 
 <Guideline appearance="do" title="Heel basaal, de link vlak boven het formulierveld plaatsen.">
   <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <a href="#">Privacybeleid gemeente Voorbeeld</a>
-          {"."}
-        </p>
-        <p>
-          <input id="pb" type="checkbox" name="privacybeleid" />
-          <label htmlFor="pb">Ik ga akkoord met het privacybeleid</label>
-        </p>
-      </>
-    )}
+    <p>
+      <a href="#">Privacybeleid gemeente Voorbeeld</a>
+      {"."}
+    </p>
+    <p>
+      <input id="pb" type="checkbox" name="privacybeleid" />
+      <label htmlFor="pb">Ik ga akkoord met het privacybeleid</label>
+    </p>
   </Canvas>
 </Guideline>
 
@@ -27,52 +23,44 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Groeperen met een fieldset en de informatie koppelen aan het formulierveld met een aria-describedby."
 >
   <Canvas language="html">
-    {() => (
-      <fieldset>
-        <legend>Privacystatement gemeente Voorbeeld</legend>
-        <p id="desc">
-          {
-            "Wij hebben jouw toestemming nodig om je e-mailadres op te slaan zodat we je onze nieuwsbrief kunnen sturen. Lees onze "
-          }
-          <a href="#" target="_blank">
-            {"privacybeleid (opent in een nieuw venster)"}
-          </a>
-          {"."}
-        </p>
-        <p>
-          <input type="checkbox" aria-describedby="desc" id="pvs" />
-          <label htmlFor="pvs">Ik ga akkoord met het privacybeleid</label>
-        </p>
-      </fieldset>
-    )}
+    <fieldset>
+      <legend>Privacystatement gemeente Voorbeeld</legend>
+      <p id="desc">
+        {
+          "Wij hebben jouw toestemming nodig om je e-mailadres op te slaan zodat we je onze nieuwsbrief kunnen sturen. Lees onze "
+        }
+        <a href="#" target="_blank">
+          {"privacybeleid (opent in een nieuw venster)"}
+        </a>
+        {"."}
+      </p>
+      <p>
+        <input type="checkbox" aria-describedby="desc" id="pvs" />
+        <label htmlFor="pvs">Ik ga akkoord met het privacybeleid</label>
+      </p>
+    </fieldset>
   </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Link in het label plaatsen.">
   <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <input id="privacybeleid" type="checkbox" name="privacybeleid" />{" "}
-          <label htmlFor="privacybeleid">
-            {"Ik ga akkoord met het "}
-            <a href="#">privacybeleid</a>
-          </label>
-        </p>
-      </>
-    )}
+    <p>
+      <input id="privacybeleid" type="checkbox" name="privacybeleid" />{" "}
+      <label htmlFor="privacybeleid">
+        {"Ik ga akkoord met het "}
+        <a href="#">privacybeleid</a>
+      </label>
+    </p>
   </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Link samen met het invoerveld in een impliciet label plaatsen.">
   <Canvas language="html">
-    {() => (
-      <p>
-        <label htmlFor="tac">
-          <input id="tac" type="checkbox" name="terms-and-conditions" />
-          Ik ga akkoord met het <a href="#">privacybeleid</a>
-        </label>
-      </p>
-    )}
+    <p>
+      <label htmlFor="tac">
+        <input id="tac" type="checkbox" name="terms-and-conditions" />
+        Ik ga akkoord met het <a href="#">privacybeleid</a>
+      </label>
+    </p>
   </Canvas>
 </Guideline>
