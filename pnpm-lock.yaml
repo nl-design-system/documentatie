@@ -345,8 +345,8 @@ importers:
         specifier: 1.0.11
         version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/root-css':
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.1.2
+        version: 4.1.2
       '@utrecht/separator-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -908,8 +908,8 @@ importers:
         specifier: 1.0.11
         version: 1.0.11(@babel/runtime@7.29.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/root-css':
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.1.2
+        version: 4.1.2
       '@utrecht/root-react':
         specifier: 1.0.17
         version: 1.0.17(@babel/runtime@7.29.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4217,9 +4217,6 @@ packages:
 
   '@utrecht/root-css@2.0.1':
     resolution: {integrity: sha512-mhEyFaHhWHmwxu3HFR1+HpQDdQfGCfETBRKDP9QsGFwxX1t8FDUmL570+0LH3VqBA7db6gz8/krh8MUzCRp8yw==}
-
-  '@utrecht/root-css@4.1.0':
-    resolution: {integrity: sha512-n2W52d/mSBgscTClpytczKSafdW8SBt1FiO7ysQRVXgDWgUFAzSUZ0M4ZGoTxzq/0oDYB0ol7j0pTUqHh6mQYg==}
 
   '@utrecht/root-css@4.1.2':
     resolution: {integrity: sha512-z1JqIjlJGbkZxr25JXSR+p12uMfmLQjRrlGx78454RF3FoRvIOj8jU0UfndWnzHNQyzTpjtCo/ly4dWNYPmLkQ==}
@@ -13428,8 +13425,6 @@ snapshots:
   '@utrecht/rich-text-css@2.1.0': {}
 
   '@utrecht/root-css@2.0.1': {}
-
-  '@utrecht/root-css@4.1.0': {}
 
   '@utrecht/root-css@4.1.2': {}
 
