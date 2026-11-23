@@ -3,7 +3,64 @@ import type {} from 'mdast-util-mdx-expression';
 import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
 import type { VFile } from 'vfile';
 import prettierSync from '@prettier/sync';
+import { transformSync } from 'esbuild';
+import { createElement, Fragment } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { visit } from 'unist-util-visit';
+
+const sizes = [20, 50, 75];
+
+/**
+ * Turns the JSX children of a Canvas into HTML, one for each size.
+ * When a component or variable is used in the source, the `html` format will
+ * fail. Fall back to `typescript` formatting which uses the authored MDX as
+ * source.
+ */
+export const canvasCode = (sources: string[]): { code: string[]; isFallback: boolean } => {
+  try {
+    const html = jsxToHtml(sources.join('\n'));
+    return { code: sizes.map((width) => format(html, 'html', width)), isFallback: false };
+  } catch {
+    return {
+      code: sizes.map((width) => sources.map((source) => format(source, 'typescript', width)).join('\n')),
+      isFallback: true,
+    };
+  }
+};
+
+/**
+ * Format a string with either the `html` or `typescript` parser from Prettier.
+ * When the parser is `html`, use `singleQuote: true`, this keeps `'` in
+ * `style` attributes, the `typescript` parsers renders `&quot;`
+ */
+const format = (code: string, parser: 'html' | 'typescript', printWidth: number) =>
+  prettierSync
+    .format(code, {
+      printWidth,
+      htmlWhitespaceSensitivity: 'ignore',
+      parser,
+      singleAttributePerLine: true,
+      singleQuote: parser === 'html',
+    })
+    .replace(/;?\n$/, '');
+
+/**
+ * Transform JSX to HTML via `esbuild`. That transforms `style={{...}}`
+ * attributes and other JSX artifacts to normal HTML
+ */
+const jsxToHtml = (source: string): string => {
+  const { code } = transformSync(`<>${source}</>`, {
+    jsx: 'transform',
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment',
+    loader: 'jsx',
+  });
+  // The `code` can only come from authored MDX
+  // eslint-disable-next-line no-new-func
+  const element = new Function('h', 'Fragment', `return ${code}`)(createElement, Fragment);
+  // React escapes `'`, which is not needed because it always quotes attributes with `"`
+  return renderToStaticMarkup(element).replaceAll('&#x27;', "'");
+};
 
 /**
  * The Canvas component used in Docusaurus depends on a function providing the
@@ -33,71 +90,49 @@ export function remarkCanvasFix() {
       }
     });
 
-    visit(tree, (node, _, parent) => {
-      if (!parent || parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Canvas') return;
+    visit(tree, 'mdxJsxFlowElement', (node) => {
+      if (node.name !== 'Canvas') return;
 
-      const parentNode = parent;
+      // Use existing `code` attribute when present
+      if (node.attributes.some((attr) => attr.type === 'mdxJsxAttribute' && attr.name === 'code')) return;
 
-      if (node.position) {
-        const source = String(file.value).slice(node.position.start.offset, node.position.end.offset);
+      const sources = node.children.flatMap((child) =>
+        child.position ? [String(file.value).slice(child.position.start.offset, child.position.end.offset)] : [],
+      );
+      if (sources.length === 0) return;
 
-        const formattedCodeSmall = prettierSync
-          .format(source, {
-            printWidth: 20,
-            parser: 'typescript',
-            singleAttributePerLine: true,
-          })
-          .replace(/;\n$/, '');
-        const formattedCodeMedium = prettierSync
-          .format(source, {
-            printWidth: 50,
-            parser: 'typescript',
-            singleAttributePerLine: true,
-          })
-          .replace(/;\n$/, '');
-        const formattedCodeLarge = prettierSync
-          .format(source, {
-            printWidth: 75,
-            parser: 'typescript',
-            singleAttributePerLine: true,
-          })
-          .replace(/;\n$/, '');
+      const { code, isFallback } = canvasCode(sources);
+      if (isFallback) file.message('Canvas children could not be rendered to HTML, showing JSX instead', node);
 
-        const codeAttr: MdxJsxAttribute = {
-          name: 'code',
-          type: 'mdxJsxAttribute',
-          value: {
-            data: {
-              estree: {
-                body: [
-                  {
-                    expression: {
-                      elements: [formattedCodeSmall, formattedCodeMedium, formattedCodeLarge].map((code) => ({
-                        raw: JSON.stringify(code),
-                        type: 'Literal',
-                        value: code,
-                      })),
-                      type: 'ArrayExpression',
-                    },
-                    type: 'ExpressionStatement',
+      const codeAttr: MdxJsxAttribute = {
+        name: 'code',
+        type: 'mdxJsxAttribute',
+        value: {
+          data: {
+            estree: {
+              body: [
+                {
+                  expression: {
+                    elements: code.map((value) => ({
+                      raw: JSON.stringify(value),
+                      type: 'Literal',
+                      value,
+                    })),
+                    type: 'ArrayExpression',
                   },
-                ],
-                sourceType: 'module',
-                type: 'Program',
-              },
+                  type: 'ExpressionStatement',
+                },
+              ],
+              sourceType: 'module',
+              type: 'Program',
             },
-            type: 'mdxJsxAttributeValueExpression',
-            value: `[${[formattedCodeSmall, formattedCodeMedium, formattedCodeLarge]
-              .map((code) => JSON.stringify(code))
-              .join(', ')}]`,
           },
-        };
+          type: 'mdxJsxAttributeValueExpression',
+          value: `[${code.map((value) => JSON.stringify(value)).join(', ')}]`,
+        },
+      };
 
-        // only if no existing `code` attribute is present create a new one
-        if (parentNode.attributes.some((attr) => attr.type === 'mdxJsxAttribute' && attr.name === 'code') === false) {
-          parentNode.attributes.push(codeAttr);
-        }
-      }
+      node.attributes.push(codeAttr);
     });
   };
 }
