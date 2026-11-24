@@ -16,11 +16,8 @@ Koppel alle zichtbare instructies en foutmeldingen ook aan de Text Area met het 
 <textarea id="message" aria-describedby="message-description message-error"></textarea>
 ```
 
-Geef zowel in tekst als in code aan of een veld verplicht ingevuld moet worden. In code doe je dit doe je met het `aria-required` HTML-attribuut of `required` HTML-attribuut.
-
 NL Design System richtlijnen:
 
 - [Toegankelijke naam label](/richtlijnen/formulieren/labels/toegankelijke-naam/)
 - [Toegankelijke formulieren](/richtlijnen/formulieren/)
 - [Toegankelijke foutmeldingen](/richtlijnen/formulieren/foutmeldingen/)
-- [Toegankelijke verplichte velden](/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/)

@@ -1,4 +1,5 @@
 import Wcag258 from '@nl-design-system-unstable/documentation//componenten/ac/_wcag-2.5.8-textarea.md';
+import Wcag131Required from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.1-textarea-required.md';
 import Wcag131 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.1-textarea.md';
 import Wcag132 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.2-textarea.md';
 import Wcag135 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.5-textarea.md';
@@ -30,8 +31,14 @@ export const usage = [
     sc: '1.3.1',
     status: '',
     tags: ['developer'],
-    title:
-      'Het label van de Text Area is gekoppeld aan de Text Area en het is duidelijk of de Text Area verplicht ingevuld moet worden.',
+    title: 'Het label van de Text Area is gekoppeld aan de Text Area.',
+  },
+  {
+    component: Wcag131Required,
+    sc: '1.3.1',
+    status: '',
+    tags: ['developer'],
+    title: 'Het is duidelijk of de Text Area verplicht ingevuld moet worden.',
   },
   {
     component: Wcag132,
