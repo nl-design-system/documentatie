@@ -240,8 +240,8 @@ importers:
         specifier: 14.0.1
         version: 14.0.1
       '@nl-design-system/component-progress':
-        specifier: 1.1.20
-        version: 1.1.20
+        specifier: 1.1.21
+        version: 1.1.21
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -662,8 +662,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@nl-design-system/component-progress':
-        specifier: 1.1.20
-        version: 1.1.20
+        specifier: 1.1.21
+        version: 1.1.21
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -969,8 +969,8 @@ importers:
         specifier: 7.1.1
         version: 7.1.1(@types/node@24.10.9)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(esbuild@0.28.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.97.3)(tsx@4.23.0)(yaml@2.9.1)
       '@nl-design-system/component-progress':
-        specifier: 1.1.20
-        version: 1.1.20
+        specifier: 1.1.21
+        version: 1.1.21
       '@testing-library/dom':
         specifier: 10.4.2
         version: 10.4.2
@@ -3011,8 +3011,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1':
     resolution: {integrity: sha512-a5HuEqczeXqfg1nR3sVJe/N71EKa77Zvsm9ov8qwGGeAAgAGeKzQMc867XchZ2lrAMa7lY7QrnjwpjOFUmbaDw==}
 
-  '@nl-design-system/component-progress@1.1.20':
-    resolution: {integrity: sha512-rhc9my/rCVVn5IASt6303sGxF0FccVqTDvOg62kMR3md3NpWZQIuu1DdUf+NU62d86VxINai3NaWeWW7nz7Xdw==}
+  '@nl-design-system/component-progress@1.1.21':
+    resolution: {integrity: sha512-NPwFLi2MAP1mv9qV61MzFag8B8p6xNIBNEev2OQPe5xdF/qm5bD+CSKCySiwyb02y9oceqo5VpbXkK1goKy13g==}
 
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
@@ -9361,7 +9361,6 @@ packages:
       '@vitest/ui': 4.1.11
       happy-dom: '*'
       jsdom: '*'
-      vite: ^6.0.0 || ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@edge-runtime/vm':
         optional: true
@@ -11652,7 +11651,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1': {}
 
-  '@nl-design-system/component-progress@1.1.20': {}
+  '@nl-design-system/component-progress@1.1.21': {}
 
   '@nl-design-system/eslint-config@1.0.0(eslint@9.39.2(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
     dependencies:
@@ -20254,13 +20253,13 @@ snapshots:
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.1
-      vite: 8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.10.9
       jsdom: 30.1.2
     transitivePeerDependencies:
       - msw
+      - vite
 
   vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.28.2)(sass@1.97.3)(tsx@4.23.0)(yaml@2.9.1)):
     dependencies:
@@ -20282,13 +20281,13 @@ snapshots:
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.1
-      vite: 8.3.5(@types/node@24.10.9)(esbuild@0.28.2)(sass@1.97.3)(tsx@4.23.0)(yaml@2.9.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.10.9
       jsdom: 30.1.2
     transitivePeerDependencies:
       - msw
+      - vite
 
   volar-service-css@0.0.71(@volar/language-service@2.4.31(typescript@5.9.3)):
     dependencies:
