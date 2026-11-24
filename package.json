@@ -106,5 +106,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@argos-ci/cli": "6.15.0"
   }
 }
