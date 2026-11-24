@@ -4,7 +4,7 @@ Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit ga
 
 Zorg ervoor dat de component mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.
 
-Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld `overflow-wrap: break-word; hyphens: auto;` eventueel in combinatie met `text-wrap-style: balance`. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op `:root` niveau.
+Definieer in de CSS op `:root` niveau een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld `overflow-wrap: break-word; hyphens: auto;` eventueel in combinatie met `text-wrap-style: balance`. Zo ontstaat er geen horizontale scrollbar op de pagina en wordt tekst niet onleesbaar. Definieer daarna in de CSS op component niveau voor de Text Area dat de tekst niet tijdens het bewerken opnieuw ingedeeld wordt. Dit doe je met `text-wrap-style: stable`.
 
 Je moet de afstand kunnen vergroten naar deze waardes:
 
@@ -17,12 +17,12 @@ Dit is te testen met een extensie zoals Stylus of User CSS, een [bookmarklet](ht
 
 ```css
 <style>
-body * {
+:root {
     line-height: 1.5 !important;
     letter-spacing: 0.12em !important;
     word-spacing: 0.16em !important;
 }
-body p {
+p {
     margin-bottom: 2em !important;
 }
 </style>

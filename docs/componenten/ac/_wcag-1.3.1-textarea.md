@@ -3,8 +3,8 @@
 Als de Text Area een zichtbaar label heeft, gebruik dan een `label`-element en koppel het met de attributen `for` en `id` aan de Text Area.
 
 ```html
-<p><label for="example">Ik ben een Text Area</label></p>
-<p><textarea id="example"></textarea></p>
+<p><label for="message">Je bericht</label></p>
+<p><textarea id="message"></textarea></p>
 ```
 
 Koppel alle zichtbare instructies en foutmeldingen ook aan de Text Area met het `aria-describedby` attribuut:
@@ -16,7 +16,7 @@ Koppel alle zichtbare instructies en foutmeldingen ook aan de Text Area met het 
 <textarea id="message" aria-describedby="message-description message-error"></textarea>
 ```
 
-Geef zowel in tekst als in code aan of een veld verplicht ingevuld moet worden. In code doe je dit doe je met het `required` attribuut of met het `aria-required` attribuut.
+Geef zowel in tekst als in code aan of een veld verplicht ingevuld moet worden. In code doe je dit doe je met het `aria-required` HTML-attribuut of `required` HTML-attribuut.
 
 NL Design System richtlijnen:
 

@@ -4,7 +4,7 @@ Zorg ervoor dat de Text Area een toegankelijke naam heeft, door een Form Label t
 
 Zorg dat de Text Area een `textbox` rol heeft, door het HTML-element `textarea` te gebruiken.
 
-Daarnaast moeten de de ingevulde waarde beschikbaar zijn voor hulpsoftware. Dat gaat automatisch goed wanneer je een `textarea` gebruikt.
+Daarnaast moeten de de ingevulde waarde beschikbaar zijn voor hulpsoftware. Dat gaat automatisch goed wanneer je het HTML-element `textarea` gebruikt.
 
 NL Design System richtlijnen:
 
