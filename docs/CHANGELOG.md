@@ -1,5 +1,12 @@
 # @nl-design-system-unstable/documentation
 
+## 2.2.1
+
+### Patch Changes
+
+- Updated dependencies [cfa7aca]
+  - @nl-design-system-community/documentation-components@2.0.0
+
 ## 2.2.0
 
 ### Minor Changes
