@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 const websiteURL = 'http://localhost:4321/private/content-test/canvas';
 
-test('renders Canvas preview from arrow function children', async ({ page }) => {
+test('renders Canvas preview from children', async ({ page }) => {
   await page.goto(websiteURL);
 
   const example = page.locator('.ma-canvas__example').first();

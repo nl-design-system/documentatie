@@ -19,7 +19,7 @@ const siteUrl = 'https://nldesignsystem.nl/';
  * - `remarkDirective`, `remarkAdmonitions` and `remarkUndoInlineDirectives`: no
  *   documentation snippet uses `:::` directives yet. Add the three together when
  *   one does, `remarkDirective` on its own changes how plain text is parsed.
- * - `remarkUnwrapParagraph`, `remarkCanvasFix` and `clientLoadPlugin`: these
+ * - `remarkUnwrapParagraph`, `remarkCanvasAuthoringImprovement` and `clientLoadPlugin`: these
  *   all act on MDX nodes, which plain markdown never produces.
  * - `remarkCustomHeaderId`: only does something for headings.
  *

@@ -69,7 +69,7 @@ const jsxToHtml = (source: string): string => {
  * children. This is enough for Astro to work. When Docusaurus is no longer
  * used, the source files can be updated and this plugin can be removed
  */
-export function remarkCanvasFix() {
+export function remarkCanvasAuthoringImprovement() {
   return async (tree: Root, file: VFile) => {
     visit(tree, 'mdxJsxFlowElement', (node, _, parent) => {
       if (node.name !== 'Canvas') return;
