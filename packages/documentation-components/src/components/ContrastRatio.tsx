@@ -14,9 +14,7 @@ export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: Contras
       <dt className="ma-contrast-ratio__result-key">Contrast ratio:</dt>
       <dd className="ma-contrast-ratio__result-value">
         <NumberData>
-          {new Intl.NumberFormat('nl', { maximumSignificantDigits: 3, roundingMode: 'floor' } as unknown).format(
-            contrastRatio,
-          )}
+          {new Intl.NumberFormat('nl', { maximumSignificantDigits: 3, roundingMode: 'floor' }).format(contrastRatio)}
           {' ÷ 1'}
         </NumberData>
       </dd>

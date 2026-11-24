@@ -1,0 +1,36 @@
+{
+  "name": "@nl-design-system-community/praatmee.codefor.nl",
+  "version": "1.0.0",
+  "description": "NL Design System - Praat mee Code for NL",
+  "private": true,
+  "license": "EUPL-1.2",
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "apps/praatmee.codefor.nl"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env src/local.ts",
+    "build": "tsc",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "2.1.6",
+    "@hono/zod-validator": "0.9.1",
+    "@slack/web-api": "8.3.0",
+    "hono": "4.13.18",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "tsx": "4.23.0",
+    "typescript": "5.9.3"
+  },
+  "keywords": [
+    "nl-design-system",
+    "codefor.nl",
+    "praatmee"
+  ],
+  "author": "Community for NL Design System"
+}

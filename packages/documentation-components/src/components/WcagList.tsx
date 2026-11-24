@@ -1,9 +1,9 @@
-import { Heading, type HeadingProps } from '../heading/heading';
-import { Link } from '../link/link';
-import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon';
-import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index';
+import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
+import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon.tsx';
 import clsx from 'clsx';
-import { successCriteriaMap } from './wcag22';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { successCriteriaMap } from './wcag22.ts';
 import './TaskList.css';
 
 export interface WcagListItemProps {
@@ -18,7 +18,7 @@ export interface WcagListProps {
   items: WcagListItemProps[];
 }
 
-export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: WcagListItemProps) => {
+export const WcagListItem = ({ checked, description, headingLevel = 3, sc }: WcagListItemProps) => {
   const data = successCriteriaMap.get(sc);
   const title = data ? `${sc} ${data.nl?.title}` : sc;
   return (
@@ -44,7 +44,7 @@ export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: Wca
 export const WcagList = ({ headingLevel, items }: WcagListProps) => (
   <ul className="task-list">
     {items.map((item, index) => (
-      <WcagListItem key={index} headingLevel={headingLevel} {...item} />
+      <WcagListItem key={index} {...item} headingLevel={headingLevel} />
     ))}
   </ul>
 );

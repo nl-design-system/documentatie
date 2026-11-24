@@ -1,36 +1,37 @@
-import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { LinkList } from '../link-list/link-list';
-import { Link } from '../link/link';
-import { Heading, HeadingProps } from '../heading/heading';
-import { Paragraph } from '../paragraph/paragraph';
-import clsx from 'clsx';
-import { BrandIcon } from './BrandIcon';
-import { Card, CardContent, CardGroup } from './CardGroup';
-import { Card as RhcCard } from '../card/card';
-import { ComponentProgress } from './ComponentProgress';
-import { EstafetteBadge } from './EstafetteBadge';
-import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
-import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
-import '@nl-design-system-candidate/heading-css/heading.css';
+import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import clsx from 'clsx';
+import { Accordion, AccordionSection } from '../accordion/accordion.tsx';
+import { Card } from '../card/card.tsx';
+import { Heading, HeadingProps } from '../heading/heading.tsx';
+import { LinkList } from '../link-list/link-list.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import {
-  COMPONENT_STATES,
   getProjectFrameworks,
   getRelayBoardDescription,
   relayProjectIds,
+  RELAY_STEP_SORT_ORDER,
   toKebabCase,
   type ComponentPageSectionProps,
-} from '../utils';
+} from '../utils.ts';
+import { BrandIcon } from './BrandIcon.tsx';
+import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
+import '@nl-design-system-candidate/heading-css/heading.css';
+import { CardGroup } from './CardGroup.tsx';
 import './ComponentPage.css';
+import { ComponentProgress } from './ComponentProgress.tsx';
 import relationMap from './relations.json';
-import { Accordion, AccordionSection } from '../accordion/accordion';
 import '../accordion/accordion.css';
-import { ComponentIllustration } from '../component-illustration/component-illustration';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
   const relayOrderedProjects =
-    relayProjects && relayProjectIds.map((id) => relayProjects.find((project) => project.id === id)).filter(Boolean);
+    relayProjects &&
+    relayProjectIds
+      .map((id) => relayProjects.find((project) => project.id === id))
+      .filter((project) => project !== undefined)
+      .sort((a, b) => RELAY_STEP_SORT_ORDER.indexOf(a.id) - RELAY_STEP_SORT_ORDER.indexOf(b.id));
 
   return (
     component && (
@@ -38,14 +39,14 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
         {relayOrderedProjects.map((project) => (
           <AccordionSection
             key={project.title}
-            className={clsx('ma-definition-of-done', project && `ma-definition-of-done--${toKebabCase(project.title)}`)}
-            heading={project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : ''}
+            className={clsx('ma-definition-of-done', `ma-definition-of-done--${toKebabCase(project.title)}`)}
+            heading={`${project.title} - ${project.progress.value} van ${project.progress.max}`}
             headingLevel={headingLevel}
             headingApperance="level-5"
           >
             <>
               <TaskList>
-                {project.tasks.map(({ checked, name, id }) => (
+                {project.tasks.map(({ id, name, checked }) => (
                   <TaskListItem checked={checked} title={name} key={id} description={getRelayBoardDescription(id)} />
                 ))}
               </TaskList>
@@ -87,8 +88,8 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
             ({ name, value }) => urlMap.has(name) && URL.canParse(value) && new URL(value).protocol === 'https:',
           );
 
-          return globalThis.isAstro ? (
-            <RhcCard
+          return (
+            <Card
               key={project.title}
               heading={project.title.replace(/^Community/i, '')}
               headingLevel={headingLevel}
@@ -108,16 +109,12 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                     )}
                     {links.length > 0 && (
                       <LinkList
-                        links={links
-                          .filter((item) => !!urlMap.get(item.name))
-                          .map((item) => {
-                            const url = urlMap.get(item.name);
-                            return {
-                              children: url.desciption,
-                              icon: <BrandIcon brand={url.brand} />,
-                              href: item.value,
-                            };
-                          })}
+                        links={links.flatMap((item) => {
+                          const url = urlMap.get(item.name);
+                          return url
+                            ? [{ children: url.desciption, href: item.value, icon: <BrandIcon brand={url.brand} /> }]
+                            : [];
+                        })}
                       />
                     )}
                   </div>
@@ -130,8 +127,8 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                         <LinkList
                           links={tasks.map((frameworkTask) => ({
                             children: frameworkTask.description,
-                            icon: <BrandIcon brand={frameworkTask.brand} />,
                             href: frameworkTask.value,
+                            icon: <BrandIcon brand={frameworkTask.brand ?? ''} />,
                           }))}
                         />
                       </section>
@@ -139,57 +136,6 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                 </div>
               }
             />
-          ) : (
-            <Card key={project.title} className="ma-implementation-card">
-              <CardContent>
-                <Heading level={headingLevel}>{project.title.replace(/^Community/i, '')}</Heading>
-                <Paragraph>
-                  <ComponentProgress
-                    checked={project.progress.value}
-                    unchecked={project.progress.max - project.progress.value}
-                  />
-                  {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
-                  <Link href={project.url}>{project.title} projectbord</Link>
-                </Paragraph>
-                {(links.length > 0 || frameworks.length > 0) && (
-                  <Heading level={(headingLevel + 1) as HeadingProps['level']}>Snel aan de slag</Heading>
-                )}
-                {links.length > 0 && (
-                  <>
-                    <LinkList
-                      links={links
-                        .filter((item) => !!urlMap.get(item.name))
-                        .map((item) => {
-                          const url = urlMap.get(item.name);
-                          return {
-                            children: url.desciption,
-                            icon: <BrandIcon brand={url.brand} />,
-                            href: item.value,
-                          };
-                        })}
-                    />
-                  </>
-                )}
-                {frameworks.length > 0 && (
-                  <>
-                    {frameworks.map(({ frameworkName, tasks }) => (
-                      <>
-                        <Heading level={(headingLevel + 2) as HeadingProps['level']}>
-                          {alias} in {frameworkName}
-                        </Heading>
-                        <LinkList
-                          links={tasks.map((frameworkTask) => ({
-                            children: frameworkTask.description,
-                            icon: <BrandIcon brand={frameworkTask.brand} />,
-                            href: frameworkTask.value,
-                          }))}
-                        />
-                      </>
-                    ))}
-                  </>
-                )}
-              </CardContent>
-            </Card>
           );
         })}
     </CardGroup>
@@ -237,40 +183,8 @@ export const HelpImproveComponent = ({ component, headingLevel }: ComponentPageS
   );
 };
 
-interface IntroductionProps extends ComponentPageSectionProps {
-  description?: string;
-  illustration?: string;
-}
-
-export const Introduction = ({ component, headingLevel, description }: IntroductionProps) => {
-  const relayStep = component && COMPONENT_STATES[component.relayStep];
-
-  // This component should not be rendered with Astro since the Astro layout
-  // renders the `h1` in the template. That allows us to inject frontmatter
-  // data between the page title and the rest of the document's markdown
-  if (globalThis.isAstro) return null;
-
-  return (
-    component && (
-      <>
-        <InlineHeadingGroup level={headingLevel} suffix={relayStep && <EstafetteBadge state={relayStep} />}>
-          {component.title}
-        </InlineHeadingGroup>
-        <Paragraph purpose="lead">{description}</Paragraph>
-        {['Help Wanted', 'Community'].includes(relayStep) && (
-          <ComponentIllustration
-            relayStep={relayStep}
-            description={`Schets van de ${component.title} component`}
-            name={component.title}
-          />
-        )}
-      </>
-    )
-  );
-};
-
 export const Related = ({ component }: ComponentPageSectionProps) => {
-  const relatedComponents = (component && relationMap[component.title]) || [];
+  const relatedComponents = (component && relationMap[component.title as keyof typeof relationMap]) || [];
   return (
     relatedComponents.length > 0 && (
       <Paragraph>

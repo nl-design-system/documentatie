@@ -1,12 +1,12 @@
-import { Link } from '../link/link';
-import { BadgeList, DataBadge } from '@utrecht/component-library-react';
-import { Heading } from '@nl-design-system-candidate/heading-react/css';
-import { Paragraph } from '../paragraph/paragraph';
-import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
-import { Card, CardContent, CardIllustration } from './CardGroup';
-import { ComponentIllustration } from '../component-illustration/component-illustration';
-import { EstafetteBadge } from './EstafetteBadge';
+import { BadgeList, DataBadge } from '@utrecht/component-library-react';
+import clsx from 'clsx';
+import { ComponentIllustration } from '../component-illustration/component-illustration.tsx';
+import { Heading } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { Card, CardContent, CardIllustration } from './CardGroup.tsx';
+import { EstafetteBadge } from './EstafetteBadge.tsx';
 import './ComponentCard.css';
 
 interface ComponentCardProps {
@@ -26,10 +26,10 @@ function appendTrailingSlash(string: string) {
 export const ComponentCard = ({
   name,
   description,
-  relayStep,
+  frameworkNames,
   headingLevel = 2,
   href,
-  frameworkNames,
+  relayStep,
 }: PropsWithChildren<ComponentCardProps>) => {
   return (
     <Card
@@ -61,7 +61,7 @@ export const ComponentCard = ({
         </div>
         {href && (
           <Paragraph>
-            <Link className="utrecht-link" href={appendTrailingSlash(href)}>
+            <Link href={appendTrailingSlash(href)}>
               Bekijk <span className="w">{name}</span> component
             </Link>
           </Paragraph>

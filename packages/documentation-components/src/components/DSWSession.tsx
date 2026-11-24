@@ -1,10 +1,10 @@
-import { IconCalendarEvent } from '../functional-icon';
-import { ButtonLink } from '../button-link/button-link';
-import { Heading } from '../heading/heading';
-import { Paragraph } from '../paragraph/paragraph';
-import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
-import { VideoPlayer } from './VideoPlayer';
+import clsx from 'clsx';
+import { ButtonLink } from '../button-link/button-link.tsx';
+import { IconCalendarEvent } from '../functional-icon/index.tsx';
+import { Heading } from '../heading/heading.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { VideoPlayer } from './VideoPlayer.tsx';
 import './DSWSession.css';
 
 const date = new Date();
@@ -46,17 +46,17 @@ interface Session {
 }
 
 export const DSWSession = ({
-  lang = 'nl',
-  headingLevel = 3,
-  allSpeakers,
   videoId,
-  children,
   allSessions,
+  allSpeakers,
+  children,
+  headingLevel = 3,
+  lang = 'nl',
   sessionId,
 }: PropsWithChildren<DSWSessionProps>) => {
   const session = allSessions?.find(({ uuid }) => sessionId === uuid);
-  const speakers = session && session.speakers.map((fullName) => allSpeakers[fullName]).filter(Boolean);
-  const videoIds = [videoId, session?.videoId, ...(session?.videoIds ?? [])].filter(Boolean);
+  const speakers = session?.speakers.map((fullName) => allSpeakers[fullName]).filter(Boolean) ?? [];
+  const videoIds = [videoId, session?.videoId, ...(session?.videoIds ?? [])].filter((id): id is string => Boolean(id));
 
   return session ? (
     <article className={clsx('ma-dsw-session')}>
@@ -74,9 +74,7 @@ export const DSWSession = ({
             .join(' & ')}
       </Paragraph>
       {videoIds.length > 0 &&
-        videoIds.map((vidId) => (
-          <VideoPlayer key={vidId} id={vidId} title={session.subject} style={{ marginBlock: '20px' }} lang={lang} />
-        ))}
+        videoIds.map((vidId) => <VideoPlayer key={vidId} id={vidId} title={session.subject} lang={lang} />)}
       {session && session.isoDateTime && session.isoDateTime > dateNow ? (
         <Paragraph>
           <time dateTime={session.isoDateTime}>

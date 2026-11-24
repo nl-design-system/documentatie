@@ -19,17 +19,12 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
-import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
-import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
+import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
+import { Note } from "@nl-design-system-community/documentation-components/src/note/note";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import disclaimer from "./_wcag-disclaimer.md?raw";
 import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_4.1.2-summary.md";
-
-<WcagHeadingGroup level={1} conformanceLevel="Niveau A">
-  {"WCAG-succescriterium 4.1.2 Naam, rol, waarde"}
-</WcagHeadingGroup>
 
 ## Uitleg
 
@@ -266,9 +261,9 @@ Oplossing: zet de toggle `aria-expanded="true/false"` op de button, omdat deze s
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 4.1.2 Name, role, value</span>](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 4.1.2 Name, role, value</span>](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html).
 
-<SpotlightSection>
+<Note>
   <Markdown omitH1 headingLevel={3} content={disclaimer} />
-</SpotlightSection>
+</Note>
 
 ## Help richtlijn verbeteren
 

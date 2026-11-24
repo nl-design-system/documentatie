@@ -19,17 +19,12 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
-import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
-import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
+import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
+import { Note } from "@nl-design-system-community/documentation-components/src/note/note";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import disclaimer from "./_wcag-disclaimer.md?raw";
 import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_4.1.1-summary.md";
-
-<WcagHeadingGroup level={1} conformanceLevel="Vervallen">
-  {"WCAG-succescriterium 4.1.1 Parsen"}
-</WcagHeadingGroup>
 
 **Let op**: De werkgroep die WCAG maakt heeft 4.1.1 de afgelopen jaren besproken en vastgesteld dat dit criterium tegenwoordig niet meer relevant is, omdat browsers en hulptechnologieën intussen zijn verbeterd (zie de [WCAG FAQ](https://www.w3.org/WAI/standards-guidelines/wcag/faq/#parsing411)). Het criterium is misschien in jouw situatie niet meer van toepassing. In WCAG-versie 2.2 is het helemaal verwijderd. In versie 2.1 is een [opmerking](https://www.w3.org/TR/WCAG21/#h-note-26) toegevoegd dat content in HTML of XML automatisch aan het criterium voldoet. Zie ook: [Wat is verplicht?](https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht#welkeeisen).
 
@@ -111,9 +106,9 @@ Een formulier dat vaak twee keer wordt toegevoegd, is een aanmeldformulier voor 
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 4.1.1 Parsing</span>](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#parsing).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 4.1.1 Parsing</span>](https://www.w3.org/WAI/WCAG22/Understanding/parsing.html).
 
-<SpotlightSection>
+<Note>
   <Markdown omitH1 headingLevel={3} content={disclaimer} />
-</SpotlightSection>
+</Note>
 
 ## Help richtlijn verbeteren
 

@@ -1,7 +1,7 @@
 import Wcag111 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.1.1-link.md';
+import Wcag141 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.1-link.md';
 import Wcag1411 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11-link.md';
 import Wcag1412 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md';
-import Wcag141 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.1-link.md';
 import Wcag143 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md';
 import Wcag144 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md';
 import Wcag211 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-link.md';
@@ -18,107 +18,107 @@ import Wcag244 from '@nl-design-system-unstable/documentation/wcag/summaries/_2.
 
 export const usage = [
   {
-    title: 'Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief.',
+    component: Wcag111,
     sc: '1.1.1',
     status: '',
-    component: Wcag111,
     tags: ['designer', 'contentmaker'],
+    title: 'Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief.',
   },
   {
-    title: 'Links in een lopende tekst zijn duidelijk zichtbaar.',
+    component: Wcag141,
     sc: '1.4.1',
     status: '',
-    component: Wcag141,
     tags: ['designer', 'contentmaker'],
+    title: 'Links in een lopende tekst zijn duidelijk zichtbaar.',
   },
   {
-    title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg.',
+    component: Wcag143,
     sc: '1.4.3',
     status: '',
-    component: Wcag143,
     tags: ['designer', 'contentmaker'],
+    title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg.',
   },
   {
-    title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst.',
+    component: Wcag145,
     sc: '1.4.5',
     status: '',
-    component: Wcag145,
     tags: ['designer', 'contentmaker'],
+    title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst.',
   },
   {
-    title:
-      'Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.',
+    component: Wcag1411,
     sc: '1.4.11',
     status: '',
-    component: Wcag1411,
     tags: ['designer', 'contentmaker'],
+    title:
+      'Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.',
   },
   {
-    title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).',
+    component: Wcag244,
     sc: '2.4.4',
     status: '',
-    component: Wcag244,
     tags: ['designer', 'contentmaker'],
+    title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).',
   },
   {
-    title: 'Als de Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud',
+    component: Wcag2411,
     sc: '2.4.11',
     status: '',
-    component: Wcag2411,
     tags: ['developer', 'designer'],
+    title: 'Als de Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud',
   },
   {
-    title:
-      'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.',
+    component: Wcag312,
     sc: '3.1.2',
     status: '',
-    component: Wcag312,
     tags: ['developer', 'contentmaker'],
+    title:
+      'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.',
   },
   {
-    title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label',
+    component: Wcag324,
     sc: '3.2.4',
     status: '',
-    component: Wcag324,
     tags: ['developer', 'designer', 'contentmaker'],
+    title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label',
   },
 ];
 
 export const component = [
   {
-    title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.',
+    component: Wcag144,
     sc: '1.4.4',
     status: '',
-    component: Wcag144,
     tags: ['developer'],
+    title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.',
   },
   {
-    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.',
+    component: Wcag1412,
     sc: '1.4.12',
     status: '',
-    component: Wcag1412,
     tags: ['developer'],
+    title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.',
   },
   {
-    title: 'Je kunt de Link focussen met de tabtoets en activeren met de entertoets.',
+    component: Wcag211,
     sc: '2.1.1',
     status: '',
-    component: Wcag211,
     tags: ['developer'],
+    title: 'Je kunt de Link focussen met de tabtoets en activeren met de entertoets.',
   },
   {
-    title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval.',
+    component: Wcag212,
     sc: '2.1.2',
     status: '',
-    component: Wcag212,
     tags: ['developer'],
+    title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval.',
   },
   {
-    title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar.',
+    component: Wcag247,
     sc: '2.4.7',
     status: '',
-    component: Wcag247,
     tags: ['developer', 'designer'],
+    title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar.',
   },
   /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
   /*
@@ -131,25 +131,25 @@ export const component = [
     },
     */
   {
-    title:
-      'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.',
+    component: Wcag252,
     sc: '2.5.2',
     status: '',
-    component: Wcag252,
     tags: ['developer'],
+    title:
+      'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.',
   },
   {
-    title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam.',
+    component: Wcag253,
     sc: '2.5.3',
     status: '',
-    component: Wcag253,
     tags: ['developer'],
+    title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam.',
   },
   {
-    title: 'De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels.',
+    component: Wcag255,
     sc: '2.5.5',
     status: '',
-    component: Wcag255,
     tags: ['developer'],
+    title: 'De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels.',
   },
 ];

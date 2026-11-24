@@ -1,8 +1,8 @@
-import clsx from 'clsx';
 import type { AnchorHTMLAttributes } from 'react';
+import clsx from 'clsx';
 import './ExternalLink.css';
 
-export const ExternalLink = ({ children, href, className }: AnchorHTMLAttributes<HTMLAnchorElement>) => (
+export const ExternalLink = ({ children, className, href }: AnchorHTMLAttributes<HTMLAnchorElement>) => (
   <a href={href} className={clsx('ma-external-link', className)} target="_blank" rel="noreferrer">
     {children}
     <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" className="ma-external-link__icon">

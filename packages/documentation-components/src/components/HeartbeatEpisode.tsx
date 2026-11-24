@@ -1,9 +1,9 @@
-import HeartbeatJSON from '../../../../docs/community/events/heartbeat/heartbeat.json';
-import { VideoPlayer } from './VideoPlayer';
-import { Heading, type HeadingProps } from '../heading/heading';
-import { Link } from '../link/link';
-import { Paragraph } from '../paragraph/paragraph';
 import Markdown from 'react-markdown';
+import HeartbeatJSON from '../../../../docs/community/events/heartbeat/heartbeat.json';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { VideoPlayer } from './VideoPlayer.tsx';
 
 interface Heartbeat {
   id: number;
@@ -19,14 +19,14 @@ interface HeartbeatEpisodeProps {
 }
 
 export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) => {
-  const episode: Heartbeat = id ? HeartbeatJSON.find((h) => h.id === id) : HeartbeatJSON[0];
+  const episode: Heartbeat | undefined = id ? HeartbeatJSON.find((h) => h.id === id) : HeartbeatJSON[0];
 
   return episode ? (
     <>
       {!!headingLevel && (
         <Heading level={headingLevel}>
           Heartbeat van{' '}
-          {new Date(episode.date).toLocaleDateString('NL-nl', { year: 'numeric', month: 'long', day: 'numeric' })}
+          {new Date(episode.date).toLocaleDateString('NL-nl', { day: 'numeric', month: 'long', year: 'numeric' })}
         </Heading>
       )}
       {episode.description.map((description) => (

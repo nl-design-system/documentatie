@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Pas de kleur van de tekst of achtergrond aan, voor een contrastratio van tenminste:
+Pas de kleur van de tekst of achtergrond aan, voor een contrastratio van ten minste:
 
 - 3:1 voor tekst van 24 pixels of groter.
 - 3:1 voor dikgedrukte tekst van 19 pixels of groter.

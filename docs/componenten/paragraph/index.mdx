@@ -63,14 +63,14 @@ import MultipleExplanation from "@nl-design-system-unstable/documentation/compon
 import MultipleSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/multiple/solution.md";
 import StrongMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/metadata.json";
 import StrongExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/explanation.md";
-import StrongSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/solution.md";
-import StrongSolutionHeading from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/solution-heading.md";
-import StrongSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/solution-lead.md";
+import StrongSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/bold.solution.md";
+import StrongSolutionHeading from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/solution.md";
+import StrongSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/strong/lead.solution.md";
 import EmphasisMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/emphasis/metadata.json";
 import EmphasisExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/emphasis/explanation.md";
 import EmphasisSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/emphasis/solution.md";
-import EmphasisSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/emphasis/solution-lead.md";
-import EmphasisSolutionQuote from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/emphasis/solution-quote.md";
+import EmphasisSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/emphasis/lead.solution.md";
+import EmphasisSolutionQuote from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/emphasis/quote.solution.md";
 import UnderlineMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/underline/metadata.json";
 import UnderlineExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/underline/explanation.md";
 import UnderlineSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_rules/underline/solution.md";
@@ -82,13 +82,11 @@ import {
 import { LinkList, LinkListLink } from "@nl-design-system-community/documentation-components/src/link-list/link-list";
 import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
 import { BrandIcon } from "@nl-design-system-community/documentation-components/src/components/BrandIcon";
-import { ComponentAliases } from "@nl-design-system-community/documentation-components/src/components/ComponentAliases";
 
 import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -96,20 +94,14 @@ import {
   ChecklistItem,
 } from "@nl-design-system-community/documentation-components/src/components/Checklist";
 import { DesignTokens } from "@nl-design-system-community/documentation-components/src/components/DesignTokens";
-import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
 import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/paragraph-tokens";
 
-{/* Add name and description for the component */}
 export const title = "Paragraph";
-export const description = "De paragraph gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.";
 export const issueNumber = 115;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentAliases component={component} />
 
 <Card className="ma-implementation-card">
   <CardContent>

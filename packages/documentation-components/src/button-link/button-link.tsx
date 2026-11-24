@@ -1,7 +1,6 @@
 import '@nl-design-system-candidate/button-css/button.css';
-
-import clsx from 'clsx';
 import type { AnchorHTMLAttributes, ReactNode } from 'react';
+import clsx from 'clsx';
 
 export interface ButtonLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   purpose?: 'primary' | 'secondary' | 'subtle';
@@ -11,12 +10,12 @@ export interface ButtonLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement>
 }
 
 export const ButtonLink = ({
-  className,
   children,
-  purpose,
-  iconStart,
-  iconEnd,
+  className,
   href,
+  iconEnd,
+  iconStart,
+  purpose,
   ...restProps
 }: ButtonLinkProps) => {
   return (

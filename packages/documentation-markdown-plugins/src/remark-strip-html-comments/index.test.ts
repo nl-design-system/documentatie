@@ -1,6 +1,6 @@
 import { remark } from 'remark';
 import { describe, expect, test } from 'vitest';
-import { remarkStripHtmlComments } from './index';
+import { remarkStripHtmlComments } from './index.ts';
 
 const process = (markdown: string) => String(remark().use(remarkStripHtmlComments).processSync(markdown)).trim();
 

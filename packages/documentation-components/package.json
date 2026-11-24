@@ -24,7 +24,6 @@
     "@gemeente-denhaag/iconbutton": "3.1.1",
     "@gemeente-denhaag/side-navigation": "4.1.0",
     "@iframe-resizer/react": "5.5.8",
-    "@mdx-js/react": "3.1.1",
     "@nl-design-system-candidate/button-css": "1.1.0",
     "@nl-design-system-candidate/button-react": "1.1.0",
     "@nl-design-system-candidate/code-block-css": "1.2.0",
@@ -45,6 +44,7 @@
     "@nl-design-system-community/design-tokens-schema": "2.1.0",
     "@nl-design-system-community/documentation-i18n": "workspace:*",
     "@nl-design-system-community/documentation-index": "workspace:*",
+    "@nl-design-system-community/documentation-markdown-plugins": "workspace:*",
     "@nl-design-system-community/editor-react": "1.2.0",
     "@nl-design-system-community/ma-task-list-css": "0.1.0",
     "@nl-design-system-community/ma-task-list-react": "0.1.0",
@@ -93,10 +93,9 @@
     "@utrecht/page-header-react": "1.0.10",
     "@utrecht/page-layout-css": "4.0.0",
     "@utrecht/page-layout-react": "1.0.11",
-    "@utrecht/root-css": "4.1.0",
+    "@utrecht/root-css": "4.1.2",
     "@utrecht/root-react": "1.0.17",
     "@utrecht/separator-css": "3.0.1",
-    "@utrecht/spotlight-section-css": "3.0.2",
     "@utrecht/table-css": "3.0.1",
     "@utrecht/textarea-css": "4.0.1",
     "@utrecht/textbox-css": "4.0.1",
@@ -110,18 +109,20 @@
     "prism-react-renderer": "2.4.1",
     "prismjs": "1.30.0",
     "react-hook-form": "7.71.1",
-    "react-lite-youtube-embed": "3.5.1",
     "react-markdown": "10.1.0",
     "unist-util-visit": "5.1.0"
   },
   "devDependencies": {
     "@astrojs/markdown-remark": "7.3.4",
     "@astrojs/react": "7.1.1",
-    "@nl-design-system/component-progress": "1.1.12",
+    "@nl-design-system/component-progress": "1.1.21",
     "@testing-library/dom": "10.4.2",
     "@testing-library/jest-dom": "7.0.1",
     "@testing-library/react": "16.3.3",
     "@types/mdast": "4.0.4",
+    "@types/prismjs": "1.26.3",
+    "@types/react": "18.3.27",
+    "@types/react-dom": "18.3.7",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "rehype": "13.0.2",
@@ -136,7 +137,7 @@
     "vitest": "4.1.11"
   },
   "scripts": {
-    "lint-todo": "tsc --noEmit",
+    "lint": "tsc --noEmit",
     "test": "vitest run --config ./vitest-jsdom.config.ts"
   }
 }

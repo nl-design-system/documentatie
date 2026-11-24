@@ -35,13 +35,13 @@ interface FlexProps {
 }
 
 export const Flex = ({
-  direction = 'row',
-  justify = 'flex-start',
   align = 'stretch',
-  wrap = 'nowrap',
   children,
   className,
+  direction = 'row',
   is: Component = 'div',
+  justify = 'flex-start',
+  wrap = 'nowrap',
 }: FlexProps) => {
   const directionClass = `ma-flex--direction-${direction}`;
   const justifyClass = `ma-flex--justify-${justify.replace(/\s+/g, '-')}`;

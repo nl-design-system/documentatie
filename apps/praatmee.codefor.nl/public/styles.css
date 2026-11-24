@@ -1,0 +1,203 @@
+/* Separate file because the CSP forbids inline styles. Colours meet WCAG AA. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --praatmee-accent: #a34f00; /* Code for NL orange, darkened for contrast */
+  --praatmee-accent-hover: #7a3b00;
+  --praatmee-black: #000;
+  --praatmee-border: #6b6b6b;
+  --praatmee-error: #b3261e;
+  --praatmee-error-bg: #fdecea;
+  --praatmee-focus: #004b8d;
+  --praatmee-muted: #4d4d4d;
+  --praatmee-success: #0b6b3a;
+  --praatmee-success-bg: #e8f5ee;
+  --praatmee-text: #1a1a1a;
+  --praatmee-white: #fff;
+}
+
+body {
+  background-color: var(--praatmee-white);
+  color: var(--praatmee-text);
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "Roboto",
+    "Arial",
+    sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+.praatmee-header,
+.praatmee-main {
+  margin-block: 0;
+  margin-inline: auto;
+  max-inline-size: 36rem;
+  padding-block: 1.5rem;
+  padding-inline: 1rem;
+}
+
+.praatmee-logo {
+  align-items: center;
+  color: var(--praatmee-text);
+  display: inline-flex;
+  font-weight: 700;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.praatmee-logo img {
+  block-size: auto;
+  inline-size: 3rem;
+}
+
+.praatmee-logo:hover span {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-block: 0 1rem;
+  margin-inline: 0;
+}
+
+a {
+  color: var(--praatmee-focus);
+  text-underline-offset: 0.15em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--praatmee-focus);
+  outline-offset: 3px;
+}
+
+.praatmee-field {
+  margin-block: 0 1.5rem;
+  margin-inline: 0;
+}
+
+.praatmee-label {
+  display: block;
+  font-weight: 700;
+}
+
+.praatmee-hint,
+.praatmee-field-error {
+  display: block;
+  margin-block: 0.25rem 0.5rem;
+  margin-inline: 0;
+}
+
+.praatmee-hint {
+  color: var(--praatmee-muted);
+}
+
+.praatmee-field-error {
+  color: var(--praatmee-error);
+  font-weight: 700;
+}
+
+.praatmee-input {
+  background-color: var(--praatmee-white);
+  border: 2px solid var(--praatmee-border);
+  border-radius: 0.25rem;
+  color: inherit;
+  display: block;
+  font: inherit;
+  inline-size: 100%;
+  max-inline-size: 24rem;
+  min-block-size: 2.75rem; /* touch target */
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+.praatmee-input--short {
+  max-inline-size: 8rem;
+}
+
+.praatmee-input[aria-invalid="true"] {
+  border-color: var(--praatmee-error);
+  border-width: 3px;
+}
+
+.praatmee-button {
+  background-color: var(--praatmee-accent);
+  border: 0;
+  border-radius: 0.4em;
+  box-shadow: 0 3px 0 var(--praatmee-accent-hover);
+  color: var(--praatmee-white);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  min-block-size: 2.75rem;
+  padding-block: 0.75rem;
+  padding-inline: 1.5rem;
+}
+
+.praatmee-button:hover {
+  background-color: var(--praatmee-accent-hover);
+}
+
+.praatmee-alert {
+  border-inline-start: 0.5rem solid;
+  border-radius: 0.25rem;
+  margin-block: 1.5rem;
+  margin-inline: 0;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.praatmee-alert h2 {
+  font-size: 1.25rem;
+  margin-block: 0 0.5rem;
+  margin-inline: 0;
+}
+
+.praatmee-alert p,
+.praatmee-alert ul {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+.praatmee-alert--error {
+  background-color: var(--praatmee-error-bg);
+  border-color: var(--praatmee-error);
+}
+
+.praatmee-alert--success {
+  background-color: var(--praatmee-success-bg);
+  border-color: var(--praatmee-success);
+}
+
+.praatmee-visually-hidden {
+  block-size: 1px;
+  clip-path: inset(50%);
+  inline-size: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* Honeypot field */
+.praatmee-hp {
+  block-size: 1px;
+  inline-size: 1px;
+  inset-inline-start: -10000px;
+  overflow: hidden;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .praatmee-button {
+    transition: background-color 150ms;
+  }
+}

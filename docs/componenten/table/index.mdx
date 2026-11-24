@@ -32,18 +32,34 @@ keywords:
 
 {/* @license CC0-1.0 */}
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
-import { DefinitionOfDone, HelpImproveComponent, Implementations, Introduction, Related } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
-import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import { DefinitionOfDone, HelpImproveComponent, Implementations, Related } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
+import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
 import guidelines from "./\_guidelines.md?raw";
+import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
+import MissingHeaderRowMeta from "@nl-design-system-unstable/documentation/componenten/table/\_rules/missing-header-row/metadata.json";
+import MissingHeaderRowExplanation from "@nl-design-system-unstable/documentation/componenten/table/\_rules/missing-header-row/explanation.md";
+import MissingHeaderRowSolution from "@nl-design-system-unstable/documentation/componenten/table/\_rules/missing-header-row/solution.md";
+import MissingHeaderColumnMeta from "@nl-design-system-unstable/documentation/componenten/table/\_rules/missing-header-column/metadata.json";
+import MissingHeaderColumnExplanation from "@nl-design-system-unstable/documentation/componenten/table/\_rules/missing-header-column/explanation.md";
+import MissingHeaderColumnSolution from "@nl-design-system-unstable/documentation/componenten/table/\_rules/missing-header-column/solution.md";
+import SingleRowMeta from "@nl-design-system-unstable/documentation/componenten/table/\_rules/single-row/metadata.json";
+import SingleRowExplanation from "@nl-design-system-unstable/documentation/componenten/table/\_rules/single-row/explanation.md";
+import SingleRowSolution from "@nl-design-system-unstable/documentation/componenten/table/\_rules/single-row/solution.md";
+import SingleRowSolutionText from "@nl-design-system-unstable/documentation/componenten/table/\_rules/single-row/text.solution.md";
+import EmptyCellMeta from "@nl-design-system-unstable/documentation/componenten/table/\_rules/empty-cell/metadata.json";
+import EmptyCellExplanation from "@nl-design-system-unstable/documentation/componenten/table/\_rules/empty-cell/explanation.md";
+import EmptyCellSolution from "@nl-design-system-unstable/documentation/componenten/table/\_rules/empty-cell/solution.md";
+import EmptyCaptionMeta from "@nl-design-system-unstable/documentation/componenten/table/\_rules/empty-caption/metadata.json";
+import EmptyCaptionExplanation from "@nl-design-system-unstable/documentation/componenten/table/\_rules/empty-caption/explanation.md";
+import EmptyCaptionSolution from "@nl-design-system-unstable/documentation/componenten/table/\_rules/empty-caption/solution.md";
+import MergedCellsMeta from "@nl-design-system-unstable/documentation/componenten/table/\_rules/merged-cells/metadata.json";
+import MergedCellsExplanation from "@nl-design-system-unstable/documentation/componenten/table/\_rules/merged-cells/explanation.md";
+import MergedCellsSolution from "@nl-design-system-unstable/documentation/componenten/table/\_rules/merged-cells/solution.md";
 
-{/* Add name and description for the component */}
 export const title = "Table";
-export const description = "Structureert data in rijen en kolommen.";
 export const issueNumber = 39;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
@@ -58,5 +74,59 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Richtlijnen
 
 <Markdown omitH1 headingLevel={3} content={guidelines} />
+
+## Veel gemaakte fouten bij het inzetten van Table
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{MissingHeaderRowMeta.title}</Heading>
+
+<MissingHeaderRowExplanation />
+
+#### Oplossing
+
+<MissingHeaderRowSolution />
+
+<Heading level={3}>{MissingHeaderColumnMeta.title}</Heading>
+
+<MissingHeaderColumnExplanation />
+
+#### Oplossing
+
+<MissingHeaderColumnSolution />
+
+<Heading level={3}>{SingleRowMeta.title}</Heading>
+
+<SingleRowExplanation />
+
+#### Oplossing
+
+<SingleRowSolution />
+
+<SingleRowSolutionText />
+
+<Heading level={3}>{EmptyCellMeta.title}</Heading>
+
+<EmptyCellExplanation />
+
+#### Oplossing
+
+<EmptyCellSolution />
+
+<Heading level={3}>{EmptyCaptionMeta.title}</Heading>
+
+<EmptyCaptionExplanation />
+
+#### Oplossing
+
+<EmptyCaptionSolution />
+
+<Heading level={3}>{MergedCellsMeta.title}</Heading>
+
+<MergedCellsExplanation />
+
+#### Oplossing
+
+<MergedCellsSolution />
 
 <HelpImproveComponent component={component} headingLevel={2} />

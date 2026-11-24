@@ -1,0 +1,23 @@
+---
+import Document, { type Props as DocumentProps } from './document.astro';
+import {
+  PageBodyContent,
+  PageBodyWrapper,
+} from '@nl-design-system-community/documentation-components/src/page-body/page-body.tsx';
+import { siteLang } from '../seo.config.ts';
+
+export type Props = DocumentProps;
+
+/**
+ * This layout gives a default PageBody layout where the main content is centered in the page.
+ */
+const { ...props } = Astro.props;
+---
+
+<Document {...props}>
+  <PageBodyWrapper Component="main" id="main" lang={props.lang !== siteLang ? props.lang : undefined}>
+    <PageBodyContent>
+      <slot />
+    </PageBodyContent>
+  </PageBodyWrapper>
+</Document>

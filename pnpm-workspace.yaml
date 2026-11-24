@@ -1,5 +1,6 @@
 packages:
   - docs/
+  - apps/*
   - packages/*
 
 allowBuilds:
@@ -28,6 +29,7 @@ minimumReleaseAgeExclude:
   - '@utrecht/*'
   - proxy-addr@2.0.8
   - tinypool@2.1.1 || 2.1.2
+  - hono@4.13.18
 
 overrides:
   '@isaacs/brace-expansion@<=5.0.0': '>=5.0.1'
@@ -41,6 +43,7 @@ patchedDependencies:
   '@gemeente-denhaag/icons@4.0.1': patches/@gemeente-denhaag__icons@4.0.1.patch
   '@gemeente-denhaag/number-badge@2.1.0': patches/@gemeente-denhaag__number-badge@2.1.0.patch
   '@gemeente-denhaag/side-navigation@4.1.0': patches/@gemeente-denhaag__side-navigation@4.1.0.patch
+  '@justinribeiro/lite-youtube@1.9.0': patches/@justinribeiro__lite-youtube@1.9.0.patch
   '@rijkshuisstijl-community/card-react': patches/@rijkshuisstijl-community__card-react.patch
 
 provenance: true

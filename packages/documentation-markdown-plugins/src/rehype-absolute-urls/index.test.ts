@@ -2,7 +2,7 @@ import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';
 import { unified } from 'unified';
 import { describe, expect, test } from 'vitest';
-import { rehypeAbsoluteUrls } from './index';
+import { rehypeAbsoluteUrls } from './index.ts';
 
 const siteUrl = 'https://nldesignsystem.nl';
 

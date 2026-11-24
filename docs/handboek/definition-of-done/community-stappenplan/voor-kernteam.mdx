@@ -40,7 +40,7 @@ import PublicRepoDoel from "./public-repo/_doel.md";
 
 # Stappenplan: Community door het kernteam
 
-Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29) van het [Estafettemodel](https://www.nldesignsystem.nl/handboek/component-bijdragen/definition-of-done).
+Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29) van het [Estafettemodel](https://nldesignsystem.nl/handboek/estafettemodel/componenten/definition-of-done/).
 Organisaties die een component bij willen dragen kunnen het [Stappenplan voor organisaties](/handboek/estafettemodel/componenten/community/voor-organisaties/) gebruiken.
 
 Onderstaande stappen zijn van toepassing op 1 implementatie uit de community. Alle checks die je uitvoert gelden dus voor deze ene implementatie.
@@ -355,7 +355,6 @@ Voordat je de component progress gaat bijwerken is het handig om te controleren 
 - Publiceer een nieuwe versie van het `component-progress` package: ga naar de [pull requests van de Index repository](https://github.com/nl-design-system/index/pulls) en zoek naar de pull request genaamd `docs(release): design system packages`. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.
 - Wacht tot [`@nl-design-system/component-progress` op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
-- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm update --recursive @nl-design-system/component-progress@latest` te draaien. Dit update de devDependency en de lockfile.
 - Maak een nieuwe branch aan en gebruik de volgende naam:
 
 **Branch**
@@ -363,6 +362,14 @@ Voordat je de component progress gaat bijwerken is het handig om te controleren 
 ```
 build/update-component-progress-{datum-of-versienummer}
 ```
+
+- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch het volgende te draaien:
+
+```bash
+pnpm update --recursive @nl-design-system/component-progress@latest
+```
+
+Dit update de devDependency en de lockfile.
 
 - Maak een commit en gebruik hierbij het volgende bericht:
 
@@ -438,4 +445,4 @@ Promoties kunnen ook gecombineerd worden wanneer meerdere componenten van status
 
 ## 🏁 Finish
 
-Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29/views/1) van het [Estafettemodel](https://www.nldesignsystem.nl/handboek/component-bijdragen/definition-of-done). De component gaat nu door voor de 'Candidate' status.
+Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29/views/1) van het [Estafettemodel](https://nldesignsystem.nl/handboek/estafettemodel/componenten/definition-of-done/). De component gaat nu door voor de 'Candidate' status.

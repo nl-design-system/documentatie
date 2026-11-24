@@ -1,0 +1,26 @@
+---
+import { DocCardList } from '@nl-design-system-community/documentation-components/src/doc-card-list/doc-card-list.tsx';
+import ComponentOverview from '@nl-design-system-community/documentation-components/src/component-overview/component-overview.astro';
+import { CriteriaList } from '@nl-design-system-community/documentation-components/src/criteria-list/criteria-list.tsx';
+import { CriteriaListItem } from '@nl-design-system-community/documentation-components/src/criteria-list/criteria-list-item.tsx';
+import type { NavigationElement } from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
+import type { ComponentProps } from 'react';
+
+interface MDXComponentsOptions {
+  navigationItems?: NavigationElement[];
+  navigationList?: NavigationElement[];
+}
+
+export const MDXComponents = async ({ navigationItems, navigationList }: MDXComponentsOptions = {}) => {
+  return {
+    ComponentOverview,
+    CriteriaList,
+    CriteriaListItem: (props: ComponentProps<typeof CriteriaListItem>) => {
+      const scPage = navigationList?.find((item) => item.href?.startsWith(`/wcag/${props.sc}`));
+      return CriteriaListItem({ ...props, scLabel: scPage?.label });
+    },
+    DocCardList: (props: Partial<ComponentProps<typeof DocCardList>>) =>
+      DocCardList({ items: navigationItems || [], ...props }),
+  };
+};
+---

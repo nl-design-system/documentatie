@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { useIsBrowser } from '../hooks/use-is-browser';
+import { useIsBrowser } from '../hooks/use-is-browser.ts';
 
 /**
  * This component is used as an alternative to the BrowserOnly component from

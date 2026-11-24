@@ -1,10 +1,10 @@
-import { relative, resolve, sep } from 'node:path';
-import { readdir } from 'node:fs/promises';
 import type { Dirent } from 'node:fs';
-import { sortItems } from './sort-items';
-export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element';
-export { getMainNavigation } from './get-main-navigation';
-export { getNavigationElement } from './get-navigation-element';
+import { readdir } from 'node:fs/promises';
+import { relative, resolve, sep } from 'node:path';
+import { sortItems } from './sort-items.ts';
+export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element.ts';
+export { getMainNavigation } from './get-main-navigation.ts';
+export { getNavigationElement } from './get-navigation-element.ts';
 
 interface AstroMetadata {
   [key: string]: unknown;
@@ -81,7 +81,7 @@ export interface NavigationItem extends DocumentationMetadata {
   filePath?: string;
 
   /** The parent `NavigationGroup` this item is nested under. */
-  parent?: NavigationGroup;
+  parent?: NavigationGroupResolved;
 
   /** The href to the rendered page */
   href?: string;
@@ -91,6 +91,9 @@ export interface NavigationItem extends DocumentationMetadata {
 
   /** Indicating that this item is the current page */
   current?: boolean;
+
+  /** Items cannot be expanded, only groups can. Declared so `expanded` can be read on any `NavigationElement` */
+  expanded?: never;
 
   metadata?: string;
 }
@@ -128,7 +131,7 @@ export interface NavigationGroup {
   ignoredFiles?: string[];
 
   /** The parent `NavigationGroup` this group is nested under. */
-  parent?: NavigationGroup;
+  parent?: NavigationGroupResolved;
 
   /** The position this group should take within a NavigationGroup items list */
   order?: number;
@@ -212,17 +215,17 @@ export async function navigationItem(
   if (!label) throw new Error(`No label provided for ${_filePath}`);
 
   const item: NavigationItem = {
-    type: options?.type || 'item',
     id: entry?.id,
     description: entry?.data.description,
-    label,
     filePath: entry?.filePath,
-    parent: options?.parent,
     href: `/${entry?.id || options?.href}/`.replaceAll(/\/{2,}/g, '/'),
-    order: entry?.data?.navigation_order,
-    unlisted: entry?.data?.unlisted,
-    metadata: entry?.data?.conformance_level,
+    label,
     lang: options?.lang || entry?.data?.lang || 'nl',
+    metadata: entry?.data?.conformance_level,
+    order: entry?.data?.navigation_order,
+    parent: options?.parent,
+    type: options?.type || 'item',
+    unlisted: entry?.data?.unlisted,
   };
 
   return item;
@@ -344,24 +347,26 @@ export async function navigationGroup(
 
   // Resulting NavigationGroup to be returned
   const group: NavigationGroup = {
-    type: 'group',
-    label: options.label || index?.label || toTitleCase(folderName) || 'unknown',
-    items: sortedItems,
-    index,
     filePath: options.filePath,
     href: index?.href,
-    order: index?.order,
+    index,
+    items: sortedItems,
+    label: options.label || index?.label || toTitleCase(folderName) || 'unknown',
     lang: options?.lang || index?.lang || 'nl',
+    order: index?.order,
+    type: 'group',
   };
 
-  // Add the resulting NavigationGroup to each item as a parent
+  // Add the resulting NavigationGroup to each item as a parent.
+  // Its items are resolved by `navigationRoot` before anyone reads `parent`.
+  const parent = group as NavigationGroupResolved;
   group.items.forEach(async (item) => {
     const _item = await item;
-    _item.parent = group;
+    _item.parent = parent;
   });
 
   if (index) {
-    index.parent = group;
+    index.parent = parent;
   }
 
   // Return the group for consumption
@@ -375,7 +380,7 @@ export async function navigationGroup(
  */
 export async function navigationRoot(group: Promise<NavigationGroup>) {
   const navigationTree = (await group) as NavigationGroupResolved;
-  const navigationList = new Set<NavigationElement>();
+  const navigationList = new Set<NavigationElementResolved>();
 
   const walkTree = (
     item: NavigationGroupResolved | NavigationItem,
@@ -405,7 +410,7 @@ export async function navigationRoot(group: Promise<NavigationGroup>) {
 
   navigationTree.items = navigationTree.items.map(walkTree).filter(Boolean) as NavigationElementResolved[];
 
-  return () => structuredClone({ navigationTree, navigationList: [...navigationList] });
+  return () => structuredClone({ navigationList: [...navigationList], navigationTree });
 }
 
 async function getEntryWithFilepath(entries: DocumentationEntries, filePath: string) {

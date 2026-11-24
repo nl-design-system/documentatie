@@ -1,0 +1,160 @@
+import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
+import { Document, Surface } from '@utrecht/component-library-react';
+import { HTMLContent } from '@utrecht/component-library-react';
+import clsx from 'clsx';
+import * as prettierBabel from 'prettier/plugins/babel';
+import * as prettierESTree from 'prettier/plugins/estree';
+import * as prettierHTML from 'prettier/plugins/html';
+import * as prettierPostcss from 'prettier/plugins/postcss';
+import * as prettier from 'prettier/standalone';
+import { isValidElement, useEffect, useId, useState } from 'react';
+import { Fragment } from 'react';
+import * as ReactDOMServer from 'react-dom/server';
+import { Button } from '../../button/button.tsx';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
+import { CodeBlockSyntaxHighlighting } from '../CodeBlockSyntaxHighlighting.tsx';
+import './CanvasLegacy.css';
+
+export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
+
+const ParagraphContainer = ({ children }: PropsWithChildren<object>) => (
+  <Surface className="nlds-canvas__example-surface">
+    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>
+      <Paragraph className="nlds-canvas__example-paragraph">{children}</Paragraph>
+    </Document>
+  </Surface>
+);
+
+ParagraphContainer.displayName = 'ParagraphContainer';
+
+const DocumentContainer = ({ children }: PropsWithChildren<object>) => (
+  <Surface className="nlds-canvas__example-surface">
+    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>{children}</Document>
+  </Surface>
+);
+DocumentContainer.displayName = 'DocumentContainer';
+
+const SurfaceContainer = ({ children }: PropsWithChildren<object>) => (
+  <Surface className="nlds-canvas__example-surface">{children}</Surface>
+);
+
+SurfaceContainer.displayName = 'SurfaceContainer';
+
+export interface CanvasLegacyProps {
+  defaultExpandedCode?: boolean;
+  displayCode?: boolean;
+  code?: string | ReactNode | (() => ReactNode);
+  children: ReactNode | (() => ReactNode);
+  language: string;
+  copy?: boolean;
+  container?: string | CanvasContainerType;
+  designTokens?: CSSProperties;
+  className?: string;
+}
+
+export const CanvasLegacy = ({
+  children,
+  code,
+  container = 'document',
+  copy = true,
+  defaultExpandedCode = false,
+  designTokens,
+  displayCode = true,
+  language,
+}: CanvasLegacyProps) => {
+  // By default the `children` argument is converted to code.
+  const jsxTree = typeof children === 'function' ? children() : children;
+  // You can override the code from `children` with the `code` argument.
+  // The code argument can be a string, or JSX, or a function that generates JSX.
+  const codeJsxTree = typeof code === 'function' ? code() : isValidElement(code) ? code : undefined;
+  const unformattedCode = typeof code === 'string' ? code : ReactDOMServer.renderToStaticMarkup(codeJsxTree || jsxTree);
+  const [exampleSourceCode, setExampleSourceCode] = useState(unformattedCode);
+  const [expandedSourceCode, setExpandedSourceCode] = useState(defaultExpandedCode);
+
+  const toggleExpanded = () => {
+    setExpandedSourceCode(!expandedSourceCode);
+  };
+
+  useEffect(() => {
+    const formatWithPrettier = async () => {
+      const exampleSourceCode = await prettier.format(unformattedCode, {
+        embeddedLanguageFormatting: 'off',
+        htmlWhitespaceSensitivity: 'ignore',
+        parser: language,
+        plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
+        semi: false,
+        singleAttributePerLine: true,
+      });
+      setExampleSourceCode(exampleSourceCode);
+    };
+    formatWithPrettier();
+  }, [unformattedCode]);
+
+  const codeBlockId = useId();
+
+  const copyCode = () => {
+    navigator.clipboard.writeText(exampleSourceCode).catch((err) => console.error('Copy code failed', err));
+  };
+
+  let Container: ElementType = Fragment;
+
+  if (container === 'paragraph') {
+    Container = ParagraphContainer;
+  } else if (container === 'document') {
+    Container = DocumentContainer;
+  } else if (container === 'surface') {
+    Container = SurfaceContainer;
+  }
+
+  return (
+    <div className={clsx('nlds-canvas')}>
+      {jsxTree && (
+        <div className={clsx('nlds-canvas__example')}>
+          <div className="voorbeeld-theme" style={designTokens}>
+            <Container>
+              <HTMLContent>{jsxTree}</HTMLContent>
+            </Container>
+          </div>
+        </div>
+      )}
+      {displayCode && (
+        <div className={clsx('nlds-canvas__toolbar')}>
+          <Button
+            className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
+            purpose="subtle"
+            onClick={toggleExpanded}
+            aria-expanded={expandedSourceCode}
+            aria-controls={codeBlockId}
+          >
+            {!expandedSourceCode ? 'Bekijk code' : 'Verberg code'}
+          </Button>
+        </div>
+      )}
+      {displayCode && (
+        <div
+          className={clsx('nlds-canvas__code-block', !copy && 'nlds-canvas__code-block--user-select-none')}
+          id={codeBlockId}
+          hidden={!expandedSourceCode}
+        >
+          <CodeBlockSyntaxHighlighting
+            codeBlockLabel={'Codevoorbeeld'}
+            syntax={language}
+            textContent={exampleSourceCode}
+            trim
+          />
+          {copy && (
+            <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
+              <Button
+                className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
+                purpose="subtle"
+                onClick={copyCode}
+              >
+                Kopieer
+              </Button>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};

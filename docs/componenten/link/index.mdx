@@ -50,6 +50,7 @@ import LinkIllustration from "@nl-design-system-candidate/link-docs/docs/anatomy
 import AccessibleNameMeta from "@nl-design-system-unstable/documentation/componenten/link/\_rules/accessible-name/metadata.json";
 import AccessibleNameExplanation from "@nl-design-system-unstable/documentation/componenten/link/\_rules/accessible-name/explanation.md";
 import AccessibleNameSolution from "@nl-design-system-unstable/documentation/componenten/link/\_rules/accessible-name/solution.md";
+import AccessibleNameWriteSolution from "@nl-design-system-unstable/documentation/componenten/link/\_rules/accessible-name/write.solution.md";
 import ContrastMeta from "@nl-design-system-unstable/documentation/componenten/link/\_rules/contrast/metadata.json";
 import ContrastExplanation from "@nl-design-system-unstable/documentation/componenten/link/\_rules/contrast/explanation.md";
 import ContrastSolution from "@nl-design-system-unstable/documentation/componenten/link/\_rules/contrast/solution.md";
@@ -64,6 +65,7 @@ import KeyboardExplanation from "@nl-design-system-unstable/documentation/compon
 import KeyboardSolution from "@nl-design-system-unstable/documentation/componenten/link/\_rules/keyboard/solution.md";
 import LanguageMeta from "@nl-design-system-unstable/documentation/componenten/link/\_rules/language/metadata.json";
 import LanguageExplanation from "@nl-design-system-unstable/documentation/componenten/link/\_rules/language/explanation.md";
+import LanguageTranslateSolution from "@nl-design-system-unstable/documentation/componenten/link/\_rules/language/translate.solution.md";
 import LanguageSolution from "@nl-design-system-unstable/documentation/componenten/link/\_rules/language/solution.md";
 import VisibleFocusMeta from "@nl-design-system-unstable/documentation/componenten/link/\_rules/visible-focus/metadata.json";
 import VisibleFocusExplanation from "@nl-design-system-unstable/documentation/componenten/link/\_rules/visible-focus/explanation.md";
@@ -77,13 +79,11 @@ import {
 import { LinkList, LinkListLink } from "@nl-design-system-community/documentation-components/src/link-list/link-list";
 import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
 import { BrandIcon } from "@nl-design-system-community/documentation-components/src/components/BrandIcon";
-import { ComponentAliases } from "@nl-design-system-community/documentation-components/src/components/ComponentAliases";
 
 import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -91,20 +91,14 @@ import {
   ChecklistItem,
 } from "@nl-design-system-community/documentation-components/src/components/Checklist";
 import { DesignTokens } from "@nl-design-system-community/documentation-components/src/components/DesignTokens";
-import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
 import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/link-tokens";
 
-{/* Add name and description for the component */}
 export const title = "Link";
-export const description = "Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.";
 export const issueNumber = 118;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentAliases component={component} />
 
 <Card className="ma-implementation-card">
   <CardContent>
@@ -168,6 +162,8 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 #### Oplossing
 
+<AccessibleNameWriteSolution />
+
 <AccessibleNameSolution />
 
 <Heading level={3}>{ContrastMeta.title}</Heading>
@@ -209,6 +205,8 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 #### Oplossing
 
 <LanguageSolution />
+
+<LanguageTranslateSolution />
 
 <Heading level={3}>{VisibleFocusMeta.title}</Heading>
 

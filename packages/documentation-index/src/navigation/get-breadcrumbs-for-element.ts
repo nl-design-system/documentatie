@@ -1,5 +1,5 @@
-import type { NavigationElement, NavigationGroup } from './index';
-import { getNavigationElement } from './get-navigation-element';
+import type { NavigationElement, NavigationGroup } from './index.ts';
+import { getNavigationElement } from './get-navigation-element.ts';
 
 /**
  * Based on the navigation config, get the breadcrumb path of

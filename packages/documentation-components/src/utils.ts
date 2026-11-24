@@ -1,43 +1,44 @@
-import packageJson from '../../../package.json';
-import { HeadingProps } from './heading/heading';
+import type { HeadingProps } from './heading/heading.tsx';
+import packageJson from '../../../package.json' with { type: 'json' };
 
 export const COMPONENT_STATES = {
-  UNKNOWN: 'Todo',
-  HELP_WANTED: 'Help Wanted',
-  COMMUNITY: 'Community',
   CANDIDATE: 'Candidate',
+  COMMUNITY: 'Community',
   HALL_OF_FAME: 'Hall of fame',
+  HELP_WANTED: 'Help Wanted',
+  UNKNOWN: 'Todo',
 };
 
-export const toKebabCase = (string: string) => string?.toLowerCase().replace(/\s+/gi, '-');
+export const toKebabCase = (string?: string) => string?.toLowerCase().replace(/\s+/gi, '-');
 
 export const getRelayBoardDescription = (id: string): string => {
-  const descriptions = {
+  const descriptions: Record<string, string> = {
     PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.',
-    PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in één zin beschreven.',
-    PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.',
-    PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.',
-    'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.',
     PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.',
-    PVTSSF_lADOBGdlVM4AdX8lzgTC95M:
-      'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.',
-    'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.',
-    'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.',
+    PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.',
     PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.',
     PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.',
+    'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.',
+    'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.',
+    'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.',
+    PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in één zin beschreven.',
+    PVTSSF_lADOBGdlVM4AdX8lzgTC95M:
+      'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.',
+    PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.',
   };
 
   return descriptions[id];
 };
 
 export const previousRelayStep = {
-  HELP_WANTED: 'UNKNOWN',
-  COMMUNITY: 'HELP_WANTED',
   CANDIDATE: 'COMMUNITY',
+  COMMUNITY: 'HELP_WANTED',
   HALL_OF_FAME: 'CANDIDATE',
+  HELP_WANTED: 'UNKNOWN',
 };
 
 export const relayProjectIds = Object.keys(previousRelayStep);
+export const RELAY_STEP_SORT_ORDER = ['HELP_WANTED', 'COMMUNITY', 'CANDIDATE', 'HALL_OF_FAME', 'UNKNOWN'];
 
 export const normalizeName = (name: string) => name.toLowerCase().replace(/(\s|-)+/, '');
 const FRAMEWORK_NAME_SORT_ORDER = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
@@ -109,6 +110,8 @@ export function removeDuplicates<T>(items: T[]): T[] {
 const sortFrameworkNames = (frameworkNames: string[]): string[] =>
   [...frameworkNames].sort((a, b) => FRAMEWORK_NAME_SORT_ORDER.indexOf(a) - FRAMEWORK_NAME_SORT_ORDER.indexOf(b));
 
+const isHttpsUrl = (value: string): boolean => URL.canParse(value) && new URL(value).protocol === 'https:';
+
 export const getAllFrameworkNames = (components: Component[]): string[] => {
   const allProjects = components.flatMap(({ projects }) => projects);
   const allFrameworkNames = allProjects.flatMap((project) => getProjectFrameworkNames(project));
@@ -126,8 +129,9 @@ export const getProjectFrameworkNames = (project: ComponentProject): string[] =>
   return sortFrameworkNames(
     removeDuplicates(
       project.tasks
-        .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
-        .map(({ name }) => frameworkRx.exec(name)?.[1]),
+        .filter(({ name, value }) => value !== '' && frameworkRx.test(name) && isHttpsUrl(value))
+        .map(({ name }) => frameworkRx.exec(name)?.[1])
+        .filter((name): name is string => name !== undefined),
     ),
   );
 };
@@ -156,19 +160,23 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
   // { brand:'github', name: 'GitHub URL (CSS)', id: '...', value: '...', description: '...' }
   return frameworkNames.map((frameworkName) => {
     const tasks = project.tasks
-      .filter(({ name, value }) => value !== '' && name.includes(frameworkName))
-      .map(({ name, id, value }): FrameworkTask => {
-        const brand = /^(.+) URL/.exec(name)[1];
+      .filter(({ name, value }) => value !== '' && name.includes(frameworkName) && isHttpsUrl(value))
+      .map(({ id, name, value }): FrameworkTask => {
+        const brandMatch = /^(.+) URL/.exec(name);
+        if (!brandMatch) {
+          throw new TypeError(`Expected task name "${name}" to match "<brand> URL"`);
+        }
+        const brand = brandMatch[1];
         const description =
           brand === 'Storybook'
             ? `${alias} (${frameworkName}) in Storybook van ${project.title}`
             : `${alias} (${frameworkName}) op ${brand}`;
         return {
-          brand: brand.toLowerCase(),
-          name,
           id,
-          value,
+          name,
+          brand: brand.toLowerCase(),
           description,
+          value,
         };
       });
 
@@ -179,17 +187,20 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
   });
 };
 export type TokenNode = { [key: string]: TokenNode } | { $type: unknown };
+export type TokenGroup = { [key: string]: TokenNode };
 export type TokenPath = string[];
 
 export const tokenPathToDottedTokenPath = (tokenPath: TokenPath): string => tokenPath.join('.');
 export const tokenPathToCSSCustomProperty = (tokenPath: TokenPath): string => '--' + tokenPath.join('-');
-export const tokenAtPath = (obj: TokenNode, path: TokenPath): TokenNode => path.reduce((acc, key) => acc?.[key], obj);
+export const tokenAtPath = (obj: TokenNode, path: TokenPath): TokenNode =>
+  path.reduce((acc, key) => (acc as TokenGroup)?.[key], obj);
 
 export function getTokenPaths(obj: TokenNode, partialTokenPath: TokenPath = []): TokenPath[] {
   if (Object.hasOwn(obj, '$type')) return [partialTokenPath];
+  const group = obj as TokenGroup;
 
-  return Object.keys(obj).flatMap((key) =>
-    typeof obj[key] === 'object' && obj[key] !== null ? getTokenPaths(obj[key], [...partialTokenPath, key]) : [],
+  return Object.keys(group).flatMap((key) =>
+    typeof group[key] === 'object' && group[key] !== null ? getTokenPaths(group[key], [...partialTokenPath, key]) : [],
   );
 }
 
@@ -197,17 +208,20 @@ export function sortTokenPaths(tokenPaths: TokenPath[]): TokenPath[] {
   const memo = new Map<TokenPath, string>();
 
   function getKey(tokenPath: TokenPath): string {
-    if (!memo.has(tokenPath)) {
-      memo.set(tokenPath, tokenPathToDottedTokenPath(tokenPath));
+    let key = memo.get(tokenPath);
+    if (key === undefined) {
+      key = tokenPathToDottedTokenPath(tokenPath);
+      memo.set(tokenPath, key);
     }
-    return memo.get(tokenPath);
+    return key;
   }
 
   return tokenPaths.sort((a, b) => a.length - b.length || getKey(a).localeCompare(getKey(b)));
 }
 
+type EmptyTokenTree = { [key: string]: EmptyTokenTree };
 export function tokenPathsToEmptyTokenTree(tokenPaths: TokenPath[]): TokenNode {
-  const root = {};
+  const root: EmptyTokenTree = {};
   for (const tokenPath of tokenPaths) {
     let node = root;
     for (const key of tokenPath) {

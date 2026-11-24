@@ -3,7 +3,6 @@ node_modules/
 vendor/
 
 # Ignore generated files
-.docusaurus/
 build/
 coverage/
 dist/
