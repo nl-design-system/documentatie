@@ -62,6 +62,12 @@ import { DesignTokens } from "@nl-design-system-community/documentation-componen
 import Markdown from "@nl-design-system-community/documentation-components/src/markdown/markdown.astro";
 import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/mark-tokens";
+import ColorOnlyMeta from "@nl-design-system-unstable/documentation/componenten/mark/\_rules/color-only/metadata.json";
+import ColorOnlyExplanation from "@nl-design-system-unstable/documentation/componenten/mark/\_rules/color-only/explanation.md";
+import ColorOnlySolution from "@nl-design-system-unstable/documentation/componenten/mark/\_rules/color-only/solution.md";
+import EmphasisMeta from "@nl-design-system-unstable/documentation/componenten/mark/\_rules/emphasis/metadata.json";
+import EmphasisExplanation from "@nl-design-system-unstable/documentation/componenten/mark/\_rules/emphasis/explanation.md";
+import EmphasisSolution from "@nl-design-system-unstable/documentation/componenten/mark/\_rules/emphasis/solution.md";
 
 export const title = "Mark";
 export const issueNumber = 333;
@@ -136,3 +142,23 @@ export const component = componentProgress.find((item) => item.number === issueN
 <Implementations component={component} headingLevel={3} />
 
 <Related component={component} />
+
+## Veel gemaakte fouten bij het inzetten van Mark
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{ColorOnlyMeta.title}</Heading>
+
+<ColorOnlyExplanation />
+
+#### Oplossing
+
+<ColorOnlySolution />
+
+<Heading level={3}>{EmphasisMeta.title}</Heading>
+
+<EmphasisExplanation />
+
+#### Oplossing
+
+<EmphasisSolution />
