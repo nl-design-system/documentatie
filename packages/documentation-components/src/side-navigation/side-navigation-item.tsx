@@ -3,11 +3,13 @@ import {
   SideNavigationLink,
   SideNavigationLinkLabel,
   SideNavigationList,
-  SideNavigationExpandButton,
+  // TODO: changes to the expand button have been made locally
+  // SideNavigationExpandButton,
   // TODO: Export is missing from npm package
   // SideNavigationExpandSeparator,
 } from '@gemeente-denhaag/side-navigation';
 import { type KeyboardEvent, type ReactNode, useId, useRef, useState, type Ref } from 'react';
+import SideNavigationExpandButton from './side-navigation-expand-button';
 // TODO: We don't need number badge as dependency
 // import { NumberBadge } from '@gemeente-denhaag/number-badge';
 
@@ -16,6 +18,7 @@ export interface SideNavigationTreeItemProps {
   label: string;
   icon: ReactNode;
   current?: boolean;
+  lang?: string;
   counter?: number;
   expanded?: boolean;
   items?: SideNavigationTreeItemProps[];
@@ -37,7 +40,7 @@ export const SideNavigationTreeItemSummaryElement = (props: SideNavigationTreeIt
   return (
     <SideNavigationItem>
       <div className="denhaag-side-navigation__tree-item-label-wrapper">
-        <SideNavigationLink href={props.href} current={props.current}>
+        <SideNavigationLink href={props.href} current={props.current} lang={props.lang}>
           {props.icon}
           {props.counter && props.counter > 0 ? (
             <SideNavigationLinkLabel>
@@ -51,9 +54,9 @@ export const SideNavigationTreeItemSummaryElement = (props: SideNavigationTreeIt
         {props.items?.length && (
           <SideNavigationExpandButton
             hidden
-            aria-label={`${expanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu ${props.label}`}
-            data-open-label={`${props.openLabel || 'Open'} submenu ${props.label}`}
-            data-closed-label={`${props.closeLabel || 'Sluit'} submenu ${props.label}`}
+            aria-label={`${expanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu`}
+            data-open-label={`${props.openLabel || 'Open'} submenu`}
+            data-closed-label={`${props.closeLabel || 'Sluit'} submenu`}
             aria-expanded={expanded}
           />
         )}
@@ -63,7 +66,12 @@ export const SideNavigationTreeItemSummaryElement = (props: SideNavigationTreeIt
           <summary>{`submenu ${props.label}`}</summary>
           <SideNavigationList id={listId}>
             {props.items.map((subItem, subIndex) => (
-              <SideNavigationTreeItemSummaryElement key={subIndex} {...subItem} />
+              <SideNavigationTreeItemSummaryElement
+                key={subIndex}
+                {...subItem}
+                openLabel={props.openLabel}
+                closeLabel={props.closeLabel}
+              />
             ))}
           </SideNavigationList>
         </details>
@@ -78,7 +86,7 @@ export const SideNavigationTreeItemElement = (props: SideNavigationTreeItemProps
   return (
     <SideNavigationItem>
       <span className="denhaag-side-navigation__tree-item-label-wrapper">
-        <SideNavigationLink href={props.href} current={props.current} onKeyDown={handleEscapeOnLink}>
+        <SideNavigationLink href={props.href} current={props.current} lang={props.lang} onKeyDown={handleEscapeOnLink}>
           {props.icon}
           {props.counter && props.counter > 0 ? (
             <SideNavigationLinkLabel>
@@ -96,7 +104,7 @@ export const SideNavigationTreeItemElement = (props: SideNavigationTreeItemProps
             <SideNavigationExpandButton
               ref={toggleRef}
               onClick={togglePanel}
-              aria-label={`${isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu ${props.label}`}
+              aria-label={`${isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu`}
               aria-expanded={isExpanded}
               onKeyDown={handleEscapeOnToggle}
             />
@@ -107,7 +115,13 @@ export const SideNavigationTreeItemElement = (props: SideNavigationTreeItemProps
       {props.items?.length && isExpanded && (
         <SideNavigationList id={listId}>
           {props.items.map((subItem, subIndex) => (
-            <SideNavigationTreeItem key={subIndex} {...subItem} closeParent={closePanel} />
+            <SideNavigationTreeItem
+              key={subIndex}
+              {...subItem}
+              closeParent={closePanel}
+              openLabel={props.openLabel}
+              closeLabel={props.closeLabel}
+            />
           ))}
         </SideNavigationList>
       )}

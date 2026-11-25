@@ -1,7 +1,9 @@
 import { IconButton, IconButtonProps } from '@gemeente-denhaag/iconbutton';
-import { ChevronDownIcon } from '@gemeente-denhaag/icons';
+// TODO: We want to use our own chevron
+// import { ChevronDownIcon } from '@gemeente-denhaag/icons';
 import clsx from 'clsx';
 import React from 'react';
+import { IconChevronDown } from '../functional-icon/index.tsx';
 
 export type SideNavigationExpandIconProps = IconButtonProps;
 
@@ -15,7 +17,7 @@ export const SideNavigationExpandButton = React.forwardRef<HTMLButtonElement, Si
 
     return (
       <IconButton ref={ref} {...props} className={className}>
-        <ChevronDownIcon />
+        <IconChevronDown />
       </IconButton>
     );
   },
