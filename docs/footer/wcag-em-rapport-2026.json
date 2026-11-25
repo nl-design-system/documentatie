@@ -1,0 +1,1675 @@
+{
+  "@context": {
+    "reporter": "http://github.com/w3c/wai-wcag-em-report-tool/",
+    "wcagem": "http://www.w3.org/TR/WCAG-EM/#",
+    "Evaluation": "wcagem:procedure",
+    "defineScope": "wcagem:step1",
+    "scope": "wcagem:step1a",
+    "step1b": { "@id": "wcagem:step1b", "@type": "@id" },
+    "conformanceTarget": "step1b",
+    "accessibilitySupportBaseline": "wcagem:step1c",
+    "additionalEvaluationRequirements": "wcagem:step1d",
+    "exploreTarget": "wcagem:step2",
+    "essentialFunctionality": "wcagem:step2b",
+    "pageTypeVariety": "wcagem:step2c",
+    "technologiesReliedUpon": "wcagem:step2d",
+    "selectSample": "wcagem:step3",
+    "structuredSample": "wcagem:step3a",
+    "randomSample": "wcagem:step3b",
+    "Website": "wcagem:website",
+    "Webpage": "wcagem:webpage",
+    "auditSample": "wcagem:step4",
+    "reportFindings": "wcagem:step5",
+    "documentSteps": "wcagem:step5a",
+    "commissioner": "wcagem:commissioner",
+    "evaluator": "wcagem:evaluator",
+    "evaluationSpecifics": "wcagem:step5b",
+    "WCAG": "http://www.w3.org/TR/WCAG/#",
+    "WCAG20": "http://www.w3.org/TR/WCAG20/#",
+    "WCAG21": "http://www.w3.org/TR/WCAG21/#",
+    "WAI": "http://www.w3.org/WAI/",
+    "A": "WAI:WCAG2A-Conformance",
+    "AA": "WAI:WCAG2AA-Conformance",
+    "AAA": "WAI:WCAG2AAA-Conformance",
+    "wcagVersion": "WAI:standards-guidelines/wcag/#versions",
+    "reportToolVersion": "wcagem:reportToolVersion",
+    "earl": "http://www.w3.org/ns/earl#",
+    "Assertion": "earl:Assertion",
+    "TestMode": "earl:TestMode",
+    "TestCriterion": "earl:TestCriterion",
+    "TestCase": "earl:TestCase",
+    "TestRequirement": "earl:TestRequirement",
+    "TestSubject": "earl:TestSubject",
+    "TestResult": "earl:TestResult",
+    "OutcomeValue": "earl:OutcomeValue",
+    "Pass": "earl:Pass",
+    "Fail": "earl:Fail",
+    "CannotTell": "earl:CannotTell",
+    "NotApplicable": "earl:NotApplicable",
+    "NotTested": "earl:NotTested",
+    "assertedBy": "earl:assertedBy",
+    "mode": "earl:mode",
+    "result": "earl:result",
+    "subject": "earl:subject",
+    "test": "earl:test",
+    "outcome": "earl:outcome",
+    "dcterms": "http://purl.org/dc/terms/",
+    "title": "dcterms:title",
+    "description": "dcterms:description",
+    "summary": "dcterms:summary",
+    "date": "dcterms:date",
+    "hasPart": "dcterms:hasPart",
+    "isPartOf": "dcterms:isPartOf",
+    "id": "@id",
+    "type": "@type",
+    "language": "@language"
+  },
+  "language": "en",
+  "type": "Evaluation",
+  "reportToolVersion": "4.1.0",
+  "defineScope": {
+    "id": "_:defineScope",
+    "scope": {
+      "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+      "title": "NLDesignSystem.nl"
+    },
+    "conformanceTarget": "AA",
+    "accessibilitySupportBaseline": "Gangbare browsers en hulpapparatuur.",
+    "additionalEvaluationRequirements": "",
+    "wcagVersion": "2.2"
+  },
+  "exploreTarget": {
+    "id": "_:exploreTarget",
+    "essentialFunctionality": "",
+    "pageTypeVariety": "",
+    "technologiesReliedUpon": ["HTML", "CSS", "WAI-ARIA", "JavaScript", "SVG", "ECMAScript 5", "DOM", "HTML5"]
+  },
+  "selectSample": {
+    "id": "_:selectSample",
+    "structuredSample": [
+      {
+        "id": "https://nldesignsystem.nl/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/",
+        "title": "Home"
+      },
+      {
+        "id": "https://nldesignsystem.nl/sitemap/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/sitemap/",
+        "title": "Sitemap"
+      },
+      {
+        "id": "https://nldesignsystem.nl/events/design-systems-week-2026/tijdschema/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/events/design-systems-week-2026/tijdschema/",
+        "title": "Tijdschema"
+      },
+      {
+        "id": "https://nldesignsystem.nl/community/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/community/",
+        "title": "Community"
+      },
+      {
+        "id": "https://nldesignsystem.nl/componenten/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/componenten/",
+        "title": "Componenten"
+      },
+      {
+        "id": "https://nldesignsystem.nl/button/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/button/",
+        "title": "Button"
+      },
+      {
+        "id": "https://nldesignsystem.nl/events/heartbeat/videos/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/events/heartbeat/videos/",
+        "title": "Video's van de Heartbeat"
+      },
+      {
+        "id": "https://nldesignsystem.nl/project/kernteam/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/project/kernteam/",
+        "title": "Kernteam"
+      },
+      {
+        "id": "https://nldesignsystem.nl/zoeken/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/zoeken/",
+        "title": "Zoeken"
+      },
+      {
+        "id": "https://nldesignsystem.nl/community/belangenorganisaties/aanmelden/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/community/belangenorganisaties/aanmelden/",
+        "title": "Belangenorganisaties"
+      },
+      {
+        "id": "https://nldesignsystem.nl/community/sluit-je-aan/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/community/sluit-je-aan/",
+        "title": "Sluit je aan"
+      },
+      {
+        "id": "https://nldesignsystem.nl/community/sluit-je-aan/bedankt/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/community/sluit-je-aan/bedankt/",
+        "title": "Bedankt voor je aanmelding"
+      },
+      {
+        "id": "https://nldesignsystem.nl/wcag/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/wcag/",
+        "title": "WCAG"
+      },
+      {
+        "id": "https://nldesignsystem.nl/wcag/1.1.1/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/wcag/1.1.1/",
+        "title": "WCAG 1.1.1 Niet-tekstuele content"
+      },
+      {
+        "id": "https://nldesignsystem.nl/wcag/1.3.1/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/wcag/1.3.1/",
+        "title": "WCAG 1.3.1 Info en relaties"
+      },
+      {
+        "id": "https://nldesignsystem.nl/wcag/1.4.1/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/wcag/1.4.1/",
+        "title": "WCAG 1.4.1 Gebruik van kleur"
+      },
+      {
+        "id": "https://nldesignsystem.nl/wcag/2.1.1/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/wcag/2.1.1/",
+        "title": "WCAG 2.1.1 Toetsenbord"
+      },
+      {
+        "id": "https://nldesignsystem.nl/wcag/2.4.1/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/wcag/2.4.1/",
+        "title": "WCAG 2.4.1 Blokken omzeilen"
+      },
+      {
+        "id": "https://nldesignsystem.nl/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar/",
+        "title": "Placeholder goed zichtbaar"
+      },
+      {
+        "id": "https://nldesignsystem.nl/richtlijnen/formulieren/descriptions/inhoud/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/richtlijnen/formulieren/descriptions/inhoud/",
+        "title": "Inhoud description"
+      },
+      {
+        "id": "https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/",
+        "title": "Kleurgebruik in tekst"
+      },
+      {
+        "id": "https://nldesignsystem.nl/handboek/estafettemodel/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/handboek/estafettemodel/",
+        "title": "Estafettemodel"
+      },
+      {
+        "id": "https://nldesignsystem.nl/handboek/designer/figma-structuur/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/handboek/designer/figma-structuur/",
+        "title": "Figma structuur"
+      },
+      {
+        "id": "https://nldesignsystem.nl/handboek/huisstijl/basis-tokens/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/handboek/huisstijl/basis-tokens/",
+        "title": "Basis-tokens"
+      },
+      {
+        "id": "https://nldesignsystem.nl/events/design-systems-week-2025/en/program/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/events/design-systems-week-2025/en/program/",
+        "title": "Videos van Design Systems Week 2025"
+      },
+      {
+        "id": "https://nldesignsystem.nl/toegankelijkheidsverklaring/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/toegankelijkheidsverklaring/",
+        "title": "Toegankelijkheid"
+      }
+    ],
+    "randomSample": [
+      {
+        "id": "https://nldesignsystem.nl/woordenlijst/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:07:08.753Z",
+        "description": "https://nldesignsystem.nl/woordenlijst/",
+        "title": "Woordenlijst"
+      },
+      {
+        "id": "https://nldesignsystem.nl/privacyverklaring/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:12:56.573Z",
+        "description": "https://nldesignsystem.nl/privacyverklaring/",
+        "title": "Privacyverklaring"
+      },
+      {
+        "id": "https://nldesignsystem.nl/slack/",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2026-10-19T10:13:06.218Z",
+        "description": "https://nldesignsystem.nl/slack/",
+        "title": "Slack"
+      }
+    ]
+  },
+  "auditSample": [
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T07:44:14.000Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:pause-stop-hide",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:resize-text",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:images-of-text",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:reflow",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:non-text-contrast",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:text-spacing",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:content-on-hover-or-focus",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:keyboard",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T07:44:14.000Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:no-keyboard-trap",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:character-key-shortcuts",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T07:44:14.000Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:three-flashes-or-below-threshold",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.767Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:bypass-blocks",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.768Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:page-titled",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-29T11:09:00.189Z",
+        "description": "Ingesloten YouTube-speler op de pagina Home: Onzichtbare elementen krijgen toetsenbordfocus.\nAls de video start en de bezoeker met het toetsenbord navigeert, komt de focus eerst op een onzichtbare knop in de speler. Nog 2 onzichtbare knoppen krijgen ook focus, direct voor en direct na de knop afspelen/pauzeren.\nNa de link met het zichtbare label \"YouTube\" staan ook meerdere onzichtbare links die toetsenbordfocus krijgen.\n\nIngesloten YouTube-speler op de pagina Home: De toetsenbordfocus gaat buiten het dialoogvenster.\nDe knop met de toegankelijke naam \"Instellingen voor afspelen\" opent een modaal dialoogvenster. Terwijl het venster open is, kan de toetsenbordfocus het venster verlaten en naar de inhoud van de pagina gaan.",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Onvoldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:focus-order",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.553Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.768Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:link-purpose-in-context",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.768Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:multiple-ways",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-29T11:09:13.757Z",
+        "description": "Ingesloten YouTube-speler op de pagina Home: De logoknop heeft een onjuiste toegankelijke naam.\nDe logoknop opent de YouTube-pagina van de organisatie, maar de toegankelijke naam is \"thumbnail-image\". Die naam beschrijft de afbeelding en niet wat de knop doet. Screenreadergebruikers weten daardoor niet dat de knop de YouTube-pagina van de organisatie opent.\n\nIngesloten YouTube-speler op de pagina Home: Het dialoogvenster heeft een algemene toegankelijke naam.\nDe knop met de toegankelijke naam \"Instellingen voor afspelen\" opent een dialoogvenster. Dat venster krijgt de toegankelijke naam \"Dialoogvenster\" uit aria-label. Die naam zegt wat voor component het is, maar niet waar het venster voor is of wat erin staat. Screenreadergebruikers horen dat er een dialoogvenster is geopend, maar niet waar het over gaat.",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Onvoldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:headings-and-labels",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-29T11:09:25.694Z",
+        "description": "Ingesloten YouTube-speler op de pagina Home: De toetsenbordfocus is niet zichtbaar op interactieve elementen.\nDe knop met de toegankelijke naam \"Instellingen voor afspelen\" opent een modaal dialoogvenster. De interactieve elementen in dit venster hebben geen zichtbare focusindicator. Toetsenbordgebruikers zien niet welk element focus heeft.\n",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Onvoldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:focus-visible",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.768Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:focus-not-obscured-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:15:16.154Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:pointer-gestures",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T07:44:14.000Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:pointer-cancellation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.769Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:label-in-name",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:15:25.459Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:motion-actuation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.554Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:15:29.094Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:dragging-movements",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.769Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:target-size-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:language-of-page",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:language-of-parts",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:on-focus",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:on-input",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:consistent-navigation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:consistent-identification",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:consistent-help",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:error-identification",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:labels-or-instructions",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.770Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:error-suggestion",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.555Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:15:45.280Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:error-prevention-legal-financial-data",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.771Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:redundant-entry",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:16:08.042Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:accessible-authentication-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-29T11:09:41.362Z",
+        "description": "Ingesloten YouTube-speler op de pagina Home: In de code staat niet dat de knop een pop-up opent.\nDe knop voor instellingen, met de toegankelijke naam \"Instellingen voor afspelen\", opent een dialoogvenster. Dat staat niet in de code.\n\nIngesloten YouTube-speler op de pagina Home: Het menu met instellingen heeft onvolledige menusemantiek.\nDe knop met de toegankelijke naam \"Instellingen voor afspelen\" opent een dialoogvenster. Daarin staan bedieningselementen als \"Kwaliteit 1080p\", \"Snelheid Normaal\", \"Ondertiteling Uit\" en \"Meer opties\". Deze elementen hebben de rol menuitem, maar het element eromheen heeft geen rol menu of menubar. Hulpsoftware krijgt dus losse menu-items door, zonder het menu waar ze bij horen. In de submenu's gebeurt hetzelfde.\nDe items die meer opties openen, geven ook niet door dat ze een submenu hebben: er is geen aria-haspopup en geen status open of dicht.\n\nIngesloten YouTube-speler op de pagina Home: De gekozen videokwaliteit wordt niet doorgegeven aan hulpsoftware.\nIn het submenu voor videokwaliteit (\"Kwaliteit\") laat een vinkje zien welke optie gekozen is, bijvoorbeeld \"Automatisch (1080p)\". Die status is alleen zichtbaar. Screenreadergebruikers horen de opties, maar niet welke gekozen is.\n\nIngesloten YouTube-speler op de pagina Home: Links hebben geen toegankelijke naam.\nNa de link met het zichtbare label \"YouTube\" staan in de speler meerdere onzichtbare links. Een deel daarvan heeft geen toegankelijke naam. Screenreadergebruikers weten niet waar deze links voor zijn of waar ze heen gaan.\n",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Onvoldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:name-role-value",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.767Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:timing-adjustable",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-29T11:09:46.341Z",
+        "description": "Ingesloten YouTube-speler op de pagina Home: De melding over het kopiëren van de link wordt niet voorgelezen.\nAls je de link naar de video wilt kopiëren en dat mislukt, verschijnt de melding \"Kan link niet naar klembord kopiëren\" op het scherm. Screenreaders lezen die melding niet voor. Screenreadergebruikers weten dus niet dat het kopiëren is mislukt.\n",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Onvoldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:status-messages",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:non-text-content",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:13:46.198Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:audio-only-and-video-only-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:captions-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:audio-description-or-media-alternative-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:13:51.766Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:captions-live",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:audio-description-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:info-and-relationships",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:meaningful-sequence",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:sensory-characteristics",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:orientation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:identify-input-purpose",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:07:08.772Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Voldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:use-of-color",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-19T10:14:03.962Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:inapplicable",
+          "type": ["OutcomeValue", "NotApplicable"],
+          "title": "Niet van toepassing"
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:audio-control",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2026-10-29T11:08:01.556Z",
+      "assertedBy": {
+        "id": "_:b11",
+        "type": "http://xmlns.com/foaf/0.1/Person",
+        "http://xmlns.com/foaf/0.1/name": "Proper Access"
+      },
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2026-10-29T11:08:50.575Z",
+        "description": "Ingesloten YouTube-speler op de pagina Home: Grote tekst heeft een contrast lager dan 3,0:1.\nBij een schermresolutie van 1280 bij 1024 pixels en een zoomniveau van 400% (320 pixels breed) ligt de link met de witte tekst \"YouTube\" over de video. Het contrast met de video erachter kan te laag zijn. Rond 1:29 in de video staat de witte tekst bijvoorbeeld op een lichtroze (#F8DDFF) achtergrond. De contrastratio is dan 1,3:1.",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Onvoldoende" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2026-10-29T11:07:48.479Z",
+        "description": "Binnen de scope van het onderzoek valt:\n- Alle webcontent van de publieke website van het NL Design System op nldesignsystem.nl",
+        "title": "NLDesignSystem.nl"
+      },
+      "test": {
+        "id": "WCAG22:contrast-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2026-10-29T11:07:48.481Z"
+      }
+    }
+  ],
+  "reportFindings": {
+    "date": { "type": "http://www.w3.org/TR/NOTE-datetime", "@value": "15 oktober 2026" },
+    "summary": "De website van NL Design System is onderzocht tussen 21 september en 7 oktober 2026. Het onderzoek is uitgevoerd aan de hand van de evaluatiemethode WCAG-EM en toetst aan WCAG 2.2 niveau A en AA. De afgekeurde succescriteria gaan alleen over de ingesloten videospeler van YouTube.",
+    "title": "Audit digitale toegankelijkheid van de website van NL Design System",
+    "commissioner": "NL Design System",
+    "evaluator": "Julia Tol",
+    "documentSteps": [
+      { "id": "_:about" },
+      { "id": "_:defineScope" },
+      { "id": "_:exploreTarget" },
+      { "id": "_:selectSample" }
+    ],
+    "evaluationSpecifics": "Chrome 155, Firefox 156, Safari 26.6, VoiceOver op macOS Tahoe 26.6.2"
+  }
+}
