@@ -5,11 +5,11 @@ import {
   SideNavigationList,
   // TODO: changes to the expand button have been made locally
   // SideNavigationExpandButton,
-  // TODO: Export is missing from npm package
-  // SideNavigationExpandSeparator,
 } from '@gemeente-denhaag/side-navigation';
 import { type KeyboardEvent, type ReactNode, useId, useRef, useState, type Ref } from 'react';
 import SideNavigationExpandButton from './side-navigation-expand-button';
+// TODO: Export is missing from npm package
+import SideNavigationExpandSeparator from './side-navigation-expand-separator';
 // TODO: We don't need number badge as dependency
 // import { NumberBadge } from '@gemeente-denhaag/number-badge';
 
@@ -52,13 +52,16 @@ export const SideNavigationTreeItemSummaryElement = (props: SideNavigationTreeIt
           )}
         </SideNavigationLink>
         {props.items?.length && (
-          <SideNavigationExpandButton
-            hidden
-            aria-label={`${expanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu`}
-            data-open-label={`${props.openLabel || 'Open'} submenu`}
-            data-closed-label={`${props.closeLabel || 'Sluit'} submenu`}
-            aria-expanded={expanded}
-          />
+          <>
+            <SideNavigationExpandSeparator />
+            <SideNavigationExpandButton
+              hidden
+              aria-label={`${expanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open'} submenu`}
+              data-open-label={`${props.openLabel || 'Open'} submenu`}
+              data-closed-label={`${props.closeLabel || 'Sluit'} submenu`}
+              aria-expanded={expanded}
+            />
+          </>
         )}
       </div>
       {props.items?.length && (
@@ -100,7 +103,7 @@ export const SideNavigationTreeItemElement = (props: SideNavigationTreeItemProps
 
         {props.items?.length && (
           <>
-            {/* <SideNavigationExpandSeparator /> */}
+            <SideNavigationExpandSeparator />
             <SideNavigationExpandButton
               ref={toggleRef}
               onClick={togglePanel}
