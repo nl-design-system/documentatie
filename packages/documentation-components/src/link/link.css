@@ -1,0 +1,9 @@
+.ma-print-url {
+  display: none;
+}
+
+@media print {
+  .ma-print-url {
+    display: inline;
+  }
+}

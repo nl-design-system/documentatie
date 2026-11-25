@@ -1,0 +1,1387 @@
+{
+  "@context": {
+    "reporter": "http://github.com/w3c/wai-wcag-em-report-tool/",
+    "wcagem": "http://www.w3.org/TR/WCAG-EM/#",
+    "Evaluation": "wcagem:procedure",
+    "defineScope": "wcagem:step1",
+    "scope": "wcagem:step1a",
+    "step1b": { "@id": "wcagem:step1b", "@type": "@id" },
+    "conformanceTarget": "step1b",
+    "accessibilitySupportBaseline": "wcagem:step1c",
+    "additionalEvaluationRequirements": "wcagem:step1d",
+    "exploreTarget": "wcagem:step2",
+    "essentialFunctionality": "wcagem:step2b",
+    "pageTypeVariety": "wcagem:step2c",
+    "technologiesReliedUpon": "wcagem:step2d",
+    "selectSample": "wcagem:step3",
+    "structuredSample": "wcagem:step3a",
+    "randomSample": "wcagem:step3b",
+    "Website": "wcagem:website",
+    "Webpage": "wcagem:webpage",
+    "auditSample": "wcagem:step4",
+    "reportFindings": "wcagem:step5",
+    "documentSteps": "wcagem:step5a",
+    "commissioner": "wcagem:commissioner",
+    "evaluator": "wcagem:evaluator",
+    "evaluationSpecifics": "wcagem:step5b",
+    "WCAG": "http://www.w3.org/TR/WCAG/#",
+    "WCAG20": "http://www.w3.org/TR/WCAG20/#",
+    "WCAG21": "http://www.w3.org/TR/WCAG21/#",
+    "WCAG22": "https://www.w3.org/TR/WCAG22/#",
+    "WAI": "http://www.w3.org/WAI/",
+    "A": "WAI:WCAG2A-Conformance",
+    "AA": "WAI:WCAG2AA-Conformance",
+    "AAA": "WAI:WCAG2AAA-Conformance",
+    "wcagVersion": "WAI:standards-guidelines/wcag/#versions",
+    "reportToolVersion": "wcagem:reportToolVersion",
+    "earl": "http://www.w3.org/ns/earl#",
+    "Assertion": "earl:Assertion",
+    "TestMode": "earl:TestMode",
+    "TestCriterion": "earl:TestCriterion",
+    "TestCase": "earl:TestCase",
+    "TestRequirement": "earl:TestRequirement",
+    "TestSubject": "earl:TestSubject",
+    "TestResult": "earl:TestResult",
+    "OutcomeValue": "earl:OutcomeValue",
+    "Pass": "earl:Pass",
+    "Fail": "earl:Fail",
+    "CannotTell": "earl:CannotTell",
+    "NotApplicable": "earl:NotApplicable",
+    "NotTested": "earl:NotTested",
+    "assertedBy": "earl:assertedBy",
+    "mode": "earl:mode",
+    "result": "earl:result",
+    "subject": "earl:subject",
+    "test": "earl:test",
+    "outcome": "earl:outcome",
+    "dcterms": "http://purl.org/dc/terms/",
+    "title": "dcterms:title",
+    "description": "dcterms:description",
+    "summary": "dcterms:summary",
+    "date": "dcterms:date",
+    "hasPart": "dcterms:hasPart",
+    "isPartOf": "dcterms:isPartOf",
+    "id": "@id",
+    "type": "@type",
+    "language": "@language"
+  },
+  "language": "en",
+  "type": "Evaluation",
+  "reportToolVersion": "3.0.3",
+  "defineScope": {
+    "id": "_:defineScope",
+    "scope": {
+      "description": "..."
+    },
+    "conformanceTarget": "AA",
+    "accessibilitySupportBaseline": "...",
+    "additionalEvaluationRequirements": "...",
+    "wcagVersion": "2.2"
+  },
+  "exploreTarget": {
+    "id": "_:exploreTarget",
+    "essentialFunctionality": "- completing and submitting a form provided on the website",
+    "pageTypeVariety": "",
+    "technologiesReliedUpon": ["...", "..."]
+  },
+  "selectSample": {
+    "id": "_:selectSample",
+    "structuredSample": [
+      {
+        "id": "_:subject_2",
+        "type": ["TestSubject", "Webpage"],
+        "date": "2024-06-23T17:47:14.583Z",
+        "description": "https://example.com",
+        "title": "Homepage"
+      }
+    ],
+    "randomSample": {
+      "id": "_:subject_12",
+      "type": ["TestSubject", "Webpage"],
+      "date": "2024-06-23T17:57:01.488Z",
+      "description": "https://example.com/404",
+      "title": "Page Not Found"
+    }
+  },
+  "auditSample": [
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:25:39.650Z",
+        "description": "...",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "...",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG21:non-text-content",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T19:39:16.472Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:audio-only-and-video-only-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T19:39:22.438Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:captions-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T19:39:29.916Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:audio-description-or-media-alternative-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T19:39:33.830Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:captions-live",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T19:39:39.170Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:audio-description-prerecorded",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-24T15:52:54.390Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:info-and-relationships",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T20:03:45.369Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:meaningful-sequence",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:25:18.899Z",
+        "description": "De betekenis van de sterretjes naast de invoerveldlabels op het formulier wordt nooit uitgelegd. Gebruikers moeten maar aannemen dat de sterretjes aangeven dat het gerelateerde invoerveld verplicht is.  \n  Example: [Formulier - Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:sensory-characteristics",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T20:18:47.824Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:orientation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:46:39.996Z",
+        "description": "Niet alle geschikte invoervelden op de [Uw gegevens](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-gegevenscompleet) pagina hebben het autocomplete attribuut, waardoor de browser ze niet automatisch kan invullen.",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:identify-input-purpose",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:46:48.611Z",
+        "description": "De [Overzicht (Controleer en Bevestig)](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/overzicht) pagina heeft enkele verplichte selectievakjes met een rode rand. De kleur rood is de enige indicator dat het selectievakje ongeldig is.",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:use-of-color",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T20:38:53.399Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:audio-control",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T20:45:18.074Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:contrast-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T20:43:11.415Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:resize-text",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:46:56.022Z",
+        "description": "Sommige afbeeldingen (bijv. DigiD) hebben geen toegankelijke tekst. De knop ernaast geeft niet de informatie die door de afbeelding wordt overgebracht. De afbeelding wordt genegeerd door de schermlezer, waardoor de knoptekst (\"Geef verhuizing door\") minder begrijpelijk is voor schermlezergebruikers dan voor ziende gebruikers.  \n  Voorbeeld: [Verhuizing doorgeven - Button](https://loket.digitaal.utrecht.nl/nl/products/verhuizing-doorgeven)\n",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:images-of-text",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:47:06.514Z",
+        "description": "De visuele volgorde van de 3 knoppen (\"Tussendoor opslaan\", \"Volgende\", and \"Afbreken\") en de link (\"Vorige\") onderaan het hoofdgedeelte van het formulier verandert afhankelijk van het zoomniveau. Dit resulteert in een onverwachte tabvolgorde bij inzoomen.  \n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:reflow",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.069Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:03:47.231Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:non-text-contrast",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:05:22.688Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:text-spacing",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:47:14.712Z",
+        "description": "De inhoud van de tooltips op het formulier verbergt niet-decoratieve inhoud bij inzoomen en hoveren. De tooltip-inhoud kan niet worden gesloten door op de Escape-toets te drukken.  \n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:content-on-hover-or-focus",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:47:27.957Z",
+        "description": "- De inhoud van de tooltips op het formulier is niet toegankelijk voor alleen-toetsenbordgebruikers (of gebruikers van schermlezers).  \n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)\n\n- De sluitknop van de \"Opslaan en later verdergaan\" modal, die wordt gebruikt om de voortgang van het formulier op te slaan, kan niet worden gefocust door de toetsenbordgebruiker. Als er geen inhoud is ingevuld en de gebruiker op de knop \"Later verdergaan\" drukt, wordt deze knop uitgeschakeld. Dit betekent dat de gebruiker de modal alleen kan sluiten door op de Escape-toets te drukken.  \n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:keyboard",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:47:39.464Z",
+        "description": "Bij het dropdownmenu \"Klacht over de gemeente doorgeven\" (geplaatst in het hoofdgedeelte van het formulier), dat verschijnt wanneer er wordt ingezoomd, blijft de focus niet binnen het menu. Wanneer men buiten het menu tabt, blijft het dropdownmenu open, waardoor de inhoud van de pagina wordt bedekt.  \n  Example: [Uw gegevens](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-gegevenscompleet)\n\n",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:no-keyboard-trap",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:32:46.061Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:character-key-shortcuts",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:39:25.155Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:timing-adjustable",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:40:32.458Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:pause-stop-hide",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:40:50.480Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:three-flashes-or-below-threshold",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:41:05.271Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:bypass-blocks",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-24T17:22:03.090Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:page-titled",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:47:50.059Z",
+        "description": "De visuele volgorde van de 3 knoppen (\"Tussendoor opslaan\", \"Volgende\", and \"Afbreken\") en de link (\"Vorige\") onderaan het hoofdgedeelte van het formulier verandert afhankelijk van het zoomniveau. Dit resulteert in een onverwachte tabvolgorde bij inzoomen.  \n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:focus-order",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:52:54.997Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:link-purpose-in-context",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:53:34.425Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:multiple-ways",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T21:57:25.711Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:headings-and-labels",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-24T17:22:59.235Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:focus-visible",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:48:02.751Z",
+        "description": "Bij het dropdownmenu \"Klacht over de gemeente doorgeven\" (geplaatst in het hoofdgedeelte van het formulier), dat verschijnt wanneer er wordt ingezoomd, blijft de focus niet binnen het menu. Wanneer men buiten het menu tabt, blijft het dropdownmenu open, waardoor de inhoud van de pagina wordt bedekt.  \n  Example: [Uw gegevens](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-gegevenscompleet)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:focus-not-obscured-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-24T09:18:47.246Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:pointer-gestures",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-24T09:18:52.825Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:pointer-cancellation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:07:12.298Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:label-in-name",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:10:23.941Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:motion-actuation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:10:27.616Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:dragging-movements",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:11:33.821Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:target-size-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:11:50.924Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:language-of-page",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:48:17.061Z",
+        "description": "De pagina [Verhuizing doorgeven](https://loket.digitaal.utrecht.nl/nl/products/verhuizing-doorgeven) heeft een link \"Read this information in English\" met Engelse tekst die geen lang-attribuut heeft.",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:language-of-parts",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:19:24.592Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:on-focus",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:20:11.316Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:on-input",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:20:48.066Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:consistent-navigation",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:20:58.871Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:consistent-identification",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:21:11.830Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:consistent-help",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:48:34.169Z",
+        "description": "- De foutmeldingen voor de invoervelden op het formulier zijn inconsistent en onvolledig. De invoervelden op de pagina [Uw gegevens](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-gegevenscompleet) geven onvoldoende informatie over het vereiste gegevensformaat. Alleen het invoerveld \"Telefoonnummer\" biedt een nuttige foutmelding, maar deze foutmelding verschijnt alleen nadat enkele cijfers in dat invoerveld zijn ingevoerd. Als het invoerveld leeg is, is de foutmelding \"Het verplichte veld Telefoonnummer is niet ingevuld.\"\n\n- Op de eerste pagina [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht) van het formulier ontbreekt een foutmelding voor de groep radio knoppen wanneer er niets is ingevuld en op de knop \"Volgende\" wordt geklikt. De niet-behulpzame foutmelding ' \"null\" is een ongeldige keuze. ' verschijnt alleen als alle andere invoervelden op de pagina zijn ingevuld en de gebruiker op de knop \"Volgende\" klikt.\n\n\n- De foutmeldingen worden niet voorgelezen door de schermlezer.\n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)\n",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:error-identification",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:48:46.928Z",
+        "description": "- Er worden geen tekstinstructies gegeven aan het begin van de pagina [Uw gegevens](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-gegevenscompleet) die de vereiste invoer voor de verplichte invoervelden en hun opmaak beschrijven. Bijvoorbeeld, het invoerveld \"Telefoonnummer\" toont alleen de nuttige foutmelding \"Dit is geen geldig internationaal telefoonnummer. Een geldig voorbeeld van een internationaal telefoonnummer is +31612312312.Dit is geen geldig Nederlands telefoonnummer. Een geldig voorbeeld van een Nederlands telefoonnummer is 0612312312.\" als de gebruiker ten minste één cijfer erin schrijft. Als het invoerveld leeg is, is  \"Het verplichte veld Telefoonnummer is niet ingevuld.\"\n\n- Het invoerveld van het zoekformulier rechtsboven op de pagina heeft nu geen werkend label. Het aria-labelledby-attribuut verwijst op 2 plaatsen naar een element dat niet op de pagina bestaat.  \n  Example: [Bijlagen toevoegen](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/bijlagen-toevoegen-klacht)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:labels-or-instructions",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:48:58.718Z",
+        "description": "De suggesties voor het corrigeren van fouten zijn niet altijd behulpzaam. Voor de groep radio-knoppen (van de eerste pagina [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht) van het formulier), wanneer er niets is ingevuld en op de knop \"Volgende\" wordt geklikt, is de foutmelding ' \"null\" is een ongeldige keuze.'. De foutmelding wordt alleen verschijnt als de verplichte invoervelden op dezelfde pagina zijn ingevuld. Anders wordt er helemaal geen foutmelding weergegeven voor de verplichte groep radio-knoppen.",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:error-suggestion",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:41:40.420Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:error-prevention-legal-financial-data",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.070Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:42:30.204Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:redundant-entry",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.071Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-23T22:44:09.915Z",
+        "description": "",
+        "outcome": { "id": "earl:inapplicable", "type": ["OutcomeValue", "NotApplicable"], "title": "Not present" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:accessible-authentication-minimum",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.071Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-25T10:49:09.290Z",
+        "description": "- De inhoud van de tooltips op het formulier verbergt niet-decoratieve inhoud bij inzoomen en hoveren. De tooltip-inhoud kan niet worden gesloten door op de Escape-toets te drukken.\n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)\n\n- De inhoud van de tooltips op het formulier is niet toegankelijk voor alleen-toetsenbordgebruikers (of gebruikers van schermlezers).  \n  Example: [Uw Klacht](https://loket.digitaal.utrecht.nl/nl/form/klacht-over-de-gemeente-doorgeven/stap/uw-klacht)",
+        "outcome": { "id": "earl:failed", "type": ["OutcomeValue", "Fail"], "title": "Failed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:name-role-value",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-06-23T17:40:01.071Z",
+      "mode": { "type": "TestMode", "@value": "earl:manual" },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-06-24T09:36:29.244Z",
+        "description": "",
+        "outcome": { "id": "earl:passed", "type": ["OutcomeValue", "Pass"], "title": "Passed" }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": ["TestSubject", "Website"],
+        "date": "2024-06-23T17:39:51.000Z",
+        "description": "All content pages of the Online Loket website on the subdomain https://pdc.cg-intern.acc.utrecht.nl/nl",
+        "title": "Gemeente Utrecht Online Loket"
+      },
+      "test": {
+        "id": "WCAG22:status-messages",
+        "type": ["TestCriterion", "TestRequirement"],
+        "date": "2024-06-23T17:39:51.001Z"
+      }
+    }
+  ],
+  "reportFindings": {
+    "date": { "type": "http://www.w3.org/TR/NOTE-datetime", "@value": "Maandag 24 juni 2024" },
+    "summary": "De toegankelijkheid van de website is aanzienlijk verbeterd sinds de laatste evaluatie. Er zijn nog enkele problemen op aantal pagina's door het herhaald gebruik van bepaalde componenten, maar de meeste problemen worden aangetroffen in het formulier.\n\n Het rapport laat zien dat aan 28 succescriteria is voldaan en aan 16 niet. We nemen toegankelijkheid zeer serieus en zullen hard werken om de website te verbeteren om in de nabije toekomst een betere evaluatiescore te behalen.",
+    "title": "",
+    "commissioner": "Gemeente Utrecht",
+    "evaluator": "Savitri Sinnema van Frameless",
+    "documentSteps": [
+      { "id": "_:about" },
+      { "id": "_:defineScope" },
+      { "id": "_:exploreTarget" },
+      { "id": "_:selectSample" }
+    ],
+    "evaluationSpecifics": "Gebruikte hulpprogramma's: Polypane (versie 20.0.0), axe DevTools (versie 4.9.1), Accessibility Insights for Web (versie 2.43.0), WAVE (Web Accessibility Evaluation Tool, versie 3.2.5.3), Landmarks preferences (versie 2.12.0), HeadingsMap (4.8.4), Text Spacing (bookmarklet)."
+  }
+}

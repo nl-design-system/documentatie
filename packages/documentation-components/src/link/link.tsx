@@ -1,12 +1,16 @@
 import type { PropsWithChildren } from 'react';
 import { Link as CandidateLink, type LinkProps as CandidateLinkProps } from '@nl-design-system-candidate/link-react';
-import { hasFileExtension } from '../utils.ts';
+import { URLData } from '@utrecht/component-library-react';
 import '@nl-design-system-candidate/link-css/link.css';
+import { hasFileExtension } from '../utils.ts';
 
 // `href` is optional on `<a>` elements. This change allows us to use Link
 // as override component on markdown rendered content. (`components={{ a: Link }}`).
 // which otherwise would throw a type error
-export type LinkProps = Omit<CandidateLinkProps, 'href'> & { href?: CandidateLinkProps['href'] };
+export type LinkProps = Omit<CandidateLinkProps, 'href'> & {
+  href?: CandidateLinkProps['href'];
+  printable?: boolean;
+};
 
 export const improveLinkProps = ({ href }: Partial<LinkProps>) => {
   const _props: Partial<LinkProps> = {};
@@ -38,6 +42,18 @@ export const improveLinkProps = ({ href }: Partial<LinkProps>) => {
   return _props;
 };
 
-export const Link = ({ href, ...props }: PropsWithChildren<LinkProps>) => {
-  return <CandidateLink href={href} {...props} {...improveLinkProps({ href })} />;
+export const Link = ({ href, printable, ...props }: PropsWithChildren<LinkProps>) => {
+  const link = <CandidateLink href={href} {...props} {...improveLinkProps({ href })} />;
+
+  if (printable) {
+    return (
+      <>
+        {link}
+        <URLData className="ma-print-url" hidden>
+          {href}
+        </URLData>
+      </>
+    );
+  }
+  return link;
 };
