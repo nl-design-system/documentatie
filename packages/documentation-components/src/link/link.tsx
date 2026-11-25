@@ -8,6 +8,7 @@ import { hasFileExtension } from '../utils.ts';
 // as override component on markdown rendered content. (`components={{ a: Link }}`).
 // which otherwise would throw a type error
 export type LinkProps = Omit<CandidateLinkProps, 'href'> & {
+  external?: boolean;
   href?: CandidateLinkProps['href'];
   printable?: boolean;
 };
@@ -16,6 +17,10 @@ export const improveLinkProps = ({ href }: Partial<LinkProps>) => {
   const _props: Partial<LinkProps> = {};
 
   if (typeof href !== 'string') {
+    return _props;
+  }
+
+  if (href.startsWith('#')) {
     return _props;
   }
 
@@ -42,8 +47,15 @@ export const improveLinkProps = ({ href }: Partial<LinkProps>) => {
   return _props;
 };
 
-export const Link = ({ href, printable, ...props }: PropsWithChildren<LinkProps>) => {
-  const link = <CandidateLink href={href} {...props} {...improveLinkProps({ href })} />;
+export const Link = ({ external, href, printable, ...props }: PropsWithChildren<LinkProps>) => {
+  const link = (
+    <CandidateLink
+      href={href}
+      rel={external ? 'external noopener noreferrer' : undefined}
+      {...props}
+      {...improveLinkProps({ href })}
+    />
+  );
 
   if (printable) {
     return (
