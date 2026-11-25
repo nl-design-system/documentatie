@@ -76,7 +76,7 @@ interface RuleFolder {
  * sorted by component and then by folder. A rule is any directory in
  * `<component>/_rules` containing a `metadata.json`, at any depth: rules can be
  * grouped in a subfolder (`heading1/noH1`) as well as live directly in `_rules`
- * (`contrast`). Files in a folder without `metadata.json` are ignored.
+ * (`contrast`).
  */
 async function listRuleFolders(componentenDir: string): Promise<RuleFolder[]> {
   const entries = await Array.fromAsync(glob('*/_rules/**/*', { cwd: componentenDir, withFileTypes: true }));
@@ -91,7 +91,6 @@ async function listRuleFolders(componentenDir: string): Promise<RuleFolder[]> {
       // Sorted so the order of the solutions is the same on every run.
       fileNames: files.map((file) => file.name).sort((a, b) => a.localeCompare(b)),
     }))
-    .filter(({ fileNames }) => fileNames.includes('metadata.json'))
     .sort((a, b) => a.component.localeCompare(b.component) || a.dir.localeCompare(b.dir));
 }
 
@@ -114,13 +113,15 @@ const isRuleFile = (fileName: string): boolean =>
  * @param folder
  */
 function classifyRuleFolder({ component, dir, fileNames }: RuleFolder): RuleFiles {
+  if (!fileNames.includes('metadata.json')) {
+    throw new Error(`${dir} is missing metadata.json`);
+  }
   if (!fileNames.includes('explanation.md')) {
     throw new Error(`${dir} is missing explanation.md`);
   }
 
   let relatedguidelines: MarkdownSource | undefined;
-  let solution: SolutionFiles | undefined;
-  const namedSolutions: SolutionFiles[] = [];
+  const solutions: SolutionFiles[] = [];
 
   for (const fileName of fileNames) {
     if (!isRuleFile(fileName)) {
@@ -129,18 +130,16 @@ function classifyRuleFolder({ component, dir, fileNames }: RuleFolder): RuleFile
     if (fileName === 'relatedguidelines.md') {
       relatedguidelines = { path: join(dir, fileName) } as MarkdownSource;
     }
-    if (fileName === 'solution.md') {
-      solution = {
-        json: { path: join(dir, 'solution.json') } as JsonSource,
+    if (fileName === 'solution.md' || fileName.endsWith('.solution.md')) {
+      const solution = {
+        json: { path: join(dir, `${basename(fileName, '.md')}.json`) } as JsonSource,
         markdown: { path: join(dir, fileName) } as MarkdownSource,
       };
-    }
-    if (fileName.endsWith('.solution.md')) {
-      const name = basename(fileName, '.md');
-      namedSolutions.push({
-        json: { path: join(dir, `${name}.json`) } as JsonSource,
-        markdown: { path: join(dir, fileName) } as MarkdownSource,
-      });
+      if (fileName === 'solution.md') {
+        solutions.unshift(solution);
+      } else {
+        solutions.push(solution);
+      }
     }
   }
 
@@ -149,7 +148,7 @@ function classifyRuleFolder({ component, dir, fileNames }: RuleFolder): RuleFile
     component,
     explanation: { path: join(dir, 'explanation.md') } as MarkdownSource,
     metadata: { path: join(dir, 'metadata.json') } as JsonSource,
-    solutions: solution ? [solution, ...namedSolutions] : namedSolutions,
+    solutions,
   };
 }
 
