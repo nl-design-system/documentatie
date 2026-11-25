@@ -1659,7 +1659,7 @@
     }
   ],
   "reportFindings": {
-    "date": { "type": "http://www.w3.org/TR/NOTE-datetime", "@value": "15 oktober 2026" },
+    "date": { "type": "http://www.w3.org/TR/NOTE-datetime", "@value": "2026-10-15" },
     "summary": "De website van NL Design System is onderzocht tussen 21 september en 7 oktober 2026. Het onderzoek is uitgevoerd aan de hand van de evaluatiemethode WCAG-EM en toetst aan WCAG 2.2 niveau A en AA. De afgekeurde succescriteria gaan alleen over de ingesloten videospeler van YouTube.",
     "title": "Audit digitale toegankelijkheid van de website van NL Design System",
     "commissioner": "NL Design System",

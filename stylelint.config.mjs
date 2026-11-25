@@ -11,7 +11,7 @@ export default {
     'color-no-invalid-hex': [true],
     'comment-no-empty': [true],
     'custom-property-pattern':
-      '^_?(ams|rhc|denhaag|docusaurus|example|ifm|nl|nlds|utrecht|ma|basis|pra|praatmee|DocSearch|docsearch)-[a-z0-9-]+$',
+      '^_?(ams|rhc|denhaag|docusaurus|example|ifm|nl|nlds|utrecht|ma|basis|pra|praatmee|DocSearch|docsearch|todo)-[a-z0-9-]+$',
     'declaration-block-no-duplicate-properties': [true, { ignore: ['consecutive-duplicates-with-different-values'] }],
     'declaration-block-no-redundant-longhand-properties': null,
     'declaration-block-no-shorthand-property-overrides': [true],
