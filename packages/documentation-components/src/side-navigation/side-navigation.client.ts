@@ -3,44 +3,49 @@
  * open or closed state
  */
 class MaSideNavigation extends HTMLElement {
+  #toggleSelector = '.denhaag-side-navigation__expand-button, .denhaag-side-navigation__expand-button *';
+  #toggleSelectorExpanded = 'denhaag-side-navigation__expand-button--expanded';
+  #treeItemSelector = '.denhaag-side-navigation__item';
+
   toggleDetails = (evt: Event) => {
     const target = evt.target;
 
     if (!(target instanceof HTMLElement || target instanceof SVGElement)) {
       return;
     }
-    console.log(
-      target,
-      target?.matches('.denhaag-side-navigation__expand-button, .denhaag-side-navigation__expand-button *'),
-    );
-    if (!target?.matches('.denhaag-side-navigation__expand-button, .denhaag-side-navigation__expand-button *')) {
+
+    if (!target?.matches(this.#toggleSelector)) {
       return;
     }
 
-    const treeItem = target?.closest('.denhaag-side-navigation__item');
+    const treeItem = target?.closest(this.#treeItemSelector);
+    if (!treeItem) {
+      return;
+    }
 
-    if (treeItem) {
-      const details = treeItem.querySelector('details');
+    this.toggleTreeItem(treeItem);
+  };
 
-      if (details) {
-        details.open = !details.open;
-      }
+  toggleTreeItem = (treeItem: Element) => {
+    const details = treeItem.querySelector('details');
+    const button = treeItem.querySelector('button');
 
-      const button = treeItem.querySelector('button');
-      if (button && details) {
-        button.classList.toggle('denhaag-side-navigation__expand-button--expanded', details.open);
-        button.setAttribute('aria-expanded', details.open ? 'true' : 'false');
+    if (!details || !button) {
+      return;
+    }
 
-        const newLabel = details?.open ? button.dataset['openLabel'] : button.dataset['closedLabel'];
-        if (newLabel && button) {
-          button.setAttribute('aria-label', newLabel);
-        }
-      }
+    details.open = !details.open;
+    button.classList.toggle(this.#toggleSelectorExpanded, details.open);
+    button.setAttribute('aria-expanded', details.open ? 'true' : 'false');
+
+    const newLabel = details?.open ? button.dataset['openLabel'] : button.dataset['closedLabel'];
+
+    if (newLabel) {
+      button.setAttribute('aria-label', newLabel);
     }
   };
 
   connectedCallback() {
-    console.log('load');
     this.addEventListener('click', this.toggleDetails);
   }
 
