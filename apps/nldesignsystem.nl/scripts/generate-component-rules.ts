@@ -2,37 +2,19 @@ import { openAsBlob } from 'node:fs';
 import { glob, mkdir, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type {
+  ComponentRules,
+  JsonSource,
+  MarkdownSource,
+  RuleFiles,
+  RuleFolder,
+  SolutionFiles,
+} from './types/component-rules.ts';
 import { markdownToHtml } from './lib/markdown-to-html.ts';
 
 // Source markdown lives in the documentation package; output ships with it too.
 const componentenDir = fileURLToPath(new URL('../../../docs/componenten', import.meta.url));
 const docsDistDir = fileURLToPath(new URL('../../../docs/dist', import.meta.url));
-
-/**
- * `metadata.json` holds the `id` and `title` of a rule, a solution `.json` file the
- * `id` and `$comment` of a solution.
- */
-interface RuleJson {
-  id: string;
-  $comment: string;
-  title: string;
-}
-
-interface MarkdownSource {
-  path: string;
-  /** Set by `#readRuleFiles`. */
-  file?: File;
-  /** Set by `#convertMarkdownFiles`. */
-  html: string;
-}
-
-interface JsonSource {
-  path: string;
-  /** Set by `#readRuleFiles`. */
-  file?: File;
-  /** Set by `#parseJsonFiles`. */
-  parsed: RuleJson;
-}
 
 async function readAsFile(path: string, type: string): Promise<File> {
   return new File([await openAsBlob(path)], basename(path), { type });
@@ -43,32 +25,6 @@ async function readText({ file, path }: MarkdownSource | JsonSource): Promise<st
     throw new Error(`${path} has not been read`);
   }
   return file.text();
-}
-
-interface SolutionFiles {
-  json: JsonSource;
-  markdown: MarkdownSource;
-}
-
-/**
- * The files in one `_rules/<slug>` folder, by role.
- */
-interface RuleFiles {
-  component: string;
-  metadata: JsonSource;
-  explanation: MarkdownSource;
-  relatedguidelines?: MarkdownSource;
-  /** `solution.md` first, the named solutions follow alphabetically. */
-  solutions: SolutionFiles[];
-}
-
-/**
- * A rule folder with the sorted names of its files.
- */
-interface RuleFolder {
-  component: string;
-  dir: string;
-  fileNames: string[];
 }
 
 /**
@@ -150,40 +106,6 @@ function classifyRuleFolder({ component, dir, fileNames }: RuleFolder): RuleFile
     metadata: { path: join(dir, 'metadata.json') } as JsonSource,
     solutions,
   };
-}
-
-interface Solution {
-  id: string;
-  $comment: string;
-  html: string;
-}
-
-interface Rule {
-  id: string;
-  explanation: string;
-  relatedguidelines?: string;
-  solutions: Solution[];
-  /** id of the subject this rule belongs to */
-  subject: string;
-  title: string;
-}
-
-/**
- * Each component is a `subject`; the `type` field keeps the format open so other
- * kinds of subjects (templates, guidelines, …) can be added later.
- */
-interface Subject {
-  id: string;
-  label: string;
-  type: 'component';
-}
-
-/**
- * The content of `dist/component-rules.json`.
- */
-interface ComponentRules {
-  rules: Rule[];
-  subjects: Subject[];
 }
 
 /**
