@@ -20,5 +20,8 @@
   "type": "module",
   "scripts": {
     "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "rosetta": "1.1.0"
   }
 }
