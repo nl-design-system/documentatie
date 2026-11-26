@@ -74,7 +74,7 @@
       "title": "NLDesignSystem.nl"
     },
     "conformanceTarget": "AA",
-    "accessibilitySupportBaseline": "Gangbare browsers en hulpapparatuur.",
+    "accessibilitySupportBaseline": "NL Design System Baseline van oktober 2026: https://nldesignsystem.nl/baseline/2026-10/",
     "additionalEvaluationRequirements": "",
     "wcagVersion": "2.2"
   },
