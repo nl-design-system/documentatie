@@ -34,7 +34,7 @@ Neem dan [contact](https://nldesignsystem.nl/project/kernteam) met ons op.
 
 ### Rapporten
 
-- [Auditrapport november 2026](/toegankelijkheidsverklaring/rapport-2026).
+- [Auditrapport 15 oktober 2026](/toegankelijkheidsverklaring/rapport-2026).
 - [Auditrapport 26 november 2024](/toegankelijkheidsverklaring/rapport-2024).
 - [Auditrapport 20 november 2023](/toegankelijkheidsverklaring/rapport-2023).
 
