@@ -84,10 +84,12 @@ const TechnologyLink = ({ technology }: { technology: string }) =>
 export const AuditRapport = ({
   evaluation: incompleteEvaluation,
   lang,
+  omitH1,
   print,
   technicalAuditContent,
   wcagPages,
 }: {
+  omitH1?: boolean;
   evaluation: WcagEmJson;
   wcagPages?: { successCriterion: string; summaryMarkdown: string }[];
   lang?: string;
@@ -224,21 +226,28 @@ export const AuditRapport = ({
 
   const dateLanguage = dateLanguageMap[lang || 'nl'] || 'nl-NL';
 
+  const subtitle = (
+    <Paragraph>
+      {evaluation.reportFindings.evaluator} {t('wcagEvaluation.for')} {evaluation.reportFindings.commissioner}
+      {' — '}
+      {evaluation.reportFindings.date['@value']
+        ? new Intl.DateTimeFormat(dateLanguage, {
+            dateStyle: 'full',
+            timeZone: 'Europe/Amsterdam',
+          }).format(new Date(evaluation.reportFindings.date['@value']))
+        : 'TODO: datum onbekend'}
+    </Paragraph>
+  );
   return (
     <Article className="utrecht-audit-report" lang={lang}>
-      <HeadingGroup>
-        <Heading level={1}>{evaluation.reportFindings.title}</Heading>
-        <Paragraph>
-          {evaluation.reportFindings.evaluator} {t('wcagEvaluation.for')} {evaluation.reportFindings.commissioner}
-          {' — '}
-          {evaluation.reportFindings.date['@value']
-            ? new Intl.DateTimeFormat(dateLanguage, {
-                dateStyle: 'full',
-                timeZone: 'Europe/Amsterdam',
-              }).format(new Date(evaluation.reportFindings.date['@value']))
-            : 'TODO: datum onbekend'}
-        </Paragraph>
-      </HeadingGroup>
+      {omitH1 ? (
+        subtitle
+      ) : (
+        <HeadingGroup>
+          <Heading level={1}>{evaluation.reportFindings.title}</Heading>
+          {subtitle}
+        </HeadingGroup>
+      )}
       <WcagSummary
         headingLevel={2}
         outcomeMapping={outcomeMapping}
